@@ -1,0 +1,2928 @@
+<style>
+.italy-page {
+  --it-cream: #faf8f3;
+  --it-bg: #f5f7f6;
+  --card-color: #ffffff;
+  --it-text: #17221d;
+  --it-muted: #66736d;
+  --it-border: #e4e9e6;
+  --it-shadow: 0 10px 35px rgba(20, 45, 35, .08);
+  --it-radius: 20px;
+
+  color: var(--it-text);
+  line-height: 1.7;
+}
+
+.italy-page *,
+.italy-page *::before,
+.italy-page *::after {
+  box-sizing: border-box;
+}
+
+.italy-page img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
+.italy-container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------------------
+   BREADCRUMBS
+--------------------------------------------------------- */
+
+#dynamic-breadcrumb {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 24px;
+  font-size: 14px;
+  color: var(--it-muted);
+}
+
+#dynamic-breadcrumb .breadcrumb-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.5;
+}
+
+#dynamic-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+#dynamic-breadcrumb a:hover {
+  color: var(--accent-brand);
+}
+
+#dynamic-breadcrumb .breadcrumb-separator {
+  opacity: .4;
+}
+
+#dynamic-breadcrumb [aria-current="page"] {
+  color: var(--it-text);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   HERO
+--------------------------------------------------------- */
+
+.italy-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  border-radius: 28px;
+  margin-bottom: 70px;
+  background: #17372b;
+  box-shadow: var(--it-shadow);
+  margin: 0;
+}
+
+.italy-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.italy-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 30, 22, .9) 0%,
+      rgba(8, 30, 22, .7) 40%,
+      rgba(8, 30, 22, .22) 78%,
+      rgba(8, 30, 22, .08) 100%
+    );
+}
+
+.italy-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  padding: 100px 65px;
+  color: #fff;
+}
+
+.italy-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.22);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.italy-hero h1 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+}
+
+.italy-hero p {
+  max-width: 650px;
+  margin: 0 0 30px;
+  color: rgba(255,255,255,.92);
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.italy-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.italy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 19px;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.italy-button:hover {
+  transform: translateY(-2px);
+}
+
+.italy-button-primary {
+  background: #fff;
+  color: var(--accent-brand) !important;
+}
+
+.italy-button-secondary {
+  color: #fff !important;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3);
+}
+
+/* ---------------------------------------------------------
+   GENERAL SECTIONS
+--------------------------------------------------------- */
+
+.italy-section {
+  margin-bottom: 85px;
+}
+
+.italy-section-kicker {
+  margin-bottom: 8px;
+  color: var(--accent-brand);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.italy-section-title {
+  margin: 0 0 18px;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -.03em;
+}
+
+.italy-section-heading {
+  max-width: 800px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.italy-section-heading p {
+  margin: 0;
+  color: var(--it-muted);
+}
+
+/* ---------------------------------------------------------
+   INTRO
+--------------------------------------------------------- */
+
+.italy-intro {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 55px;
+  align-items: center;
+  margin-bottom: 85px;
+  margin-top: 30px;
+}
+
+.italy-intro-copy p {
+  color: #48554f;
+}
+
+.italy-intro-image {
+  overflow: hidden;
+  min-height: 420px;
+  border-radius: 24px;
+  box-shadow: var(--it-shadow);
+}
+
+.italy-intro-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+/* ---------------------------------------------------------
+   IMAGE STRIP
+--------------------------------------------------------- */
+
+.italy-image-strip {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr .8fr;
+  gap: 14px;
+  margin-bottom: 85px;
+  margin: 0;
+}
+
+.italy-image-strip figure {
+  position: relative;
+  min-height: 250px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #dfe7e2;
+}
+
+.italy-image-strip figure:first-child {
+  min-height: 330px;
+}
+
+.italy-image-strip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.italy-image-strip figure:hover img {
+  transform: scale(1.04);
+}
+
+.italy-image-strip figcaption {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.48);
+  color: #fff;
+  font-size: .86rem;
+}
+
+/* ---------------------------------------------------------
+   REGION CARDS
+--------------------------------------------------------- */
+
+.italy-region-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.italy-region-card {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 250px;
+  overflow: hidden;
+  border: 1px solid var(--it-border);
+  border-radius: var(--it-radius);
+  background: var(--card-color);
+  box-shadow: 0 4px 20px rgba(20,45,35,.04);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.italy-region-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(23,107,77,.25);
+  box-shadow: var(--it-shadow);
+}
+
+.italy-region-image {
+  height: 110%;
+  min-height: 250px;
+  overflow: hidden;
+  margin-top: -22px;
+}
+
+.italy-region-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.italy-region-card:hover .italy-region-image img {
+  transform: scale(1.05);
+}
+
+.italy-region-content {
+  padding: 27px;
+}
+
+.italy-region-content h3 {
+  margin: 0 0 9px;
+  font-size: 1.35rem;
+}
+
+.italy-region-content p {
+  margin: 0 0 18px;
+  color: var(--it-muted);
+  font-size: .94rem;
+  line-height: 1.65;
+}
+
+.italy-region-link {
+  color: var(--accent-brand);
+  font-weight: 750;
+  font-size: .9rem;
+}
+
+/* ---------------------------------------------------------
+   TRAVEL TOPICS
+--------------------------------------------------------- */
+
+.italy-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.italy-topic {
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--it-cream);
+  border: 1px solid #eeeae1;
+}
+
+.italy-topic-image {
+  height: 150px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.italy-topic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.italy-topic-content {
+  padding: 20px;
+}
+
+.italy-topic h3 {
+  margin: 0 0 7px;
+  font-size: 1.05rem;
+}
+
+.italy-topic p {
+  margin: 0;
+  color: var(--it-muted);
+  font-size: .88rem;
+}
+
+/* ---------------------------------------------------------
+   FEATURED DESTINATIONS
+--------------------------------------------------------- */
+
+.italy-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.italy-destination {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #fff !important;
+  text-decoration: none !important;
+  background: #17372b;
+}
+
+.italy-destination img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.italy-destination::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(5,20,14,.9),
+      rgba(5,20,14,.04) 72%
+    );
+}
+
+.italy-destination:hover img {
+  transform: scale(1.05);
+}
+
+.italy-destination-content {
+  position: absolute;
+  z-index: 2;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+}
+
+.italy-destination-content h3 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-size: 1.45rem;
+}
+
+.italy-destination-content p {
+  margin: 0;
+  color: rgba(255,255,255,.82);
+  font-size: .9rem;
+}
+
+/* ---------------------------------------------------------
+   TRAVEL TIPS
+--------------------------------------------------------- */
+
+.italy-tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.italy-tip {
+  overflow: hidden;
+  border-radius: var(--it-radius);
+  background: var(--card-color);
+  border: 1px solid var(--it-border);
+  box-shadow: 0 5px 25px rgba(20,45,35,.04);
+}
+
+.italy-tip-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.italy-tip-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.italy-tip-content {
+  padding: 27px;
+}
+
+.italy-tip h3 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.italy-tip-intro {
+  margin: 0 0 20px;
+  color: #53605a;
+}
+
+.italy-tip-block {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--it-border);
+}
+
+.italy-tip-block strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--it-text);
+  font-size: .92rem;
+}
+
+.italy-tip-block p {
+  margin: 0;
+  color: var(--it-muted);
+  font-size: .92rem;
+}
+
+/* ---------------------------------------------------------
+   GUIDE VISUAL SECTIONS
+--------------------------------------------------------- */
+
+.italy-guide {
+  max-width: 980px;
+}
+
+.italy-guide p,
+.italy-guide li {
+  color: #48554f;
+}
+
+.italy-guide h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.italy-guide h3 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.italy-guide-image {
+  width: 100%;
+  height: 390px;
+  margin: 35px 0;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.italy-guide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.italy-guide-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  margin: 45px 0;
+}
+
+.italy-guide-split-image {
+  overflow: hidden;
+  min-height: 330px;
+  border-radius: 22px;
+}
+
+.italy-guide-split-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+}
+
+.italy-guide-split-content h3 {
+  margin-top: 0;
+}
+
+.italy-note {
+  margin: 28px 0;
+  padding: 20px 22px;
+  border-left: 4px solid var(--accent-brand);
+  border-radius: 0 14px 14px 0;
+  background: #f0f8f4;
+}
+
+/* ---------------------------------------------------------
+   FAQ
+--------------------------------------------------------- */
+
+.italy-faq {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+}
+
+.italy-faq details {
+  padding: 19px 21px;
+  border: 1px solid var(--it-border);
+  border-radius: 15px;
+  background: #fff;
+}
+
+.italy-faq summary {
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.italy-faq p {
+  margin: 13px 0 0;
+  color: var(--it-muted);
+}
+
+/* ---------------------------------------------------------
+   COMMUNITY
+--------------------------------------------------------- */
+
+.italy-community {
+  padding: 45px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #eef8f3, #faf8f3);
+  border: 1px solid #e1ebe5;
+}
+
+.italy-community-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.italy-community-header h2 {
+  margin: 0 0 6px;
+}
+
+.italy-community-header p {
+  margin: 0;
+  color: var(--it-muted);
+}
+
+#italy-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.italy-post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--it-border);
+  border-radius: 18px;
+  background: #fff;
+  color: inherit !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 18px rgba(20,45,35,.04);
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.italy-post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(20,45,35,.10);
+}
+
+.italy-post-image,
+.italy-post-placeholder {
+  width: 100%;
+  height: 190px;
+}
+
+.italy-post-image {
+  object-fit: cover;
+}
+
+.italy-post-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf3ef;
+  color: var(--it-muted);
+  font-size: .9rem;
+}
+
+.italy-post-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.italy-post-body h3 {
+  margin: 0 0 9px;
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.italy-post-description {
+  margin: 0 0 18px;
+  color: var(--it-muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.italy-post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  font-size: .82rem;
+}
+
+.italy-post-author {
+  color: var(--it-muted);
+}
+
+.italy-post-read {
+  color: var(--accent-brand);
+  font-weight: 750;
+}
+
+/* ---------------------------------------------------------
+   IMAGE CONFIG PREVIEW
+--------------------------------------------------------- */
+
+.italy-image-credit {
+  margin-top: 10px;
+  color: var(--it-muted);
+  font-size: .78rem;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .italy-intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .italy-intro-image,
+  .italy-intro-image img {
+    min-height: 360px;
+  }
+
+  .italy-region-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .italy-topic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .italy-destination-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #italy-posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .italy-container,
+  #dynamic-breadcrumb {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .italy-hero {
+    min-height: 570px;
+    border-radius: 20px;
+    margin-bottom: 55px;
+  }
+
+  .italy-hero-content {
+    padding: 70px 28px;
+  }
+
+  .italy-hero p {
+    font-size: 1rem;
+  }
+
+  .italy-image-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .italy-image-strip figure,
+  .italy-image-strip figure:first-child {
+    min-height: 250px;
+  }
+
+  .italy-region-card {
+    grid-template-columns: 1fr;
+  }
+
+  .italy-region-image {
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .italy-destination-grid,
+  .italy-tips,
+  #italy-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .italy-topic-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .italy-tip-image {
+    height: 230px;
+  }
+
+  .italy-guide-image {
+    height: 270px;
+  }
+
+  .italy-guide-split {
+    grid-template-columns: 1fr;
+  }
+
+  .italy-guide-split-image,
+  .italy-guide-split-image img {
+    min-height: 270px;
+  }
+
+  .italy-community {
+    padding: 28px 20px;
+  }
+
+  .italy-community-header {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .italy-container,
+  #dynamic-breadcrumb {
+    width: min(100% - 18px, 1180px);
+  }
+
+  .italy-hero {
+    min-height: 600px;
+  }
+
+  .italy-hero-content {
+    padding: 55px 21px;
+  }
+
+  .italy-hero-buttons {
+    flex-direction: column;
+  }
+
+  .italy-button {
+    width: 100%;
+  }
+
+  .italy-topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .italy-section {
+    margin-bottom: 65px;
+  }
+
+  .italy-section-title {
+    font-size: 1.85rem;
+  }
+
+  .italy-region-content,
+  .italy-tip-content {
+    padding: 22px;
+  }
+
+  .italy-destination {
+    min-height: 280px;
+  }
+}
+</style>
+
+
+<!-- =========================================================
+     BILD-VERZEICHNIS
+     Alle Bilder können hier zentral ausgetauscht werden.
+     Nur die URLs ändern – der Rest der Seite bleibt gleich.
+========================================================= -->
+
+<script>
+const ITALY_IMAGES = {
+
+  hero:
+    "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=85&w=1170&auto=format&fit=crop",
+
+  intro:
+    "https://plus.unsplash.com/premium_photo-1722201172121-a36b8ea02866?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  tuscany:
+    "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  sicily:
+    "https://images.unsplash.com/photo-1523365154888-8a758819b722?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  venice:
+    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=85",
+
+  sardinia:
+    "https://images.unsplash.com/photo-1558508006-b47365cf0e61?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  lakeGarda:
+    "https://images.unsplash.com/photo-1636382667057-0752bc8492a6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  rome:
+    "https://plus.unsplash.com/premium_photo-1675975678457-d70708bf77c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  veniceCanal:
+    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=85",
+
+  amalfi:
+  "https://images.unsplash.com/photo-1633321088768-b994237c8aa8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  dolomites:
+    "https://images.unsplash.com/photo-1534106474077-f9e9c6f5a47c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  beach:
+    "https://images.unsplash.com/photo-1539981739188-bbff34df9959?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  italyRoadtrip:
+    "https://images.unsplash.com/photo-1726159496287-596e93ca635b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  food:
+    "https://images.unsplash.com/photo-1532117472055-4d0734b51f31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  pizza:
+    "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85",
+
+  florence:
+    "https://images.unsplash.com/photo-1528114039593-4366cc08227d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  coast:
+    "https://images.unsplash.com/photo-1523365154888-8a758819b722?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+  mountains:
+    "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+};
+
+/* =========================================================
+   COMMUNITY-POSTS: SUCHGEBIET HIER KONFIGURIEREN
+   Für eine neue Länder-/Themenseite nur Name und Koordinaten ändern.
+========================================================= */
+const POST_SEARCH_CONFIG = {
+  name: "Italien",
+  min_lat: 36.6301,
+  min_lon: 6.6238,
+  max_lat: 47.0920,
+  max_lon: 18.5225,
+  limit: 6
+};
+
+
+/*
+ * Automatisch alle Bilder mit
+ * data-italy-image="..."
+ * einsetzen.
+ */
+document.addEventListener("DOMContentLoaded", function () {
+
+  document
+    .querySelectorAll("[data-italy-image]")
+    .forEach(function (image) {
+
+      const key = image.getAttribute("data-italy-image");
+
+      if (ITALY_IMAGES[key]) {
+        image.src = ITALY_IMAGES[key];
+      }
+
+    });
+
+});
+</script>
+
+
+<!-- =========================================================
+     BREADCRUMBS
+========================================================= -->
+
+<nav
+  id="dynamic-breadcrumb"
+  aria-label="Breadcrumb"
+></nav>
+
+
+<!-- =========================================================
+     MAIN PAGE
+========================================================= -->
+
+<div class="italy-page">
+
+  <div class="italy-container">
+
+    <!-- HERO -->
+
+    <section class="italy-hero">
+
+      <img
+        data-italy-image="hero"
+        src=""
+        alt="Italienische Landschaft mit Bergen und See"
+      />
+
+      <div class="italy-hero-content">
+
+        <div class="italy-eyebrow">
+          Reiseguide & Community
+        </div>
+
+        <h1>
+          Italien entdecken
+        </h1>
+
+        <p>
+          Italien verbindet mediterranes Lebensgefühl mit jahrtausendealter
+          Geschichte, beeindruckenden Landschaften, traumhaften Küsten,
+          charmanten Städten und einer Küche, die weit über Pizza und Pasta
+          hinausgeht. Entdecke Regionen, Reiseziele, Sehenswürdigkeiten,
+          praktische Tipps und persönliche Reiseberichte aus der Community.
+        </p>
+
+        <div class="italy-hero-buttons">
+
+          <a
+            class="italy-button italy-button-primary"
+            href="#regionen"
+          >
+            Regionen entdecken
+          </a>
+
+          <a
+            class="italy-button italy-button-secondary"
+            href="#beitraege"
+          >
+            Beiträge lesen
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="italy-intro">
+
+      <div class="italy-intro-copy">
+
+        <div class="italy-section-kicker">
+          Italien Reiseführer
+        </div>
+
+        <h2 class="italy-section-title">
+          Urlaub in Italien: Zwischen Alpen, Mittelmeer und historischen Städten
+        </h2>
+
+        <p>
+          Kaum ein europäisches Land bietet eine vergleichbare Vielfalt wie
+          Italien. Im Norden reichen die Landschaften von den Alpen und
+          Dolomiten über große Seen bis zu den Weinregionen Venetiens und der
+          Toskana. Weiter südlich warten historische Städte, mediterrane
+          Küsten, Inseln und kleine Dörfer auf Reisende.
+        </p>
+
+        <p>
+          Ein Italien-Urlaub kann deshalb ganz unterschiedlich aussehen:
+          entspannter Strandurlaub an der Adria oder am Mittelmeer,
+          Roadtrip durch Norditalien, Wanderurlaub in den Bergen,
+          Kulturreise nach Rom, Städtereise nach Venedig oder Florenz,
+          Familienurlaub am Gardasee oder eine längere Rundreise durch
+          mehrere Regionen.
+        </p>
+
+        <p>
+          Auf dieser Seite findest du einen Überblick über beliebte
+          Reiseziele in Italien sowie praktische Hinweise zur Reiseplanung.
+          In der Community kannst du außerdem aktuelle Reiseberichte,
+          Erfahrungen und Geheimtipps anderer Reisender entdecken.
+        </p>
+
+        <p>
+          Besonders interessant ist Italien auch deshalb, weil sich viele
+          unterschiedliche Reisearten miteinander verbinden lassen. Ein
+          Urlaub kann morgens mit einem Spaziergang durch eine historische
+          Altstadt beginnen und am Nachmittag bereits an einem See, Strand
+          oder in den Bergen weitergehen.
+        </p>
+
+      </div>
+
+      <div class="italy-intro-image">
+
+        <img
+          data-italy-image="intro"
+          src=""
+          alt="Landschaft in Italien mit Hügeln und historischer Umgebung"
+          loading="lazy"
+        />
+
+      </div>
+
+    </section>
+
+
+    <!-- IMAGE STRIP -->
+
+    <section class="italy-image-strip">
+
+      <figure>
+
+        <img
+          data-italy-image="lakeGarda"
+          src=""
+          alt="Landschaft am Gardasee"
+          loading="lazy"
+        />
+
+        <figcaption>
+          Seen und Berge im Norden
+        </figcaption>
+
+      </figure>
+
+      <figure>
+
+        <img
+          data-italy-image="rome"
+          src=""
+          alt="Historische Sehenswürdigkeit in Rom"
+          loading="lazy"
+        />
+
+        <figcaption>
+          Geschichte in Rom
+        </figcaption>
+
+      </figure>
+
+      <figure>
+
+        <img
+          data-italy-image="coast"
+          src=""
+          alt="Mediterrane Küstenlandschaft"
+          loading="lazy"
+        />
+
+        <figcaption>
+          Küsten und Mittelmeer
+        </figcaption>
+
+      </figure>
+
+    </section>
+
+
+    <!-- REGIONEN -->
+
+    <section
+      class="italy-section"
+      id="regionen"
+    >
+
+      <div class="italy-section-heading">
+
+        <div class="italy-section-kicker">
+          Reiseziele
+        </div>
+
+        <h2 class="italy-section-title">
+          Die beliebtesten Regionen Italiens
+        </h2>
+
+        <p>
+          Italien besteht aus vielen sehr unterschiedlichen Regionen.
+          Während Norditalien besonders für Berge, Seen und Städte bekannt
+          ist, findest du in Mittel- und Süditalien mediterrane Landschaften,
+          Strände, historische Orte und Inseln.
+        </p>
+
+      </div>
+
+
+      <div class="italy-region-grid">
+
+        <!-- TOSKANA -->
+
+        <a
+          class="italy-region-card"
+          href="/italien/toskana"
+        >
+
+          <div class="italy-region-image">
+
+            <img
+              data-italy-image="tuscany"
+              src=""
+              alt="Landschaft der Toskana"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-region-content">
+
+            <h3>
+              Toskana
+            </h3>
+
+            <p>
+              Sanfte Hügel, Weinberge, Zypressen und historische Städte
+              machen die Toskana zu einem der bekanntesten Reiseziele
+              Italiens. Florenz, Siena, Pisa und kleinere Orte lassen sich
+              hervorragend miteinander kombinieren.
+            </p>
+
+            <span class="italy-region-link">
+              Toskana entdecken →
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <!-- SIZILIEN -->
+
+        <a
+          class="italy-region-card"
+          href="/italien/sizilien"
+        >
+
+          <div class="italy-region-image">
+
+            <img
+              data-italy-image="sicily"
+              src=""
+              alt="Küste und Landschaft auf Sizilien"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-region-content">
+
+            <h3>
+              Sizilien
+            </h3>
+
+            <p>
+              Sizilien verbindet Strände, antike Bauwerke, Vulkane,
+              mediterrane Städte und eine eigenständige Küche. Die Insel
+              eignet sich sowohl für Badeurlaub als auch für eine längere
+              Rundreise.
+            </p>
+
+            <span class="italy-region-link">
+              Sizilien entdecken →
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <!-- VENETIEN -->
+
+        <a
+          class="italy-region-card"
+          href="/italien/venetien"
+        >
+
+          <div class="italy-region-image">
+
+            <img
+              data-italy-image="venice"
+              src=""
+              alt="Venedig in Venetien"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-region-content">
+
+            <h3>
+              Venetien
+            </h3>
+
+            <p>
+              Venetien vereint Venedig, Verona, den Gardasee, die Dolomiten
+              und die Adriaküste. Die Region ist besonders interessant,
+              wenn du Städtereise, Natur und Badeurlaub miteinander
+              verbinden möchtest.
+            </p>
+
+            <span class="italy-region-link">
+              Venetien entdecken →
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <!-- SARDINIEN -->
+
+        <a
+          class="italy-region-card"
+          href="/italien/sardinien"
+        >
+
+          <div class="italy-region-image">
+
+            <img
+              data-italy-image="sardinia"
+              src=""
+              alt="Küste auf Sardinien"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-region-content">
+
+            <h3>
+              Sardinien
+            </h3>
+
+            <p>
+              Sardinien ist bekannt für türkisfarbenes Wasser, Buchten,
+              Strände und eine abwechslungsreiche Landschaft. Abseits der
+              bekannten Küstenorte gibt es kleine Dörfer, Wanderwege und
+              regionale Spezialitäten zu entdecken.
+            </p>
+
+            <span class="italy-region-link">
+              Sardinien entdecken →
+            </span>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMMUNITY -->
+
+    <section
+      class="italy-section"
+      id="beitraege"
+    >
+
+      <div class="italy-community">
+
+        <div class="italy-community-header">
+
+          <div>
+
+            <div class="italy-section-kicker">
+              Community
+            </div>
+
+            <h2>
+              Aktuelle Beiträge über Italien
+            </h2>
+
+            <p>
+              Reiseberichte, Erfahrungen und Tipps aus der Community.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div id="italy-posts">
+
+          <div
+            style="
+              padding:30px;
+              text-align:center;
+              border:1px solid #e4e9e6;
+              border-radius:16px;
+              background:#fff;
+              grid-column:1/-1;
+            "
+          >
+            Beiträge werden geladen …
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+      <!-- REISETHEMEN -->
+
+    <section class="italy-section">
+
+      <div class="italy-section-heading">
+
+        <div class="italy-section-kicker">
+          Reiseplanung
+        </div>
+
+        <h2 class="italy-section-title">
+          Italien nach Reisethema entdecken
+        </h2>
+
+        <p>
+          Nicht jeder Italien-Urlaub sieht gleich aus. Je nach Reiseart
+          können andere Regionen, Orte und Jahreszeiten besonders interessant
+          sein.
+        </p>
+
+      </div>
+
+
+      <div class="italy-topic-grid">
+
+        <article class="italy-topic">
+
+          <div class="italy-topic-image">
+
+            <img
+              data-italy-image="beach"
+              src=""
+              alt="Italienischer Strand"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-topic-content">
+
+            <h3>
+              Strandurlaub
+            </h3>
+
+            <p>
+              Küstenorte, Buchten und lange Sandstrände an Adria und Mittelmeer.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="italy-topic">
+
+          <div class="italy-topic-image">
+
+            <img
+              data-italy-image="mountains"
+              src=""
+              alt="Berglandschaft"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-topic-content">
+
+            <h3>
+              Berge & Natur
+            </h3>
+
+            <p>
+              Dolomiten, Alpen, Apennin und abwechslungsreiche Wandergebiete.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="italy-topic">
+
+          <div class="italy-topic-image">
+
+            <img
+              data-italy-image="rome"
+              src=""
+              alt="Historisches Rom"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-topic-content">
+
+            <h3>
+              Städtereisen
+            </h3>
+
+            <p>
+              Rom, Florenz, Venedig, Verona, Bologna und viele weitere Städte.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="italy-topic">
+
+          <div class="italy-topic-image">
+
+            <img
+              data-italy-image="food"
+              src=""
+              alt="Italienische Pasta"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-topic-content">
+
+            <h3>
+              Kulinarik
+            </h3>
+
+            <p>
+              Regionale Küche, Märkte, Pasta, Pizza, Fisch und lokale Spezialitäten.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- BELIEBTE ZIELE -->
+
+    <section class="italy-section">
+
+      <div class="italy-section-heading">
+
+        <div class="italy-section-kicker">
+          Beliebte Ziele
+        </div>
+
+        <h2 class="italy-section-title">
+          Diese Orte solltest du kennen
+        </h2>
+
+        <p>
+          Einige Reiseziele eignen sich besonders gut als Ausgangspunkt,
+          Zwischenstopp oder Schwerpunkt einer Italienreise.
+        </p>
+
+      </div>
+
+
+      <div class="italy-destination-grid">
+
+        <a
+          class="italy-destination"
+          href="/italien/gardasee"
+        >
+
+          <img
+            data-italy-image="lakeGarda"
+            src=""
+            alt="Gardasee mit Bergen und Wasser"
+            loading="lazy"
+          />
+
+          <div class="italy-destination-content">
+
+            <h3>
+              Gardasee
+            </h3>
+
+            <p>
+              Seen, Berge, Orte am Wasser und mediterranes Flair
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          class="italy-destination"
+          href="/italien/rom"
+        >
+
+          <img
+            data-italy-image="rome"
+            src=""
+            alt="Rom mit antiker Architektur"
+            loading="lazy"
+          />
+
+          <div class="italy-destination-content">
+
+            <h3>
+              Rom
+            </h3>
+
+            <p>
+              Antike, Vatikan, Plätze und italienisches Stadtleben
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          class="italy-destination"
+          href="/italien/venedig"
+        >
+
+          <img
+            data-italy-image="veniceCanal"
+            src=""
+            alt="Kanal und historische Gebäude in Venedig"
+            loading="lazy"
+          />
+
+          <div class="italy-destination-content">
+
+            <h3>
+              Venedig
+            </h3>
+
+            <p>
+              Kanäle, historische Paläste und die Lagune
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          class="italy-destination"
+          href="/italien/amalfi"
+        >
+
+          <img
+            data-italy-image="amalfi"
+            src=""
+            alt="Mediterrane Küste in Italien"
+            loading="lazy"
+          />
+
+          <div class="italy-destination-content">
+
+            <h3>
+              Amalfiküste
+            </h3>
+
+            <p>
+              Küstenstraßen, Buchten, Orte am Hang und Mittelmeer
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          class="italy-destination"
+          href="/italien/dolomiten"
+        >
+
+          <img
+            data-italy-image="dolomites"
+            src=""
+            alt="Berglandschaft in den Alpen"
+            loading="lazy"
+          />
+
+          <div class="italy-destination-content">
+
+            <h3>
+              Dolomiten
+            </h3>
+
+            <p>
+              Berge, Wanderwege, Seen und alpine Landschaften
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          class="italy-destination"
+          href="/italien/florenz"
+        >
+
+          <img
+            data-italy-image="florence"
+            src=""
+            alt="Florenz und historische Architektur"
+            loading="lazy"
+          />
+
+          <div class="italy-destination-content">
+
+            <h3>
+              Florenz
+            </h3>
+
+            <p>
+              Renaissance, Kunst, Museen und historische Altstadt
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRAKTISCHE TIPPS -->
+
+    <section class="italy-section">
+
+      <div class="italy-section-heading">
+
+        <div class="italy-section-kicker">
+          Reiseplanung
+        </div>
+
+        <h2 class="italy-section-title">
+          Praktische Tipps für deine Italien-Reise
+        </h2>
+
+        <p>
+          Gerade bei beliebten Reisezielen lohnt es sich, die Reise nicht
+          nur nach Sehenswürdigkeiten zu planen. Verkehr, Saison,
+          Öffnungszeiten und die Wahl des richtigen Ausgangsortes können
+          einen großen Unterschied machen.
+        </p>
+
+      </div>
+
+
+      <div class="italy-tips">
+
+
+        <!-- GARDASEE -->
+
+        <article class="italy-tip">
+
+          <div class="italy-tip-image">
+
+            <img
+              data-italy-image="lakeGarda"
+              src=""
+              alt="Gardasee und italienische Berglandschaft"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-tip-content">
+
+            <h3>
+              Verkehr am Gardasee
+            </h3>
+
+            <p class="italy-tip-intro">
+              Der Gardasee ist in der Hauptsaison sehr beliebt. Da es nur eine große
+              Hauptstraße rund um den See gibt,
+              kann es sich bei kurzen Strecken teils Stunden stauen.
+            </p>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Alternative Verkehrsmittel
+              </strong>
+
+              <p>
+                Es lohnt sich wegen dem Verkehr daher auf Boote oder Fahrräder auszuweichen, wenn das möglich ist.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- STRÄNDE -->
+
+        <article class="italy-tip">
+
+          <div class="italy-tip-image">
+
+            <img
+              data-italy-image="beach"
+              src=""
+              alt="Strand und Mittelmeer"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-tip-content">
+
+            <h3>
+              Strände in Italien
+            </h3>
+
+            <p class="italy-tip-intro">
+              Italien besitzt eine große Auswahl an Küstenregionen.
+              Zwischen bekannten Badeorten und kleineren Buchten gibt es
+              sehr unterschiedliche Stranderlebnisse.
+            </p>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Bekannte Badeorte
+              </strong>
+
+              <p>
+                Die meisten Strände in Italien sind große Tourismuszentren, bei denen man Liegen und Sonnenschirme mieten muss.
+                Allerdings bieten diese Strände auch Restaurants und weitere Infrastruktur.
+              </p>
+
+            </div>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Ruhigere Buchten
+              </strong>
+
+              <p>
+                Wer weniger Trubel sucht, sollte abseits der Orte nach Stränden suchen.
+                Hier lohnt sich eine Recherche auf Google Maps, da es doch noch den ein oder anderen Geheimtipp gibt.
+              </p>
+
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- REISEZEIT -->
+
+        <article class="italy-tip">
+
+          <div class="italy-tip-image">
+
+            <img
+              data-italy-image="coast"
+              src=""
+              alt="Italienische Küste im Sommer"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-tip-content">
+
+            <h3>
+              Die beste Reisezeit für Italien
+            </h3>
+
+            <p class="italy-tip-intro">
+              Die passende Reisezeit hängt stark davon ab, wohin du reisen
+              möchtest und was du unternehmen willst.
+            </p>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Sommer
+              </strong>
+
+              <p>
+                Für Badeurlaub sind Juni bis September besonders beliebt, aber dementsprechend sind die meisten
+                Orte auch sehr stark besucht.
+              </p>
+
+            </div>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Frühling und Herbst
+              </strong>
+
+              <p>
+                Mildere Temperaturen können für Städtereisen, Rundreisen
+                und Wanderungen angenehm sein, dort gibt es dann auch weniger Touristen. 
+                Allerdings kann es bei Touristen-Hochburgen wie dem Gardasee schwer sein Hotels und Restaurants zu finden da es kaum Gäste gibt und alles geschlossen ist.
+              </p>
+
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- ROM -->
+
+        <article class="italy-tip">
+
+          <div class="italy-tip-image">
+
+            <img
+              data-italy-image="rome"
+              src=""
+              alt="Antike Architektur in Rom"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-tip-content">
+
+            <h3>
+              Rom: Sehenswürdigkeiten früh planen
+            </h3>
+
+            <p class="italy-tip-intro">
+              Rom bietet so viele historische Sehenswürdigkeiten, dass
+              mehrere Tage schnell gefüllt sind.
+            </p>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Wichtige Sehenswürdigkeiten
+              </strong>
+
+              <p>
+                Kolosseum, Forum Romanum, Vatikan und zahlreiche Museen
+                können problemlos mehrere Tage beanspruchen, man sollte also am 
+                besten viel Zeit einplanen oder direkt einen eigenen Städtetrip für Rom planen.
+              </p>
+
+            </div>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Eintrittskarten
+              </strong>
+
+              <p>
+                Für besonders beliebte Attraktionen lohnt es sich,
+                Eintrittskarten und mögliche Zeitfenster frühzeitig zu
+                prüfen.
+              </p>
+
+            </div>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Tagesplanung
+              </strong>
+
+              <p>
+                Plane nicht zu viele Sehenswürdigkeiten direkt
+                hintereinander, man kann sich oft wirklich sehr lange aufhalten. Rom lässt sich auch hervorragend zu Fuß
+                zwischen einzelnen Programmpunkten entdecken.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- VENEDIG -->
+
+        <article class="italy-tip">
+
+          <div class="italy-tip-image">
+
+            <img
+              data-italy-image="veniceCanal"
+              src=""
+              alt="Kanal in Venedig"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-tip-content">
+
+            <h3>
+              Venedig ohne Parkplatzstress
+            </h3>
+
+            <p class="italy-tip-intro">
+              Das historische Zentrum von Venedig ist nicht mit dem
+              normalen Auto befahrbar. Die Anreise sollte deshalb vorher
+              geplant werden.
+            </p>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Mit dem Auto
+              </strong>
+
+              <p>
+                Wer mit dem Auto anreist, sollte sich bereits vor der Fahrt
+                mit Parkmöglichkeiten außerhalb des historischen Zentrums
+                beschäftigen. Man kann direkt in Venedig parken, allerdings sind die Parkplätze sehr teuer und man steht oft im Stau.
+              </p>
+
+            </div>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Mestre
+              </strong>
+
+              <p>
+                Mestre ist ein häufiger Ausgangspunkt für die Weiterfahrt
+                nach Venedig. Hier gibt es günstigere Parkplätze und eine gute Anbindung an die Stadt.
+                Allerdings sollte man sich hier auch vorher informieren, da diese oft nur begrenzt verfügbar sind.
+              </p>
+
+            </div>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Bahn
+              </strong>
+
+              <p>
+                Auch Padua kann je nach Route interessant sein, da Venedig
+                von dort mit dem Zug sehr günstig und schnell erreichbar ist.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- ESSEN -->
+
+        <article class="italy-tip">
+
+          <div class="italy-tip-image">
+
+            <img
+              data-italy-image="food"
+              src=""
+              alt="Italienische Pasta"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-tip-content">
+
+            <h3>
+              Essen in Italien
+            </h3>
+
+            <p class="italy-tip-intro">
+              Die italienische Küche ist stark regional geprägt. Deshalb
+              lohnt es sich, im Urlaub auch lokale Spezialitäten
+              auszuprobieren.
+            </p>
+
+            <div class="italy-tip-block">
+
+              <strong>
+                Primi und Secondi
+              </strong>
+
+              <p>
+                Italienische Gerichte werden häufig in zwei Gängen serviert: Primi (Pasta, Risotto, Suppe) und Secondi (Fleisch, Fisch, Gemüse). 
+                Man sollte also im Hinterkopf behalten, dass Pasta oft nicht als Hauptgericht, sondern als Vorspeise serviert wird.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- AUSFÜHRLICHER SEO GUIDE -->
+
+    <section class="italy-section">
+
+      <div class="italy-guide">
+
+        <div class="italy-section-kicker">
+          Italien Reiseführer
+        </div>
+
+        <h2>
+          Italien Urlaub planen: Was du vor der Reise wissen solltest
+        </h2>
+
+        <p>
+          Italien ist ein Reiseziel, das sich sowohl für einen kurzen
+          Wochenendtrip als auch für einen mehrwöchigen Urlaub eignet.
+          Durch die unterschiedlichen Regionen lässt sich ein Aufenthalt
+          sehr individuell gestalten. Wer zum ersten Mal nach Italien
+          reist, steht deshalb häufig vor der Frage, welche Region am
+          besten zum eigenen Urlaub passt.
+        </p>
+
+        <p>
+          Für einen klassischen Badeurlaub bieten sich beispielsweise die
+          italienische Adriaküste, Ligurien, Apulien, Sardinien oder
+          Sizilien an. Wer Berge und Seen bevorzugt, findet im Norden mit
+          dem Gardasee, dem Lago Maggiore, Südtirol und den Dolomiten
+          zahlreiche Möglichkeiten. Für Kultur- und Städtereisen sind
+          Rom, Florenz, Venedig, Verona, Bologna und Mailand interessante
+          Ziele.
+        </p>
+
+
+        <div class="italy-guide-image">
+
+          <img
+            data-italy-image="italyRoadtrip"
+            src=""
+            alt="Straße durch eine italienische Landschaft"
+            loading="lazy"
+          />
+
+        </div>
+
+
+        <h3>
+          Norditalien: Seen, Berge und Städte
+        </h3>
+
+        <p>
+          Norditalien ist besonders bei Reisenden beliebt, die Landschaft
+          und Kultur miteinander verbinden möchten. Der Gardasee liegt
+          zwischen mehreren Regionen und bietet sowohl Wassersport als
+          auch Wanderwege, historische Orte und Ausflugsziele. In den
+          Bergen der Alpen und Dolomiten kommen Wanderer, Radfahrer und
+          Wintersportler auf ihre Kosten.
+        </p>
+
+        <p>
+          Gleichzeitig liegen mit Venedig, Verona, Padua und Mailand
+          bedeutende Städte in erreichbarer Entfernung. Venetien verbindet
+          damit unterschiedliche Urlaubsarten: Seeurlaub, Städtereise,
+          Strandurlaub und Bergurlaub können innerhalb einer Reise
+          kombiniert werden.
+        </p>
+
+
+        <div class="italy-guide-split">
+
+          <div class="italy-guide-split-image">
+
+            <img
+              data-italy-image="dolomites"
+              src=""
+              alt="Berglandschaft der Dolomiten"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="italy-guide-split-content">
+
+            <h3>
+              Berge und Seen im Norden
+            </h3>
+
+            <p>
+              Wer Natur und aktive Erholung miteinander verbinden möchte,
+              findet in Norditalien zahlreiche Möglichkeiten. Seen wie der
+              Gardasee bieten Wassersport und Ausflüge, während die
+              Bergregionen für Wanderungen, Radtouren und weitere
+              Outdoor-Aktivitäten interessant sind.
+            </p>
+
+            <p>
+              Durch die relativ kurzen Entfernungen zwischen vielen
+              Reisezielen kann Norditalien außerdem gut mit einer Rundreise
+              kombiniert werden.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <h3>
+          Mittelitalien: Toskana, Umbrien und Lazio
+        </h3>
+
+        <p>
+          Mittelitalien ist vor allem für seine historischen Städte,
+          Kulturlandschaften und kulinarischen Traditionen bekannt.
+          Die Toskana mit Florenz, Siena, Pisa und zahlreichen kleineren
+          Orten eignet sich besonders für Rundreisen und Roadtrips.
+        </p>
+
+        <p>
+          Lazio ist dagegen untrennbar mit Rom verbunden. Die Hauptstadt
+          bietet eine ungewöhnlich hohe Dichte an historischen
+          Sehenswürdigkeiten. Gleichzeitig lohnt sich ein Blick über das
+          Stadtzentrum hinaus, denn die Region bietet auch Küsten,
+          Landschaften und kleinere Orte.
+        </p>
+
+
+        <div class="italy-guide-image">
+
+          <img
+            data-italy-image="florence"
+            src=""
+            alt="Historische Architektur in Florenz"
+            loading="lazy"
+          />
+
+        </div>
+
+
+        <h3>
+          Süditalien und die italienischen Inseln
+        </h3>
+
+        <p>
+          Weiter südlich verändert sich der Charakter vieler Reiseziele.
+          Mediterranes Klima, Küstenlandschaften und kleinere Städte
+          prägen große Teile Süditaliens. Regionen wie Kampanien,
+          Apulien, Kalabrien und Basilikata eignen sich für Reisende,
+          die neben bekannten Sehenswürdigkeiten auch weniger stark
+          touristisch geprägte Orte kennenlernen möchten.
+        </p>
+
+        <p>
+          Auch die Inseln Sizilien und Sardinien sind vielseitige
+          Reiseziele. Beide eignen sich für Strandurlaub, bieten aber
+          gleichzeitig historische Sehenswürdigkeiten, Natur und
+          regionale Küche. Für eine Inselrundreise sollte ausreichend
+          Zeit eingeplant werden, da die Entfernungen innerhalb der
+          Inseln nicht unterschätzt werden sollten.
+        </p>
+
+
+        <div class="italy-guide-split">
+
+          <div class="italy-guide-split-content">
+
+            <h3>
+              Küsten und Inseln
+            </h3>
+
+            <p>
+              Von der Amalfiküste bis Sardinien gibt es zahlreiche
+              unterschiedliche Küstenlandschaften. Manche Regionen eignen
+              sich besonders für Badeurlaub, andere verbinden Strände mit
+              historischen Orten, Wanderwegen oder kleineren Küstenstädten.
+            </p>
+
+            <p>
+              Wer mehrere Orte besuchen möchte, sollte bei der Planung
+              nicht nur die Entfernung auf der Karte betrachten. Gerade
+              kurvenreiche Küstenstraßen können mehr Zeit benötigen als
+              zunächst erwartet.
+            </p>
+
+          </div>
+
+          <div class="italy-guide-split-image">
+
+            <img
+              data-italy-image="amalfi"
+              src=""
+              alt="Italienische Küste mit Bergen und Meer"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
+
+        <h3>
+          Italien mit dem Auto erkunden
+        </h3>
+
+        <p>
+          Ein Roadtrip durch Italien bietet viel Freiheit und ist
+          besonders außerhalb großer Städte praktisch. Gleichzeitig
+          sollte man beachten, dass das Auto in historischen Innenstädten
+          oft eher hinderlich sein kann. Viele Städte besitzen Bereiche,
+          in denen der Autoverkehr eingeschränkt ist.
+        </p>
+
+        <p>
+          Bei einer Rundreise empfiehlt es sich deshalb, größere Städte
+          und kleinere Orte unterschiedlich zu planen. Für Rom, Venedig
+          oder Florenz kann es sinnvoll sein, eine Unterkunft mit guter
+          Anbindung an den öffentlichen Verkehr zu wählen und das Auto
+          außerhalb des Zentrums stehen zu lassen.
+        </p>
+
+        <div class="italy-note">
+
+          <strong>
+            Tipp für die Reiseplanung:
+          </strong>
+
+          Plane nicht nur die Entfernung zwischen zwei Orten ein.
+          Besonders an Seen, Küsten und in touristischen Regionen kann
+          die tatsächliche Fahrzeit deutlich länger sein als die
+          Kilometerzahl vermuten lässt.
+
+        </div>
+
+
+        <h3>
+          Italien für Familien
+        </h3>
+
+        <p>
+          Italien eignet sich auch hervorragend für Familienreisen.
+          Besonders Regionen mit Seen, Stränden und kurzen Ausflügen
+          ermöglichen eine abwechslungsreiche Mischung aus Erholung
+          und Aktivitäten. Rund um den Gardasee gibt es beispielsweise
+          zahlreiche Möglichkeiten für Familien, darunter Ausflüge auf
+          dem Wasser und Freizeitangebote.
+        </p>
+
+        <p>
+          Bei einer Städtereise mit Kindern sollte dagegen darauf
+          geachtet werden, nicht zu viele Sehenswürdigkeiten an einem
+          einzigen Tag einzuplanen. Gerade historische Städte lassen
+          sich oft angenehmer erkunden, wenn zwischen einzelnen
+          Programmpunkten ausreichend Zeit für Pausen bleibt.
+        </p>
+
+
+        <div class="italy-guide-image">
+
+          <img
+            data-italy-image="pizza"
+            src=""
+            alt="Italienische Pizza"
+            loading="lazy"
+          />
+
+        </div>
+
+
+        <h3>
+          Italien kulinarisch entdecken
+        </h3>
+
+        <p>
+          Essen ist ein wichtiger Teil einer Italienreise. Dabei gibt es
+          nicht die eine italienische Küche, sondern zahlreiche regionale
+          Traditionen. Pasta, Pizza, Fischgerichte, Käse, Wurstwaren,
+          Olivenöl, Wein und Süßspeisen werden je nach Region sehr
+          unterschiedlich zubereitet.
+        </p>
+
+        <p>
+          Gerade bei einer Rundreise lohnt es sich daher, regionale
+          Spezialitäten auszuprobieren. Ein Restaurant in Bologna bietet
+          andere kulinarische Schwerpunkte als eine Trattoria auf
+          Sizilien oder ein Lokal an der ligurischen Küste.
+        </p>
+
+
+        <h3>
+          Wie viele Tage sollte man für Italien einplanen?
+        </h3>
+
+        <p>
+          Für eine einzelne Region können bereits fünf bis sieben Tage
+          ausreichend sein, um mehrere Orte kennenzulernen. Für eine
+          größere Rundreise sollte deutlich mehr Zeit eingeplant werden.
+          Italien ist langgestreckt und die Entfernungen zwischen Nord
+          und Süd sind erheblich.
+        </p>
+
+        <p>
+          Statt in wenigen Tagen möglichst viele Orte abzuhaken, kann es
+          sinnvoller sein, sich auf eine Region oder eine Kombination aus
+          zwei benachbarten Regionen zu konzentrieren. So bleibt mehr
+          Zeit für spontane Ausflüge, lokale Restaurants und kleinere
+          Orte abseits der bekannten Sehenswürdigkeiten.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="italy-section">
+
+      <div class="italy-section-heading">
+
+        <div class="italy-section-kicker">
+          Häufige Fragen
+        </div>
+
+        <h2 class="italy-section-title">
+          Italien FAQ
+        </h2>
+
+        <p>
+          Antworten auf häufige Fragen rund um Urlaub, Reisezeit,
+          Verkehr und beliebte Reiseziele in Italien.
+        </p>
+
+      </div>
+
+
+      <div class="italy-faq">
+
+        <details>
+
+          <summary>
+            Wann ist die beste Reisezeit für Italien?
+          </summary>
+
+          <p>
+            Das hängt stark von der Region und der geplanten Reise ab.
+            Für Badeurlaub sind die warmen Monate besonders interessant,
+            während Frühling und Herbst für Städte, Rundreisen und viele
+            Outdoor-Aktivitäten angenehm sein können. Außerhalb der
+            Hauptsaison sollte man bei kleineren Urlaubsorten allerdings
+            mit eingeschränkten Öffnungszeiten rechnen.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Welche Regionen eignen sich für einen Italien-Urlaub?
+          </summary>
+
+          <p>
+            Das hängt vom Urlaubstyp ab. Die Toskana eignet sich unter
+            anderem für Kultur und Landschaft, Venetien für Städte,
+            Seen und Küste, Sardinien und Sizilien für Inselurlaub und
+            der Norden für Berge und Seen. Auch Apulien, Ligurien,
+            Kampanien und viele weitere Regionen bieten unterschiedliche
+            Reiseerlebnisse.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Kann man Italien gut mit dem Auto bereisen?
+          </summary>
+
+          <p>
+            Ja, besonders für Rundreisen durch ländliche Regionen kann
+            ein Auto praktisch sein. In historischen Innenstädten und
+            beliebten Touristenzentren kann das Auto dagegen unpraktisch
+            sein. Vor der Anreise sollte man sich deshalb über
+            Parkmöglichkeiten und lokale Verkehrsbeschränkungen
+            informieren.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Ist der Gardasee für einen Urlaub geeignet?
+          </summary>
+
+          <p>
+            Der Gardasee bietet eine Mischung aus Orten am Wasser,
+            Landschaft, Wassersport, Radwegen, Wanderungen und
+            Ausflugszielen. Besonders in der Hauptreisezeit sollte
+            allerdings mit erhöhtem Verkehrsaufkommen gerechnet werden.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Wie viele Tage sollte man in Rom verbringen?
+          </summary>
+
+          <p>
+            Für die wichtigsten Sehenswürdigkeiten sollte man mehrere
+            Tage einplanen. Wer neben Kolosseum, Forum Romanum und
+            Vatikan auch weniger bekannte Viertel, Plätze und Museen
+            erkunden möchte, kann problemlos noch länger in Rom bleiben.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Wie kommt man am besten nach Venedig?
+          </summary>
+
+          <p>
+            Venedig ist mit Auto, Bahn und Flugzeug erreichbar. Wer mit
+            dem Auto anreist, sollte die Parkplatzsituation außerhalb
+            des historischen Zentrums berücksichtigen. Mestre ist ein
+            häufiger Ausgangspunkt für die Weiterfahrt nach Venedig.
+          </p>
+
+        </details>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     BREADCRUMB SCRIPT
+========================================================= -->
+
+<script>
+(function () {
+
+  function renderBreadcrumb() {
+
+    const breadcrumb =
+      document.getElementById("dynamic-breadcrumb");
+
+    if (!breadcrumb) return;
+
+    breadcrumb.innerHTML = "";
+
+    const pathname = window.location.pathname;
+
+    const parts = pathname
+      .split("/")
+      .filter(Boolean);
+
+    if (parts.length === 0) {
+      breadcrumb.style.display = "none";
+      return;
+    }
+
+    breadcrumb.style.display = "";
+
+    const wrapper =
+      document.createElement("div");
+
+    wrapper.className =
+      "breadcrumb-inner";
+
+    const home =
+      document.createElement("a");
+
+    home.href = "/";
+    home.textContent = "Startseite";
+
+    wrapper.appendChild(home);
+
+    let currentPath = "";
+
+    parts.forEach(function (part, index) {
+
+      currentPath += "/" + part;
+
+      const separator =
+        document.createElement("span");
+
+      separator.className =
+        "breadcrumb-separator";
+
+      separator.textContent = "›";
+
+      separator.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      wrapper.appendChild(separator);
+
+      let label;
+
+      try {
+        label = decodeURIComponent(part);
+      } catch (error) {
+        label = part;
+      }
+
+      label = label
+        .replace(/[-_]+/g, " ")
+        .replace(/\b\w/g, function (letter) {
+          return letter.toUpperCase();
+        });
+
+      if (index === parts.length - 1) {
+
+        const current =
+          document.createElement("span");
+
+        current.textContent = label;
+
+        current.setAttribute(
+          "aria-current",
+          "page"
+        );
+
+        wrapper.appendChild(current);
+
+      } else {
+
+        const link =
+          document.createElement("a");
+
+        link.href = currentPath;
+        link.textContent = label;
+
+        wrapper.appendChild(link);
+
+      }
+
+    });
+
+    breadcrumb.appendChild(wrapper);
+  }
+
+
+  renderBreadcrumb();
+
+
+  if (window.__italyBreadcrumbInitialized) {
+    return;
+  }
+
+  window.__italyBreadcrumbInitialized = true;
+
+
+  window.addEventListener(
+    "popstate",
+    renderBreadcrumb
+  );
+
+
+  window.addEventListener(
+    "pageshow",
+    renderBreadcrumb
+  );
+
+
+  document.addEventListener(
+    "turbo:load",
+    renderBreadcrumb
+  );
+
+})();
+</script>
+
+
+<!-- =========================================================
+     COMMUNITY POSTS
+     Lädt Beiträge über die Geo-Suche und verwendet weiterhin
+     das vorhandene Design der italy-post-card-Komponenten.
+========================================================= -->
+
+<script>
+(function () {
+  const container = document.getElementById("italy-posts");
+  if (!container) return;
+
+  const config = POST_SEARCH_CONFIG;
+  const params = new URLSearchParams({
+    min_lat: config.min_lat,
+    min_lon: config.min_lon,
+    max_lat: config.max_lat,
+    max_lon: config.max_lon,
+    limit: config.limit
+  });
+
+  const API_URL = window.location.origin +
+    "/api/v1/geosearch/within_bounds?" + params.toString();
+
+  fetch(API_URL, {
+    headers: { "Accept": "application/json" }
+  })
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("API-Fehler: " + response.status);
+      }
+      return response.json();
+    })
+    .then(function (data) {
+      container.innerHTML = "";
+
+      if (data && data.error) {
+        throw new Error(data.error);
+      }
+
+      const articles = data && Array.isArray(data.results)
+        ? data.results
+        : [];
+
+      if (articles.length === 0) {
+        container.innerHTML = `
+          <div style="padding:30px;text-align:center;border:1px solid #e4e9e6;border-radius:16px;background:#fff;grid-column:1/-1;">
+            <strong>Keine Beiträge gefunden</strong>
+            <p style="margin:8px 0 0;color:#66736d;">
+              Sobald Beiträge für ${escapeHtml(config.name)} verfügbar sind, erscheinen sie hier.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      articles.slice(0, config.limit).forEach(function (article) {
+        const card = document.createElement("a");
+        card.className = "italy-post-card";
+        card.href = safeUrl(article.url || article.path || "#");
+
+        const title = article.title || "Ohne Titel";
+        const imageUrl = article.main_image || article.cover_image || article.social_image || null;
+        const description = article.description ||
+          (article.body_markdown ? article.body_markdown.substring(0, 150).trim() + "…" : "");
+        const user = article.user || {};
+        const authorName = user.name || user.username || "";
+
+        const image = imageUrl
+          ? `<img class="italy-post-image" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" loading="lazy">`
+          : `<div class="italy-post-placeholder">Kein Titelbild</div>`;
+
+        const descriptionHtml = description
+          ? `<p class="italy-post-description">${escapeHtml(description)}</p>`
+          : "";
+
+        const authorHtml = authorName
+          ? `<span class="italy-post-author">von ${escapeHtml(authorName)}</span>`
+          : "";
+
+        card.innerHTML = `
+          ${image}
+          <div class="italy-post-body">
+            <h3>${escapeHtml(title)}</h3>
+            ${descriptionHtml}
+            <div class="italy-post-meta">
+              ${authorHtml}
+              <span class="italy-post-read">Lesen →</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(function (error) {
+      console.error("Community-Beiträge:", error);
+      container.innerHTML = `
+        <div style="padding:30px;border:1px solid #e4e9e6;border-radius:16px;background:#fff;grid-column:1/-1;">
+          <strong>Beiträge konnten nicht geladen werden.</strong>
+          <p style="margin:8px 0 0;color:#66736d;">Bitte versuche es später erneut.</p>
+        </div>
+      `;
+    });
+
+  function escapeHtml(value) {
+    if (value === null || value === undefined) return "";
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function safeUrl(value) {
+    try {
+      const url = new URL(value, window.location.origin);
+      return (url.protocol === "http:" || url.protocol === "https:")
+        ? url.href
+        : "#";
+    } catch (error) {
+      return "#";
+    }
+  }
+})();
+</script>
+
+
+<!-- =========================================================
+     STRUCTURED DATA
+========================================================= -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristDestination",
+  "name": "Italien",
+  "description": "Reiseguide für Italien mit Informationen zu Regionen, Reisezielen, Sehenswürdigkeiten, Reisezeit, Verkehr und Community-Beiträgen.",
+  "touristType": [
+    "Leisure Travelers",
+    "Families",
+    "Adventure Travelers",
+    "Cultural Travelers"
+  ],
+  "sameAs": [
+    "https://www.italia.it/"
+  ]
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wann ist die beste Reisezeit für Italien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die passende Reisezeit hängt von Region und Reiseart ab. Für Badeurlaub sind warme Monate interessant, während Frühling und Herbst für Städtereisen, Rundreisen und viele Outdoor-Aktivitäten angenehm sein können."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Regionen eignen sich für einen Italien-Urlaub?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Italien bietet viele unterschiedliche Reiseziele. Die Toskana eignet sich unter anderem für Kultur und Landschaft, Venetien für Städte, Seen und Küste, Sardinien und Sizilien für Inselurlaub und der Norden für Berge und Seen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann man Italien gut mit dem Auto bereisen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Ein Auto kann besonders für Rundreisen und ländliche Regionen praktisch sein. In historischen Innenstädten und beliebten Touristenzentren können Parkmöglichkeiten und Verkehr jedoch eine Herausforderung darstellen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist der Gardasee für einen Roadtrip geeignet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der Gardasee bietet Orte am Wasser, Landschaft, Wassersport, Radwege, Wanderungen und zahlreiche Ausflugsziele. In der Hauptreisezeit sollte mit erhöhtem Verkehrsaufkommen gerechnet werden, weshalb man leicht im Stau stehen kann."
+      }
+    }
+  ]
+}
+</script>

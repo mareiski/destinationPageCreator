@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test File Access</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .success { color: green; }
+        .error { color: red; }
+        button { padding: 10px 20px; margin: 10px 0; }
+        pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Test Country JSON File Access</h1>
+    <button onclick="testFiles()">Test File Access</button>
+    <div id="results"></div>
+    
+    <script>
+        async function testFiles() {
+            const results = document.getElementById('results');
+            results.innerHTML = '<p>Testing file access...</p>';
+            
+            const countries = ['italien', 'spanien'];
+            
+            for (const country of countries) {
+                results.innerHTML += `<h3>${country}</h3>`;
+                
+                const paths = [
+                    `/${country}.json`,
+                    `/page-content/${country}.json`,
+                    `../page-content/${country}.json`
+                ];
+                
+                let found = false;
+                for (const path of paths) {
+                    try {
+                        const response = await fetch(path);
+                        if (response.ok) {
+                            const data = await response.json();
+                            results.innerHTML += `<p class="success">✅ Found at ${path}</p>`;
+                            results.innerHTML += `<pre>${JSON.stringify(data, null, 2).substring(0, 200)}...</pre>`;
+                            found = true;
+                            break;
+                        } else {
+                            results.innerHTML += `<p class="error">❌ ${path}: ${response.status}</p>`;
+                        }
+                    } catch (error) {
+                        results.innerHTML += `<p class="error">❌ ${path}: ${error.message}</p>`;
+                    }
+                }
+                
+                if (!found) {
+                    results.innerHTML += `<p class="error">❌ No working path found for ${country}</p>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

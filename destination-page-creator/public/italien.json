@@ -1,0 +1,566 @@
+{
+  "country_name": "Italien",
+
+  "hero": {
+    "eyebrow": "Reiseguide & Community",
+    "title": "Italien entdecken",
+    "description": "Italien verbindet mediterranes Lebensgefühl mit jahrtausendealter Geschichte, beeindruckenden Landschaften, traumhaften Küsten, charmanten Städten und einer Küche, die weit über Pizza und Pasta hinausgeht. Entdecke Regionen, Reiseziele, Sehenswürdigkeiten, praktische Tipps und persönliche Reiseberichte aus der Community.",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=85&w=1170&auto=format&fit=crop",
+      "alt": "Italienische Landschaft mit Bergen und See"
+    },
+    "buttons": [
+      {
+        "label": "Regionen entdecken",
+        "url": "#regionen"
+      },
+      {
+        "label": "Beiträge lesen",
+        "url": "#beitraege"
+      }
+    ]
+  },
+
+  "intro": {
+    "kicker": "Italien Reiseführer",
+    "title": "Urlaub in Italien: Zwischen Alpen, Mittelmeer und historischen Städten",
+    "paragraphs": [
+      "Kaum ein europäisches Land bietet eine vergleichbare Vielfalt wie Italien. Im Norden reichen die Landschaften von den Alpen und Dolomiten über große Seen bis zu den Weinregionen Venetiens und der Toskana. Weiter südlich warten historische Städte, mediterrane Küsten, Inseln und kleine Dörfer auf Reisende.",
+      "Ein Italien-Urlaub kann deshalb ganz unterschiedlich aussehen: entspannter Strandurlaub an der Adria oder am Mittelmeer, Roadtrip durch Norditalien, Wanderurlaub in den Bergen, Kulturreise nach Rom, Städtereise nach Venedig oder Florenz, Familienurlaub am Gardasee oder eine längere Rundreise durch mehrere Regionen.",
+      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in Italien sowie praktische Hinweise zur Reiseplanung. In der Community kannst du außerdem aktuelle Reiseberichte, Erfahrungen und Geheimtipps anderer Reisender entdecken.",
+      "Besonders interessant ist Italien auch deshalb, weil sich viele unterschiedliche Reisearten miteinander verbinden lassen. Ein Urlaub kann morgens mit einem Spaziergang durch eine historische Altstadt beginnen und am Nachmittag bereits an einem See, Strand oder in den Bergen weitergehen."
+    ],
+    "image": {
+      "url": "https://plus.unsplash.com/premium_photo-1722201172121-a36b8ea02866?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Landschaft in Italien mit Hügeln und historischer Umgebung"
+    }
+  },
+
+  "image_strip": [
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1636382667057-0752bc8492a6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Landschaft am Gardasee"
+      },
+      "caption": "Seen und Berge im Norden"
+    },
+    {
+      "image": {
+        "url": "https://plus.unsplash.com/premium_photo-1675975678457-d70708bf77c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Historische Sehenswürdigkeit in Rom"
+      },
+      "caption": "Geschichte in Rom"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1523365154888-8a758819b722?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Mediterrane Küstenlandschaft"
+      },
+      "caption": "Küsten und Mittelmeer"
+    }
+  ],
+
+  "regions": {
+    "kicker": "Reiseziele",
+    "title": "Die beliebtesten Regionen Italiens",
+    "description": "Italien besteht aus vielen sehr unterschiedlichen Regionen. Während Norditalien besonders für Berge, Seen und Städte bekannt ist, findest du in Mittel- und Süditalien mediterrane Landschaften, Strände, historische Orte und Inseln.",
+    "items": [
+      {
+        "title": "Toskana",
+        "url": "/italien/toskana",
+        "link_label": "Toskana entdecken →",
+        "description": "Sanfte Hügel, Weinberge, Zypressen und historische Städte machen die Toskana zu einem der bekanntesten Reiseziele Italiens. Florenz, Siena, Pisa und kleinere Orte lassen sich hervorragend miteinander kombinieren.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Landschaft der Toskana"
+        }
+      },
+      {
+        "title": "Sizilien",
+        "url": "/italien/sizilien",
+        "link_label": "Sizilien entdecken →",
+        "description": "Sizilien verbindet Strände, antike Bauwerke, Vulkane, mediterrane Städte und eine eigenständige Küche. Die Insel eignet sich sowohl für Badeurlaub als auch für eine längere Rundreise.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1523365154888-8a758819b722?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Küste und Landschaft auf Sizilien"
+        }
+      },
+      {
+        "title": "Venetien",
+        "url": "/italien/venetien",
+        "link_label": "Venetien entdecken →",
+        "description": "Venetien vereint Venedig, Verona, den Gardasee, die Dolomiten und die Adriaküste. Die Region ist besonders interessant, wenn du Städtereise, Natur und Badeurlaub miteinander verbinden möchtest.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=85",
+          "alt": "Venedig in Venetien"
+        }
+      },
+      {
+        "title": "Sardinien",
+        "url": "/italien/sardinien",
+        "link_label": "Sardinien entdecken →",
+        "description": "Sardinien ist bekannt für türkisfarbenes Wasser, Buchten, Strände und eine abwechslungsreiche Landschaft. Abseits der bekannten Küstenorte gibt es kleine Dörfer, Wanderwege und regionale Spezialitäten zu entdecken.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1558508006-b47365cf0e61?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Küste auf Sardinien"
+        }
+      }
+    ]
+  },
+
+  "community": {
+    "kicker": "Community",
+    "title": "Aktuelle Beiträge über Italien",
+    "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
+    "search": {
+      "min_lat": 36.6301,
+      "min_lon": 6.6238,
+      "max_lat": 47.092,
+      "max_lon": 18.5225,
+      "limit": 6
+    }
+  },
+
+  "topics": {
+    "kicker": "Reiseplanung",
+    "title": "Italien nach Reisethema entdecken",
+    "description": "Nicht jeder Italien-Urlaub sieht gleich aus. Je nach Reiseart können andere Regionen, Orte und Jahreszeiten besonders interessant sein.",
+    "items": [
+      {
+        "title": "Strandurlaub",
+        "description": "Küstenorte, Buchten und lange Sandstrände an Adria und Mittelmeer.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1539981739188-bbff34df9959?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Italienischer Strand"
+        }
+      },
+      {
+        "title": "Berge & Natur",
+        "description": "Dolomiten, Alpen, Apennin und abwechslungsreiche Wandergebiete.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Berglandschaft"
+        }
+      },
+      {
+        "title": "Städtereisen",
+        "description": "Rom, Florenz, Venedig, Verona, Bologna und viele weitere Städte.",
+        "image": {
+          "url": "https://plus.unsplash.com/premium_photo-1675975678457-d70708bf77c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historisches Rom"
+        }
+      },
+      {
+        "title": "Kulinarik",
+        "description": "Regionale Küche, Märkte, Pasta, Pizza, Fisch und lokale Spezialitäten.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1532117472055-4d0734b51f31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Italienische Pasta"
+        }
+      }
+    ]
+  },
+
+  "destinations": {
+    "kicker": "Beliebte Ziele",
+    "title": "Diese Orte solltest du kennen",
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer Italienreise.",
+    "items": [
+      {
+        "title": "Gardasee",
+        "description": "Seen, Berge, Orte am Wasser und mediterranes Flair",
+        "url": "/italien/gardasee",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1636382667057-0752bc8492a6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Gardasee mit Bergen und Wasser"
+        }
+      },
+      {
+        "title": "Rom",
+        "description": "Antike, Vatikan, Plätze und italienisches Stadtleben",
+        "url": "/italien/rom",
+        "image": {
+          "url": "https://plus.unsplash.com/premium_photo-1675975678457-d70708bf77c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Rom mit antiker Architektur"
+        }
+      },
+      {
+        "title": "Venedig",
+        "description": "Kanäle, historische Paläste und die Lagune",
+        "url": "/italien/venedig",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=85",
+          "alt": "Kanal und historische Gebäude in Venedig"
+        }
+      },
+      {
+        "title": "Amalfiküste",
+        "description": "Küstenstraßen, Buchten, Orte am Hang und Mittelmeer",
+        "url": "/italien/amalfi",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1633321088768-b994237c8aa8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Mediterrane Küste in Italien"
+        }
+      },
+      {
+        "title": "Dolomiten",
+        "description": "Berge, Wanderwege, Seen und alpine Landschaften",
+        "url": "/italien/dolomiten",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1534106474077-f9e9c6f5a47c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Berglandschaft in den Alpen"
+        }
+      },
+      {
+        "title": "Florenz",
+        "description": "Renaissance, Kunst, Museen und historische Altstadt",
+        "url": "/italien/florenz",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1528114039593-4366cc08227d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Florenz und historische Architektur"
+        }
+      }
+    ]
+  },
+
+  "tips": {
+    "kicker": "Reiseplanung",
+    "title": "Praktische Tipps für deine Italien-Reise",
+    "description": "Gerade bei beliebten Reisezielen lohnt es sich, die Reise nicht nur nach Sehenswürdigkeiten zu planen. Verkehr, Saison, Öffnungszeiten und die Wahl des richtigen Ausgangsortes können einen großen Unterschied machen.",
+    "items": [
+      {
+        "title": "Verkehr am Gardasee",
+        "intro": "Der Gardasee ist in der Hauptsaison sehr beliebt. Da es nur eine große Hauptstraße rund um den See gibt, kann es sich bei kurzen Strecken teils Stunden stauen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1636382667057-0752bc8492a6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Gardasee und italienische Berglandschaft"
+        },
+        "blocks": [
+          {
+            "title": "Alternative Verkehrsmittel",
+            "description": "Es lohnt sich wegen dem Verkehr daher auf Boote oder Fahrräder auszuweichen, wenn das möglich ist."
+          }
+        ]
+      },
+      {
+        "title": "Strände in Italien",
+        "intro": "Italien besitzt eine große Auswahl an Küstenregionen. Zwischen bekannten Badeorten und kleineren Buchten gibt es sehr unterschiedliche Stranderlebnisse.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1539981739188-bbff34df9959?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Strand und Mittelmeer"
+        },
+        "blocks": [
+          {
+            "title": "Bekannte Badeorte",
+            "description": "Die meisten Strände in Italien sind große Tourismuszentren, bei denen man Liegen und Sonnenschirme mieten muss. Allerdings bieten diese Strände auch Restaurants und weitere Infrastruktur."
+          },
+          {
+            "title": "Ruhigere Buchten",
+            "description": "Wer weniger Trubel sucht, sollte abseits der Orte nach Stränden suchen. Hier lohnt sich eine Recherche auf Google Maps, da es doch noch den ein oder anderen Geheimtipp gibt."
+          }
+        ]
+      },
+      {
+        "title": "Die beste Reisezeit für Italien",
+        "intro": "Die passende Reisezeit hängt stark davon ab, wohin du reisen möchtest und was du unternehmen willst.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1523365154888-8a758819b722?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Italienische Küste im Sommer"
+        },
+        "blocks": [
+          {
+            "title": "Sommer",
+            "description": "Für Badeurlaub sind Juni bis September besonders beliebt, aber dementsprechend sind die meisten Orte auch sehr stark besucht."
+          },
+          {
+            "title": "Frühling und Herbst",
+            "description": "Mildere Temperaturen können für Städtereisen, Rundreisen und Wanderungen angenehm sein, dort gibt es dann auch weniger Touristen. Allerdings kann es bei Touristen-Hochburgen wie dem Gardasee schwer sein Hotels und Restaurants zu finden da es kaum Gäste gibt und alles geschlossen ist."
+          }
+        ]
+      },
+      {
+        "title": "Rom: Sehenswürdigkeiten früh planen",
+        "intro": "Rom bietet so viele historische Sehenswürdigkeiten, dass mehrere Tage schnell gefüllt sind.",
+        "image": {
+          "url": "https://plus.unsplash.com/premium_photo-1675975678457-d70708bf77c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Antike Architektur in Rom"
+        },
+        "blocks": [
+          {
+            "title": "Wichtige Sehenswürdigkeiten",
+            "description": "Kolosseum, Forum Romanum, Vatikan und zahlreiche Museen können problemlos mehrere Tage beanspruchen, man sollte also am besten viel Zeit einplanen oder direkt einen eigenen Städtetrip für Rom planen."
+          },
+          {
+            "title": "Eintrittskarten",
+            "description": "Für besonders beliebte Attraktionen lohnt es sich, Eintrittskarten und mögliche Zeitfenster frühzeitig zu prüfen."
+          },
+          {
+            "title": "Tagesplanung",
+            "description": "Plane nicht zu viele Sehenswürdigkeiten direkt hintereinander, man kann sich oft wirklich sehr lange aufhalten. Rom lässt sich auch hervorragend zu Fuß zwischen einzelnen Programmpunkten entdecken."
+          }
+        ]
+      },
+      {
+        "title": "Venedig ohne Parkplatzstress",
+        "intro": "Das historische Zentrum von Venedig ist nicht mit dem normalen Auto befahrbar. Die Anreise sollte deshalb vorher geplant werden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=85",
+          "alt": "Kanal in Venedig"
+        },
+        "blocks": [
+          {
+            "title": "Mit dem Auto",
+            "description": "Wer mit dem Auto anreist, sollte sich bereits vor der Fahrt mit Parkmöglichkeiten außerhalb des historischen Zentrums beschäftigen. Man kann direkt in Venedig parken, allerdings sind die Parkplätze sehr teuer und man steht oft im Stau."
+          },
+          {
+            "title": "Mestre",
+            "description": "Mestre ist ein häufiger Ausgangspunkt für die Weiterfahrt nach Venedig. Hier gibt es günstigere Parkplätze und eine gute Anbindung an die Stadt. Allerdings sollte man sich hier auch vorher informieren, da diese oft nur begrenzt verfügbar sind."
+          },
+          {
+            "title": "Bahn",
+            "description": "Auch Padua kann je nach Route interessant sein, da Venedig von dort mit dem Zug sehr günstig und schnell erreichbar ist."
+          }
+        ]
+      },
+      {
+        "title": "Essen in Italien",
+        "intro": "Die italienische Küche ist stark regional geprägt. Deshalb lohnt es sich, im Urlaub auch lokale Spezialitäten auszuprobieren.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1532117472055-4d0734b51f31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Italienische Pasta"
+        },
+        "blocks": [
+          {
+            "title": "Primi und Secondi",
+            "description": "Italienische Gerichte werden häufig in zwei Gängen serviert: Primi (Pasta, Risotto, Suppe) und Secondi (Fleisch, Fisch, Gemüse). Man sollte also im Hinterkopf behalten, dass Pasta oft nicht als Hauptgericht, sondern als Vorspeise serviert wird."
+          }
+        ]
+      }
+    ]
+  },
+
+  "guide": {
+    "kicker": "Italien Reiseführer",
+    "title": "Italien Urlaub planen: Was du vor der Reise wissen solltest",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Italien ist ein Reiseziel, das sich sowohl für einen kurzen Wochenendtrip als auch für einen mehrwöchigen Urlaub eignet. Durch die unterschiedlichen Regionen lässt sich ein Aufenthalt sehr individuell gestalten. Wer zum ersten Mal nach Italien reist, steht deshalb häufig vor der Frage, welche Region am besten zum eigenen Urlaub passt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen klassischen Badeurlaub bieten sich beispielsweise die italienische Adriaküste, Ligurien, Apulien, Sardinien oder Sizilien an. Wer Berge und Seen bevorzugt, findet im Norden mit dem Gardasee, dem Lago Maggiore, Südtirol und den Dolomiten zahlreiche Möglichkeiten. Für Kultur- und Städtereisen sind Rom, Florenz, Venedig, Verona, Bologna und Mailand interessante Ziele."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1726159496287-596e93ca635b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Straße durch eine italienische Landschaft"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Norditalien: Seen, Berge und Städte"
+      },
+      {
+        "type": "paragraph",
+        "text": "Norditalien ist besonders bei Reisenden beliebt, die Landschaft und Kultur miteinander verbinden möchten. Der Gardasee liegt zwischen mehreren Regionen und bietet sowohl Wassersport als auch Wanderwege, historische Orte und Ausflugsziele. In den Bergen der Alpen und Dolomiten kommen Wanderer, Radfahrer und Wintersportler auf ihre Kosten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gleichzeitig liegen mit Venedig, Verona, Padua und Mailand bedeutende Städte in erreichbarer Entfernung. Venetien verbindet damit unterschiedliche Urlaubsarten: Seeurlaub, Städtereise, Strandurlaub und Bergurlaub können innerhalb einer Reise kombiniert werden."
+      },
+      {
+        "type": "split",
+        "image_position": "left",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1534106474077-f9e9c6f5a47c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Berglandschaft der Dolomiten"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Berge und Seen im Norden"
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer Natur und aktive Erholung miteinander verbinden möchte, findet in Norditalien zahlreiche Möglichkeiten. Seen wie der Gardasee bieten Wassersport und Ausflüge, während die Bergregionen für Wanderungen, Radtouren und weitere Outdoor-Aktivitäten interessant sind."
+          },
+          {
+            "type": "paragraph",
+            "text": "Durch die relativ kurzen Entfernungen zwischen vielen Reisezielen kann Norditalien außerdem gut mit einer Rundreise kombiniert werden."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Mittelitalien: Toskana, Umbrien und Lazio"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mittelitalien ist vor allem für seine historischen Städte, Kulturlandschaften und kulinarischen Traditionen bekannt. Die Toskana mit Florenz, Siena, Pisa und zahlreichen kleineren Orten eignet sich besonders für Rundreisen und Roadtrips."
+      },
+      {
+        "type": "paragraph",
+        "text": "Lazio ist dagegen untrennbar mit Rom verbunden. Die Hauptstadt bietet eine ungewöhnlich hohe Dichte an historischen Sehenswürdigkeiten. Gleichzeitig lohnt sich ein Blick über das Stadtzentrum hinaus, denn die Region bietet auch Küsten, Landschaften und kleinere Orte."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1528114039593-4366cc08227d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historische Architektur in Florenz"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Süditalien und die italienischen Inseln"
+      },
+      {
+        "type": "paragraph",
+        "text": "Weiter südlich verändert sich der Charakter vieler Reiseziele. Mediterranes Klima, Küstenlandschaften und kleinere Städte prägen große Teile Süditaliens. Regionen wie Kampanien, Apulien, Kalabrien und Basilikata eignen sich für Reisende, die neben bekannten Sehenswürdigkeiten auch weniger stark touristisch geprägte Orte kennenlernen möchten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auch die Inseln Sizilien und Sardinien sind vielseitige Reiseziele. Beide eignen sich für Strandurlaub, bieten aber gleichzeitig historische Sehenswürdigkeiten, Natur und regionale Küche. Für eine Inselrundreise sollte ausreichend Zeit eingeplant werden, da die Entfernungen innerhalb der Inseln nicht unterschätzt werden sollten."
+      },
+      {
+        "type": "split",
+        "image_position": "right",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1633321088768-b994237c8aa8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Italienische Küste mit Bergen und Meer"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Küsten und Inseln"
+          },
+          {
+            "type": "paragraph",
+            "text": "Von der Amalfiküste bis Sardinien gibt es zahlreiche unterschiedliche Küstenlandschaften. Manche Regionen eignen sich besonders für Badeurlaub, andere verbinden Strände mit historischen Orten, Wanderwegen oder kleineren Küstenstädten."
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer mehrere Orte besuchen möchte, sollte bei der Planung nicht nur die Entfernung auf der Karte betrachten. Gerade kurvenreiche Küstenstraßen können mehr Zeit benötigen als zunächst erwartet."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Italien mit dem Auto erkunden"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch Italien bietet viel Freiheit und ist besonders außerhalb großer Städte praktisch. Gleichzeitig sollte man beachten, dass das Auto in historischen Innenstädten oft eher hinderlich sein kann. Viele Städte besitzen Bereiche, in denen der Autoverkehr eingeschränkt ist."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und kleinere Orte unterschiedlich zu planen. Für Rom, Venedig oder Florenz kann es sinnvoll sein, eine Unterkunft mit guter Anbindung an den öffentlichen Verkehr zu wählen und das Auto außerhalb des Zentrums stehen zu lassen."
+      },
+      {
+        "type": "note",
+        "title": "Tipp für die Reiseplanung:",
+        "text": " Plane nicht nur die Entfernung zwischen zwei Orten ein. Besonders an Seen, Küsten und in touristischen Regionen kann die tatsächliche Fahrzeit deutlich länger sein als die Kilometerzahl vermuten lässt."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Italien für Familien"
+      },
+      {
+        "type": "paragraph",
+        "text": "Italien eignet sich auch hervorragend für Familienreisen. Besonders Regionen mit Seen, Stränden und kurzen Ausflügen ermöglichen eine abwechslungsreiche Mischung aus Erholung und Aktivitäten. Rund um den Gardasee gibt es beispielsweise zahlreiche Möglichkeiten für Familien, darunter Ausflüge auf dem Wasser und Freizeitangebote."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Städtereise mit Kindern sollte dagegen darauf geachtet werden, nicht zu viele Sehenswürdigkeiten an einem einzigen Tag einzuplanen. Gerade historische Städte lassen sich oft angenehmer erkunden, wenn zwischen einzelnen Programmpunkten ausreichend Zeit für Pausen bleibt."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85",
+          "alt": "Italienische Pizza"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Italien kulinarisch entdecken"
+      },
+      {
+        "type": "paragraph",
+        "text": "Essen ist ein wichtiger Teil einer Italienreise. Dabei gibt es nicht die eine italienische Küche, sondern zahlreiche regionale Traditionen. Pasta, Pizza, Fischgerichte, Käse, Wurstwaren, Olivenöl, Wein und Süßspeisen werden je nach Region sehr unterschiedlich zubereitet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gerade bei einer Rundreise lohnt es sich daher, regionale Spezialitäten auszuprobieren. Ein Restaurant in Bologna bietet andere kulinarische Schwerpunkte als eine Trattoria auf Sizilien oder ein Lokal an der ligurischen Küste."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wie viele Tage sollte man für Italien einplanen?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Für eine einzelne Region können bereits fünf bis sieben Tage ausreichend sein, um mehrere Orte kennenzulernen. Für eine größere Rundreise sollte deutlich mehr Zeit eingeplant werden. Italien ist langgestreckt und die Entfernungen zwischen Nord und Süd sind erheblich."
+      },
+      {
+        "type": "paragraph",
+        "text": "Statt in wenigen Tagen möglichst viele Orte abzuhaken, kann es sinnvoller sein, sich auf eine Region oder eine Kombination aus zwei benachbarten Regionen zu konzentrieren. So bleibt mehr Zeit für spontane Ausflüge, lokale Restaurants und kleinere Orte abseits der bekannten Sehenswürdigkeiten."
+      }
+    ]
+  },
+
+  "faq": {
+    "kicker": "Häufige Fragen",
+    "title": "Italien FAQ",
+    "description": "Antworten auf häufige Fragen rund um Urlaub, Reisezeit, Verkehr und beliebte Reiseziele in Italien.",
+    "items": [
+      {
+        "question": "Wann ist die beste Reisezeit für Italien?",
+        "answer": "Das hängt stark von der Region und der geplanten Reise ab. Für Badeurlaub sind die warmen Monate besonders interessant, während Frühling und Herbst für Städte, Rundreisen und viele Outdoor-Aktivitäten angenehm sein können. Außerhalb der Hauptsaison sollte man bei kleineren Urlaubsorten allerdings mit eingeschränkten Öffnungszeiten rechnen."
+      },
+      {
+        "question": "Welche Regionen eignen sich für einen Italien-Urlaub?",
+        "answer": "Das hängt vom Urlaubstyp ab. Die Toskana eignet sich unter anderem für Kultur und Landschaft, Venetien für Städte, Seen und Küste, Sardinien und Sizilien für Inselurlaub und der Norden für Berge und Seen. Auch Apulien, Ligurien, Kampanien und viele weitere Regionen bieten unterschiedliche Reiseerlebnisse."
+      },
+      {
+        "question": "Kann man Italien gut mit dem Auto bereisen?",
+        "answer": "Ja, besonders für Rundreisen durch ländliche Regionen kann ein Auto praktisch sein. In historischen Innenstädten und beliebten Touristenzentren kann das Auto dagegen unpraktisch sein. Vor der Anreise sollte man sich deshalb über Parkmöglichkeiten und lokale Verkehrsbeschränkungen informieren."
+      },
+      {
+        "question": "Ist der Gardasee für einen Urlaub geeignet?",
+        "answer": "Der Gardasee bietet eine Mischung aus Orten am Wasser, Landschaft, Wassersport, Radwegen, Wanderungen und Ausflugszielen. Besonders in der Hauptreisezeit sollte allerdings mit erhöhtem Verkehrsaufkommen gerechnet werden."
+      },
+      {
+        "question": "Wie viele Tage sollte man in Rom verbringen?",
+        "answer": "Für die wichtigsten Sehenswürdigkeiten sollte man mehrere Tage einplanen. Wer neben Kolosseum, Forum Romanum und Vatikan auch weniger bekannte Viertel, Plätze und Museen erkunden möchte, kann problemlos noch länger in Rom bleiben."
+      },
+      {
+        "question": "Wie kommt man am besten nach Venedig?",
+        "answer": "Venedig ist mit Auto, Bahn und Flugzeug erreichbar. Wer mit dem Auto anreist, sollte die Parkplatzsituation außerhalb des historischen Zentrums berücksichtigen. Mestre ist ein häufiger Ausgangspunkt für die Weiterfahrt nach Venedig."
+      }
+    ]
+  },
+
+  "breadcrumb": {
+    "home_label": "Startseite"
+  },
+
+  "seo": {
+    "description": "Reiseguide für Italien mit Informationen zu Regionen, Reisezielen, Sehenswürdigkeiten, Reisezeit, Verkehr und Community-Beiträgen.",
+    "tourist_types": [
+      "Leisure Travelers",
+      "Families",
+      "Adventure Travelers",
+      "Cultural Travelers"
+    ],
+    "same_as": ["https://www.italia.it/"]
+  }
+}

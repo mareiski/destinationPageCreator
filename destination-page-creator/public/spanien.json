@@ -1,0 +1,95 @@
+{
+  "country_name": "spanien",
+  "hero": {
+    "eyebrow": "Reiseguide & Community",
+    "title": "spanien entdecken",
+    "description": "Erfahre mehr über die Vielfalt von spanien - von beeindruckenden Landschaften bis zu kulturellen Highlights.",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1170&auto=format&fit=crop",
+      "alt": "spanien Landschaft"
+    },
+    "buttons": [
+      {
+        "label": "Regionen entdecken",
+        "url": "#regionen"
+      },
+      {
+        "label": "Beiträge lesen",
+        "url": "#beitraege"
+      }
+    ]
+  },
+  "intro": {
+    "kicker": "spanien Reiseführer",
+    "title": "Urlaub in spanien: Zwischen Natur und Kultur",
+    "paragraphs": [
+      "spanien bietet eine einzigartige Mischung aus Natur, Kultur und Geschichte.",
+      "Hier findest du einen Überblick über beliebte Reiseziele und praktische Hinweise zur Reiseplanung."
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=687&auto=format&fit=crop",
+      "alt": "Landschaft in spanien"
+    }
+  },
+  "image_strip": [],
+  "regions": {
+    "kicker": "Reiseziele",
+    "title": "Die beliebtesten Regionen",
+    "description": "spanien besteht aus vielen verschiedenen Regionen, die jeweils ihren eigenen Charme haben.",
+    "items": []
+  },
+  "community": {
+    "kicker": "Community",
+    "title": "Aktuelle Beiträge über spanien",
+    "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
+    "search": {
+      "min_lat": 0,
+      "min_lon": 0,
+      "max_lat": 0,
+      "max_lon": 0,
+      "limit": 6
+    }
+  },
+  "topics": {
+    "kicker": "Reiseplanung",
+    "title": "Nach Reisethema entdecken",
+    "description": "Nicht jeder spanien-Urlaub sieht gleich aus.",
+    "items": []
+  },
+  "destinations": {
+    "kicker": "Beliebte Ziele",
+    "title": "Diese Orte solltest du kennen",
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt.",
+    "items": []
+  },
+  "tips": {
+    "kicker": "Reiseplanung",
+    "title": "Praktische Tipps für deine spanien-Reise",
+    "description": "Tipps und Hinweise für die Reiseplanung.",
+    "items": []
+  },
+  "guide": {
+    "kicker": "spanien Reiseführer",
+    "title": "spanien Urlaub planen: Was du vor der Reise wissen solltest",
+    "content": []
+  },
+  "faq": {
+    "kicker": "Häufige Fragen",
+    "title": "spanien FAQ",
+    "description": "Antworten auf häufige Fragen rund um Urlaub und Reise in spanien.",
+    "items": []
+  },
+  "breadcrumb": {
+    "home_label": "Startseite"
+  },
+  "seo": {
+    "description": "Reiseguide für spanien mit Informationen zu Regionen, Reisezielen und Community-Beiträgen.",
+    "tourist_types": [
+      "Leisure Travelers",
+      "Families",
+      "Adventure Travelers",
+      "Cultural Travelers"
+    ],
+    "same_as": []
+  }
+}

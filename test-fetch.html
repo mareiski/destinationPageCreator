@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test JSON Fetch</title>
+</head>
+<body>
+    <h1>Test JSON File Fetch</h1>
+    <button onclick="testFetch()">Test Fetch</button>
+    <div id="results"></div>
+    
+    <script>
+        async function testFetch() {
+            const results = document.getElementById('results');
+            results.innerHTML = 'Testing...<br>';
+            
+            const paths = [
+                '/page-content/spanien.json',
+                '../page-content/spanien.json',
+                '/../page-content/spanien.json',
+                '/page-content/italien.json',
+                '../page-content/italien.json',
+                '/../page-content/italien.json'
+            ];
+            
+            for (const path of paths) {
+                try {
+                    results.innerHTML += `Testing: ${path}<br>`;
+                    const response = await fetch(path, { method: 'GET', headers: { 'Accept': 'application/json' } });
+                    if (response.ok) {
+                        const data = await response.json();
+                        results.innerHTML += `✅ Success! Country: ${data.country_name}<br>`;
+                    } else {
+                        results.innerHTML += `❌ Response: ${response.status} ${response.statusText}<br>`;
+                    }
+                } catch (error) {
+                    results.innerHTML += `❌ Error: ${error.message}<br>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

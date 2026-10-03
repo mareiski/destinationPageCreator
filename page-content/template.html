@@ -1,0 +1,2461 @@
+<style>
+.country_page {
+  --country_cream: #faf8f3;
+  --country_bg: #f5f7f6;
+  --card_color: #ffffff;
+  --country_text: #17221d;
+  --country_muted: #66736d;
+  --country_border: #e4e9e6;
+  --country_shadow: 0 10px 35px rgba(20, 45, 35, .08);
+  --country_radius: 20px;
+
+  color: var(--country_text);
+  line-height: 1.7;
+}
+
+.country_page *,
+.country_page *::before,
+.country_page *::after {
+  box-sizing: border-box;
+}
+
+.country_page img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
+.country_container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------------------
+   BREADCRUMBS
+--------------------------------------------------------- */
+
+#dynamic_breadcrumb {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 24px;
+  font-size: 14px;
+  color: var(--country_muted);
+}
+
+#dynamic_breadcrumb .breadcrumb_inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.5;
+}
+
+#dynamic_breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+#dynamic_breadcrumb a:hover {
+  color: var(--accent-brand);
+}
+
+#dynamic_breadcrumb .breadcrumb_separator {
+  opacity: .4;
+}
+
+#dynamic_breadcrumb [aria-current="page"] {
+  color: var(--country_text);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   HERO
+--------------------------------------------------------- */
+
+.country_hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  border-radius: 28px;
+  margin-bottom: 70px;
+  background: #17372b;
+  box-shadow: var(--country_shadow);
+  margin: 0;
+}
+
+.country_hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country_hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 30, 22, .9) 0%,
+      rgba(8, 30, 22, .7) 40%,
+      rgba(8, 30, 22, .22) 78%,
+      rgba(8, 30, 22, .08) 100%
+    );
+}
+
+.country_hero_content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  padding: 100px 65px;
+  color: #fff;
+}
+
+.country_eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.22);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.country_hero h1 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+}
+
+.country_hero p {
+  max-width: 650px;
+  margin: 0 0 30px;
+  color: rgba(255,255,255,.92);
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.country_hero_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.country_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 19px;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.country_button:hover {
+  transform: translateY(-2px);
+}
+
+.country_button_primary {
+  background: #fff;
+  color: var(--accent-brand) !important;
+}
+
+.country_button_secondary {
+  color: #fff !important;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3);
+}
+
+/* ---------------------------------------------------------
+   GENERAL SECTIONS
+--------------------------------------------------------- */
+
+.country_section {
+  margin-bottom: 85px;
+}
+
+.country_section_kicker {
+  margin-bottom: 8px;
+  color: var(--accent-brand);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.country_section_title {
+  margin: 0 0 18px;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -.03em;
+}
+
+.country_section_heading {
+  max-width: 800px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.country_section_heading p {
+  margin: 0;
+  color: var(--country_muted);
+}
+
+/* ---------------------------------------------------------
+   INTRO
+--------------------------------------------------------- */
+
+.country_intro {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 55px;
+  align-items: center;
+  margin-bottom: 85px;
+  margin-top: 30px;
+}
+
+.country_intro_copy p {
+  color: #48554f;
+}
+
+.country_intro_image {
+  overflow: hidden;
+  min-height: 420px;
+  border-radius: 24px;
+  box-shadow: var(--country_shadow);
+}
+
+.country_intro_image img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+/* ---------------------------------------------------------
+   IMAGE STRIP
+--------------------------------------------------------- */
+
+.country_image_strip {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr .8fr;
+  gap: 14px;
+  margin-bottom: 85px;
+  margin: 0;
+}
+
+.country_image_strip figure {
+  position: relative;
+  min-height: 250px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #dfe7e2;
+}
+
+.country_image_strip figure:first-child {
+  min-height: 330px;
+}
+
+.country_image_strip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.country_image_strip figure:hover img {
+  transform: scale(1.04);
+}
+
+.country_image_strip figcaption {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.48);
+  color: #fff;
+  font-size: .86rem;
+}
+
+/* ---------------------------------------------------------
+   REGION CARDS
+--------------------------------------------------------- */
+
+.country_region_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.country_region_card {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 250px;
+  overflow: hidden;
+  border: 1px solid var(--country_border);
+  border-radius: var(--country_radius);
+  background: var(--card_color);
+  box-shadow: 0 4px 20px rgba(20,45,35,.04);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.country_region_card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(23,107,77,.25);
+  box-shadow: var(--country_shadow);
+}
+
+.country_region_image {
+  height: 110%;
+  min-height: 250px;
+  overflow: hidden;
+  margin-top: -22px;
+}
+
+.country_region_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.country_region_card:hover .country_region_image img {
+  transform: scale(1.05);
+}
+
+.country_region_content {
+  padding: 27px;
+}
+
+.country_region_content h3 {
+  margin: 0 0 9px;
+  font-size: 1.35rem;
+}
+
+.country_region_content p {
+  margin: 0 0 18px;
+  color: var(--country_muted);
+  font-size: .94rem;
+  line-height: 1.65;
+}
+
+.country_region_link {
+  color: var(--accent-brand);
+  font-weight: 750;
+  font-size: .9rem;
+}
+
+/* ---------------------------------------------------------
+   TRAVEL TOPICS
+--------------------------------------------------------- */
+
+.country_topic_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.country_topic {
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--country_cream);
+  border: 1px solid #eeeae1;
+}
+
+.country_topic_image {
+  height: 150px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.country_topic_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country_topic_content {
+  padding: 20px;
+}
+
+.country_topic h3 {
+  margin: 0 0 7px;
+  font-size: 1.05rem;
+}
+
+.country_topic p {
+  margin: 0;
+  color: var(--country_muted);
+  font-size: .88rem;
+}
+
+/* ---------------------------------------------------------
+   FEATURED DESTINATIONS
+--------------------------------------------------------- */
+
+.country_destination_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.country_destination {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #fff !important;
+  text-decoration: none !important;
+  background: #17372b;
+}
+
+.country_destination img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.country_destination::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(5,20,14,.9),
+      rgba(5,20,14,.04) 72%
+    );
+}
+
+.country_destination:hover img {
+  transform: scale(1.05);
+}
+
+.country_destination_content {
+  position: absolute;
+  z-index: 2;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+}
+
+.country_destination_content h3 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-size: 1.45rem;
+}
+
+.country_destination_content p {
+  margin: 0;
+  color: rgba(255,255,255,.82);
+  font-size: .9rem;
+}
+
+/* ---------------------------------------------------------
+   TRAVEL TIPS
+--------------------------------------------------------- */
+
+.country_tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.country_tip {
+  overflow: hidden;
+  border-radius: var(--country_radius);
+  background: var(--card_color);
+  border: 1px solid var(--country_border);
+  box-shadow: 0 5px 25px rgba(20,45,35,.04);
+}
+
+.country_tip_image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.country_tip_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country_tip_content {
+  padding: 27px;
+}
+
+.country_tip h3 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.country_tip_intro {
+  margin: 0 0 20px;
+  color: #53605a;
+}
+
+.country_tip_block {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--country_border);
+}
+
+.country_tip_block strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--country_text);
+  font-size: .92rem;
+}
+
+.country_tip_block p {
+  margin: 0;
+  color: var(--country_muted);
+  font-size: .92rem;
+}
+
+/* ---------------------------------------------------------
+   GUIDE
+--------------------------------------------------------- */
+
+.country_guide {
+  max-width: 980px;
+}
+
+.country_guide p,
+.country_guide li {
+  color: #48554f;
+}
+
+.country_guide h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.country_guide h3 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.country_guide_image {
+  width: 100%;
+  height: 390px;
+  margin: 35px 0;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.country_guide_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country_guide_split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  margin: 45px 0;
+}
+
+.country_guide_split_image {
+  overflow: hidden;
+  min-height: 330px;
+  border-radius: 22px;
+}
+
+.country_guide_split_image img {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+}
+
+.country_guide_split_content h3 {
+  margin-top: 0;
+}
+
+.country_note {
+  margin: 28px 0;
+  padding: 20px 22px;
+  border-left: 4px solid var(--accent-brand);
+  border-radius: 0 14px 14px 0;
+  background: #f0f8f4;
+}
+
+/* ---------------------------------------------------------
+   FAQ
+--------------------------------------------------------- */
+
+.country_faq {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+}
+
+.country_faq details {
+  padding: 19px 21px;
+  border: 1px solid var(--country_border);
+  border-radius: 15px;
+  background: #fff;
+}
+
+.country_faq summary {
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.country_faq p {
+  margin: 13px 0 0;
+  color: var(--country_muted);
+}
+
+/* ---------------------------------------------------------
+   COMMUNITY
+--------------------------------------------------------- */
+
+.country_community {
+  padding: 45px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #eef8f3, #faf8f3);
+  border: 1px solid #e1ebe5;
+}
+
+.country_community_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.country_community_header h2 {
+  margin: 0 0 6px;
+}
+
+.country_community_header p {
+  margin: 0;
+  color: var(--country_muted);
+}
+
+#country_posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.country_post_card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--country_border);
+  border-radius: 18px;
+  background: #fff;
+  color: inherit !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 18px rgba(20,45,35,.04);
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.country_post_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(20,45,35,.10);
+}
+
+.country_post_image,
+.country_post_placeholder {
+  width: 100%;
+  height: 190px;
+}
+
+.country_post_image {
+  object-fit: cover;
+}
+
+.country_post_placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf3ef;
+  color: var(--country_muted);
+  font-size: .9rem;
+}
+
+.country_post_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.country_post_body h3 {
+  margin: 0 0 9px;
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.country_post_description {
+  margin: 0 0 18px;
+  color: var(--country_muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.country_post_meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  font-size: .82rem;
+}
+
+.country_post_author {
+  color: var(--country_muted);
+}
+
+.country_post_read {
+  color: var(--accent-brand);
+  font-weight: 750;
+}
+
+/* ---------------------------------------------------------
+   IMAGE CREDIT
+--------------------------------------------------------- */
+
+.country_image_credit {
+  margin-top: 10px;
+  color: var(--country_muted);
+  font-size: .78rem;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .country_intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .country_intro_image,
+  .country_intro_image img {
+    min-height: 360px;
+  }
+
+  .country_region_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .country_topic_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .country_destination_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #country_posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .country_container,
+  #dynamic_breadcrumb {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .country_hero {
+    min-height: 570px;
+    border-radius: 20px;
+    margin-bottom: 55px;
+  }
+
+  .country_hero_content {
+    padding: 70px 28px;
+  }
+
+  .country_hero p {
+    font-size: 1rem;
+  }
+
+  .country_image_strip {
+    grid-template-columns: 1fr;
+  }
+
+  .country_image_strip figure,
+  .country_image_strip figure:first-child {
+    min-height: 250px;
+  }
+
+  .country_region_card {
+    grid-template-columns: 1fr;
+  }
+
+  .country_region_image {
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .country_destination_grid,
+  .country_tips,
+  #country_posts {
+    grid-template-columns: 1fr;
+  }
+
+  .country_topic_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .country_tip_image {
+    height: 230px;
+  }
+
+  .country_guide_image {
+    height: 270px;
+  }
+
+  .country_guide_split {
+    grid-template-columns: 1fr;
+  }
+
+  .country_guide_split_image,
+  .country_guide_split_image img {
+    min-height: 270px;
+  }
+
+  .country_community {
+    padding: 28px 20px;
+  }
+
+  .country_community_header {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .country_container,
+  #dynamic_breadcrumb {
+    width: min(100% - 18px, 1180px);
+  }
+
+  .country_hero {
+    min-height: 600px;
+  }
+
+  .country_hero_content {
+    padding: 55px 21px;
+  }
+
+  .country_hero_buttons {
+    flex-direction: column;
+  }
+
+  .country_button {
+    width: 100%;
+  }
+
+  .country_topic_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .country_section {
+    margin-bottom: 65px;
+  }
+
+  .country_section_title {
+    font-size: 1.85rem;
+  }
+
+  .country_region_content,
+  .country_tip_content {
+    padding: 22px;
+  }
+
+  .country_destination {
+    min-height: 280px;
+  }
+}
+</style>
+
+<!--
+  =========================================================
+  EINZIGE TEMPLATE-VARIABLE
+  =========================================================
+
+  page_data enthält die komplette Konfiguration.
+
+  Der Fork übergibt {{page_data}} bereits als JSON.
+-->
+
+<script type="application/json" id="country_page_data">{{page_data}}</script>
+
+
+<!-- =========================================================
+     BREADCRUMBS
+========================================================= -->
+
+<nav
+  id="dynamic_breadcrumb"
+  aria-label="Breadcrumb"
+></nav>
+
+
+<!-- =========================================================
+     MAIN PAGE
+========================================================= -->
+
+<div class="country_page">
+
+  <div class="country_container">
+
+    <!-- HERO -->
+
+    <section class="country_hero">
+
+      <img
+        id="country_hero_image"
+        src=""
+        alt=""
+      />
+
+      <div class="country_hero_content">
+
+        <div
+          class="country_eyebrow"
+          id="country_hero_eyebrow"
+        ></div>
+
+        <h1 id="country_hero_title"></h1>
+
+        <p id="country_hero_description"></p>
+
+        <div
+          class="country_hero_buttons"
+          id="country_hero_buttons"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="country_intro">
+
+      <div
+        class="country_intro_copy"
+        id="country_intro_copy"
+      ></div>
+
+      <div class="country_intro_image">
+
+        <img
+          id="country_intro_image"
+          src=""
+          alt=""
+          loading="lazy"
+        />
+
+      </div>
+
+    </section>
+
+
+    <!-- IMAGE STRIP -->
+
+    <section
+      class="country_image_strip"
+      id="country_image_strip"
+    ></section>
+
+
+    <!-- REGIONEN -->
+
+    <section
+      class="country_section"
+      id="regionen"
+    >
+
+      <div
+        class="country_section_heading"
+        id="country_regions_heading"
+      ></div>
+
+      <div
+        class="country_region_grid"
+        id="country_region_grid"
+      ></div>
+
+    </section>
+
+
+    <!-- COMMUNITY -->
+
+    <section
+      class="country_section"
+      id="beitraege"
+    >
+
+      <div class="country_community">
+
+        <div class="country_community_header">
+
+          <div>
+
+            <div
+              class="country_section_kicker"
+              id="country_community_kicker"
+            ></div>
+
+            <h2 id="country_community_title"></h2>
+
+            <p id="country_community_description"></p>
+
+          </div>
+
+        </div>
+
+        <div id="country_posts">
+
+          <div
+            style="
+              padding:30px;
+              text-align:center;
+              border:1px solid #e4e9e6;
+              border-radius:16px;
+              background:#fff;
+              grid-column:1/-1;
+            "
+          >
+            Beiträge werden geladen …
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- REISETHEMEN -->
+
+    <section class="country_section">
+
+      <div
+        class="country_section_heading"
+        id="country_topics_heading"
+      ></div>
+
+      <div
+        class="country_topic_grid"
+        id="country_topic_grid"
+      ></div>
+
+    </section>
+
+
+    <!-- BELIEBTE ZIELE -->
+
+    <section class="country_section">
+
+      <div
+        class="country_section_heading"
+        id="country_destinations_heading"
+      ></div>
+
+      <div
+        class="country_destination_grid"
+        id="country_destination_grid"
+      ></div>
+
+    </section>
+
+
+    <!-- PRAKTISCHE TIPPS -->
+
+    <section class="country_section">
+
+      <div
+        class="country_section_heading"
+        id="country_tips_heading"
+      ></div>
+
+      <div
+        class="country_tips"
+        id="country_tips"
+      ></div>
+
+    </section>
+
+
+    <!-- AUSFÜHRLICHER GUIDE -->
+
+    <section class="country_section">
+
+      <div
+        class="country_guide"
+        id="country_guide"
+      ></div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="country_section">
+
+      <div
+        class="country_section_heading"
+        id="country_faq_heading"
+      ></div>
+
+      <div
+        class="country_faq"
+        id="country_faq"
+      ></div>
+
+    </section>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     RENDERING
+========================================================= -->
+
+<script>
+(function () {
+
+  const page_data_element =
+    document.getElementById("country_page_data");
+
+  if (!page_data_element) return;
+
+  let page_data;
+
+  try {
+    page_data = JSON.parse(page_data_element.textContent);
+  } catch (error) {
+    console.error("Country page JSON konnte nicht gelesen werden:", error);
+    return;
+  }
+
+
+  function escape_html(value) {
+
+    if (value === null || value === undefined) {
+      return "";
+    }
+
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+
+  function safe_url(value) {
+
+    if (!value) {
+      return "#";
+    }
+
+    try {
+
+      const url =
+        new URL(value, window.location.origin);
+
+      if (
+        url.protocol === "http:" ||
+        url.protocol === "https:"
+      ) {
+        return url.href;
+      }
+
+      return "#";
+
+    } catch (error) {
+      return "#";
+    }
+  }
+
+
+  function set_image(element_id, image_data) {
+
+    const element =
+      document.getElementById(element_id);
+
+    if (!element || !image_data) {
+      return;
+    }
+
+    element.src = image_data.url || "";
+    element.alt = image_data.alt || "";
+  }
+
+
+  function render_heading(element_id, data) {
+
+    const element =
+      document.getElementById(element_id);
+
+    if (!element || !data) {
+      return;
+    }
+
+    element.innerHTML = `
+      <div class="country_section_kicker">
+        ${escape_html(data.kicker || "")}
+      </div>
+
+      <h2 class="country_section_title">
+        ${escape_html(data.title || "")}
+      </h2>
+
+      <p>
+        ${escape_html(data.description || "")}
+      </p>
+    `;
+  }
+
+
+  function render_paragraphs(container, paragraphs) {
+
+    if (!container || !Array.isArray(paragraphs)) {
+      return;
+    }
+
+    paragraphs.forEach(function (paragraph) {
+
+      const element =
+        document.createElement("p");
+
+      element.textContent = paragraph;
+
+      container.appendChild(element);
+
+    });
+  }
+
+
+  function render_hero() {
+
+    const hero =
+      page_data.hero || {};
+
+    set_image(
+      "country_hero_image",
+      hero.image
+    );
+
+    const eyebrow =
+      document.getElementById("country_hero_eyebrow");
+
+    const title =
+      document.getElementById("country_hero_title");
+
+    const description =
+      document.getElementById("country_hero_description");
+
+    const buttons =
+      document.getElementById("country_hero_buttons");
+
+    if (eyebrow) {
+      eyebrow.textContent =
+        hero.eyebrow || "";
+    }
+
+    if (title) {
+      title.textContent =
+        hero.title || "";
+    }
+
+    if (description) {
+      description.textContent =
+        hero.description || "";
+    }
+
+    if (buttons) {
+
+      buttons.innerHTML = "";
+
+      (hero.buttons || []).forEach(function (button, index) {
+
+        const link =
+          document.createElement("a");
+
+        link.className =
+          "country_button " +
+          (
+            index === 0
+              ? "country_button_primary"
+              : "country_button_secondary"
+          );
+
+        link.href =
+          safe_url(button.url);
+
+        link.textContent =
+          button.label || "";
+
+        buttons.appendChild(link);
+
+      });
+
+    }
+  }
+
+
+  function render_intro() {
+
+    const intro =
+      page_data.intro || {};
+
+    const copy =
+      document.getElementById("country_intro_copy");
+
+    if (!copy) {
+      return;
+    }
+
+    copy.innerHTML = `
+      <div class="country_section_kicker">
+        ${escape_html(intro.kicker || "")}
+      </div>
+
+      <h2 class="country_section_title">
+        ${escape_html(intro.title || "")}
+      </h2>
+    `;
+
+    render_paragraphs(
+      copy,
+      intro.paragraphs
+    );
+
+    set_image(
+      "country_intro_image",
+      intro.image
+    );
+  }
+
+
+  function render_image_strip() {
+
+    const container =
+      document.getElementById("country_image_strip");
+
+    if (!container) {
+      return;
+    }
+
+    container.innerHTML = "";
+
+    (page_data.image_strip || []).forEach(function (item) {
+
+      const figure =
+        document.createElement("figure");
+
+      const image =
+        document.createElement("img");
+
+      image.src =
+        item.image && item.image.url
+          ? item.image.url
+          : "";
+
+      image.alt =
+        item.image && item.image.alt
+          ? item.image.alt
+          : "";
+
+      image.loading = "lazy";
+
+      const caption =
+        document.createElement("figcaption");
+
+      caption.textContent =
+        item.caption || "";
+
+      figure.appendChild(image);
+      figure.appendChild(caption);
+
+      container.appendChild(figure);
+
+    });
+  }
+
+
+  function render_regions() {
+
+    render_heading(
+      "country_regions_heading",
+      page_data.regions
+    );
+
+    const container =
+      document.getElementById("country_region_grid");
+
+    if (!container) {
+      return;
+    }
+
+    container.innerHTML = "";
+
+    (page_data.regions && page_data.regions.items || [])
+      .forEach(function (item) {
+
+        const card =
+          document.createElement("a");
+
+        card.className =
+          "country_region_card";
+
+        card.href =
+          safe_url(item.url);
+
+        card.innerHTML = `
+          <div class="country_region_image">
+
+            <img
+              src="${escape_html(
+                item.image && item.image.url
+                  ? item.image.url
+                  : ""
+              )}"
+              alt="${escape_html(
+                item.image && item.image.alt
+                  ? item.image.alt
+                  : ""
+              )}"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="country_region_content">
+
+            <h3>
+              ${escape_html(item.title || "")}
+            </h3>
+
+            <p>
+              ${escape_html(item.description || "")}
+            </p>
+
+            <span class="country_region_link">
+              ${escape_html(item.link_label || "")}
+            </span>
+
+          </div>
+        `;
+
+        container.appendChild(card);
+
+      });
+  }
+
+
+  function render_topics() {
+
+    render_heading(
+      "country_topics_heading",
+      page_data.topics
+    );
+
+    const container =
+      document.getElementById("country_topic_grid");
+
+    if (!container) {
+      return;
+    }
+
+    container.innerHTML = "";
+
+    (page_data.topics && page_data.topics.items || [])
+      .forEach(function (item) {
+
+        const article =
+          document.createElement("article");
+
+        article.className =
+          "country_topic";
+
+        article.innerHTML = `
+          <div class="country_topic_image">
+
+            <img
+              src="${escape_html(
+                item.image && item.image.url
+                  ? item.image.url
+                  : ""
+              )}"
+              alt="${escape_html(
+                item.image && item.image.alt
+                  ? item.image.alt
+                  : ""
+              )}"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="country_topic_content">
+
+            <h3>
+              ${escape_html(item.title || "")}
+            </h3>
+
+            <p>
+              ${escape_html(item.description || "")}
+            </p>
+
+          </div>
+        `;
+
+        container.appendChild(article);
+
+      });
+  }
+
+
+  function render_destinations() {
+
+    render_heading(
+      "country_destinations_heading",
+      page_data.destinations
+    );
+
+    const container =
+      document.getElementById("country_destination_grid");
+
+    if (!container) {
+      return;
+    }
+
+    container.innerHTML = "";
+
+    (page_data.destinations && page_data.destinations.items || [])
+      .forEach(function (item) {
+
+        const card =
+          document.createElement("a");
+
+        card.className =
+          "country_destination";
+
+        card.href =
+          safe_url(item.url);
+
+        card.innerHTML = `
+          <img
+            src="${escape_html(
+              item.image && item.image.url
+                ? item.image.url
+                : ""
+            )}"
+            alt="${escape_html(
+              item.image && item.image.alt
+                ? item.image.alt
+                : ""
+            )}"
+            loading="lazy"
+          />
+
+          <div class="country_destination_content">
+
+            <h3>
+              ${escape_html(item.title || "")}
+            </h3>
+
+            <p>
+              ${escape_html(item.description || "")}
+            </p>
+
+          </div>
+        `;
+
+        container.appendChild(card);
+
+      });
+  }
+
+
+  function render_tips() {
+
+    render_heading(
+      "country_tips_heading",
+      page_data.tips
+    );
+
+    const container =
+      document.getElementById("country_tips");
+
+    if (!container) {
+      return;
+    }
+
+    container.innerHTML = "";
+
+    (page_data.tips && page_data.tips.items || [])
+      .forEach(function (item) {
+
+        const article =
+          document.createElement("article");
+
+        article.className =
+          "country_tip";
+
+        let blocks_html = "";
+
+        (item.blocks || []).forEach(function (block) {
+
+          blocks_html += `
+            <div class="country_tip_block">
+
+              <strong>
+                ${escape_html(block.title || "")}
+              </strong>
+
+              <p>
+                ${escape_html(block.description || "")}
+              </p>
+
+            </div>
+          `;
+
+        });
+
+        article.innerHTML = `
+          <div class="country_tip_image">
+
+            <img
+              src="${escape_html(
+                item.image && item.image.url
+                  ? item.image.url
+                  : ""
+              )}"
+              alt="${escape_html(
+                item.image && item.image.alt
+                  ? item.image.alt
+                  : ""
+              )}"
+              loading="lazy"
+            />
+
+          </div>
+
+          <div class="country_tip_content">
+
+            <h3>
+              ${escape_html(item.title || "")}
+            </h3>
+
+            <p class="country_tip_intro">
+              ${escape_html(item.intro || "")}
+            </p>
+
+            ${blocks_html}
+
+          </div>
+        `;
+
+        container.appendChild(article);
+
+      });
+  }
+
+
+  function render_guide_node(node) {
+
+    if (!node) {
+      return "";
+    }
+
+    if (node.type === "paragraph") {
+
+      return `
+        <p>
+          ${escape_html(node.text || "")}
+        </p>
+      `;
+
+    }
+
+
+    if (node.type === "heading") {
+
+      const level =
+        node.level === 2 ? "h2" : "h3";
+
+      return `
+        <${level}>
+          ${escape_html(node.text || "")}
+        </${level}>
+      `;
+
+    }
+
+
+    if (node.type === "image") {
+
+      return `
+        <div class="country_guide_image">
+
+          <img
+            src="${escape_html(
+              node.image && node.image.url
+                ? node.image.url
+                : ""
+            )}"
+            alt="${escape_html(
+              node.image && node.image.alt
+                ? node.image.alt
+                : ""
+            )}"
+            loading="lazy"
+          />
+
+        </div>
+      `;
+
+    }
+
+
+    if (node.type === "split") {
+
+      const content_html =
+        (node.content || [])
+          .map(render_guide_node)
+          .join("");
+
+      const image_html = `
+        <div class="country_guide_split_image">
+
+          <img
+            src="${escape_html(
+              node.image && node.image.url
+                ? node.image.url
+                : ""
+            )}"
+            alt="${escape_html(
+              node.image && node.image.alt
+                ? node.image.alt
+                : ""
+            )}"
+            loading="lazy"
+          />
+
+        </div>
+      `;
+
+      if (node.image_position === "left") {
+
+        return `
+          <div class="country_guide_split">
+
+            ${image_html}
+
+            <div class="country_guide_split_content">
+              ${content_html}
+            </div>
+
+          </div>
+        `;
+
+      }
+
+      return `
+        <div class="country_guide_split">
+
+          <div class="country_guide_split_content">
+            ${content_html}
+          </div>
+
+          ${image_html}
+
+        </div>
+      `;
+
+    }
+
+
+    if (node.type === "note") {
+
+      return `
+        <div class="country_note">
+
+          <strong>
+            ${escape_html(node.title || "")}
+          </strong>
+
+          ${escape_html(node.text || "")}
+
+        </div>
+      `;
+
+    }
+
+    return "";
+  }
+
+
+  function render_guide() {
+
+    const container =
+      document.getElementById("country_guide");
+
+    if (!container) {
+      return;
+    }
+
+    const guide =
+      page_data.guide || {};
+
+    let html = `
+      <div class="country_section_kicker">
+        ${escape_html(guide.kicker || "")}
+      </div>
+
+      <h2>
+        ${escape_html(guide.title || "")}
+      </h2>
+    `;
+
+    (guide.content || []).forEach(function (node) {
+      html += render_guide_node(node);
+    });
+
+    container.innerHTML = html;
+  }
+
+
+  function render_faq() {
+
+    render_heading(
+      "country_faq_heading",
+      page_data.faq
+    );
+
+    const container =
+      document.getElementById("country_faq");
+
+    if (!container) {
+      return;
+    }
+
+    container.innerHTML = "";
+
+    (page_data.faq && page_data.faq.items || [])
+      .forEach(function (item) {
+
+        const details =
+          document.createElement("details");
+
+        const summary =
+          document.createElement("summary");
+
+        const paragraph =
+          document.createElement("p");
+
+        summary.textContent =
+          item.question || "";
+
+        paragraph.textContent =
+          item.answer || "";
+
+        details.appendChild(summary);
+        details.appendChild(paragraph);
+
+        container.appendChild(details);
+
+      });
+  }
+
+
+  function render_community_header() {
+
+    const community =
+      page_data.community || {};
+
+    const kicker =
+      document.getElementById(
+        "country_community_kicker"
+      );
+
+    const title =
+      document.getElementById(
+        "country_community_title"
+      );
+
+    const description =
+      document.getElementById(
+        "country_community_description"
+      );
+
+    if (kicker) {
+      kicker.textContent =
+        community.kicker || "";
+    }
+
+    if (title) {
+      title.textContent =
+        community.title || "";
+    }
+
+    if (description) {
+      description.textContent =
+        community.description || "";
+    }
+  }
+
+
+  function render_breadcrumb() {
+
+    const breadcrumb =
+      document.getElementById(
+        "dynamic_breadcrumb"
+      );
+
+    if (!breadcrumb) {
+      return;
+    }
+
+    breadcrumb.innerHTML = "";
+
+    const pathname =
+      window.location.pathname;
+
+    const parts =
+      pathname
+        .split("/")
+        .filter(Boolean);
+
+    if (parts.length === 0) {
+
+      breadcrumb.style.display =
+        "none";
+
+      return;
+    }
+
+    breadcrumb.style.display = "";
+
+    const wrapper =
+      document.createElement("div");
+
+    wrapper.className =
+      "breadcrumb_inner";
+
+    const home =
+      document.createElement("a");
+
+    home.href = "/";
+    home.textContent =
+      page_data.breadcrumb &&
+      page_data.breadcrumb.home_label
+        ? page_data.breadcrumb.home_label
+        : "Startseite";
+
+    wrapper.appendChild(home);
+
+    let current_path = "";
+
+    parts.forEach(function (part, index) {
+
+      current_path += "/" + part;
+
+      const separator =
+        document.createElement("span");
+
+      separator.className =
+        "breadcrumb_separator";
+
+      separator.textContent = "›";
+
+      separator.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      wrapper.appendChild(separator);
+
+      let label;
+
+      try {
+        label =
+          decodeURIComponent(part);
+      } catch (error) {
+        label = part;
+      }
+
+      label = label
+        .replace(/[-_]+/g, " ")
+        .replace(/\b\w/g, function (letter) {
+          return letter.toUpperCase();
+        });
+
+      if (index === parts.length - 1) {
+
+        const current =
+          document.createElement("span");
+
+        current.textContent =
+          label;
+
+        current.setAttribute(
+          "aria-current",
+          "page"
+        );
+
+        wrapper.appendChild(current);
+
+      } else {
+
+        const link =
+          document.createElement("a");
+
+        link.href =
+          current_path;
+
+        link.textContent =
+          label;
+
+        wrapper.appendChild(link);
+
+      }
+
+    });
+
+    breadcrumb.appendChild(wrapper);
+  }
+
+
+  function render_community_posts() {
+
+    const container =
+      document.getElementById(
+        "country_posts"
+      );
+
+    if (!container) {
+      return;
+    }
+
+    const community =
+      page_data.community || {};
+
+    const search_config =
+      community.search || {};
+
+    const params =
+      new URLSearchParams({
+        min_lat:
+          search_config.min_lat,
+        min_lon:
+          search_config.min_lon,
+        max_lat:
+          search_config.max_lat,
+        max_lon:
+          search_config.max_lon,
+        limit:
+          search_config.limit
+      });
+
+    const api_url =
+      window.location.origin +
+      "/api/v1/geosearch/within_bounds?" +
+      params.toString();
+
+    fetch(api_url, {
+      headers: {
+        "Accept": "application/json"
+      }
+    })
+      .then(function (response) {
+
+        if (!response.ok) {
+          throw new Error(
+            "API-Fehler: " +
+            response.status
+          );
+        }
+
+        return response.json();
+
+      })
+      .then(function (data) {
+
+        container.innerHTML = "";
+
+        if (data && data.error) {
+          throw new Error(data.error);
+        }
+
+        const articles =
+          data &&
+          Array.isArray(data.results)
+            ? data.results
+            : [];
+
+        if (articles.length === 0) {
+
+          const empty =
+            document.createElement("div");
+
+          empty.style.cssText =
+            "padding:30px;text-align:center;border:1px solid #e4e9e6;border-radius:16px;background:#fff;grid-column:1/-1;";
+
+          const country_name =
+            page_data.country_name || "";
+
+          empty.innerHTML = `
+            <strong>
+              Keine Beiträge gefunden
+            </strong>
+
+            <p style="margin:8px 0 0;color:#66736d;">
+              Sobald Beiträge für
+              ${escape_html(country_name)}
+              verfügbar sind, erscheinen sie hier.
+            </p>
+          `;
+
+          container.appendChild(empty);
+
+          return;
+        }
+
+
+        articles
+          .slice(
+            0,
+            search_config.limit || 6
+          )
+          .forEach(function (article) {
+
+            const card =
+              document.createElement("a");
+
+            card.className =
+              "country_post_card";
+
+            card.href =
+              safe_url(
+                article.url ||
+                article.path ||
+                "#"
+              );
+
+            const title =
+              article.title ||
+              "Ohne Titel";
+
+            const image_url =
+              article.main_image ||
+              article.cover_image ||
+              article.social_image ||
+              null;
+
+            const description =
+              article.description ||
+              (
+                article.body_markdown
+                  ? article.body_markdown
+                      .substring(0, 150)
+                      .trim() + "…"
+                  : ""
+              );
+
+            const user =
+              article.user || {};
+
+            const author_name =
+              user.name ||
+              user.username ||
+              "";
+
+            const image_html =
+              image_url
+                ? `
+                  <img
+                    class="country_post_image"
+                    src="${escape_html(image_url)}"
+                    alt="${escape_html(title)}"
+                    loading="lazy"
+                  >
+                `
+                : `
+                  <div class="country_post_placeholder">
+                    Kein Titelbild
+                  </div>
+                `;
+
+            const description_html =
+              description
+                ? `
+                  <p class="country_post_description">
+                    ${escape_html(description)}
+                  </p>
+                `
+                : "";
+
+            const author_html =
+              author_name
+                ? `
+                  <span class="country_post_author">
+                    von ${escape_html(author_name)}
+                  </span>
+                `
+                : "";
+
+            card.innerHTML = `
+              ${image_html}
+
+              <div class="country_post_body">
+
+                <h3>
+                  ${escape_html(title)}
+                </h3>
+
+                ${description_html}
+
+                <div class="country_post_meta">
+
+                  ${author_html}
+
+                  <span class="country_post_read">
+                    Lesen →
+                  </span>
+
+                </div>
+
+              </div>
+            `;
+
+            container.appendChild(card);
+
+          });
+
+      })
+      .catch(function (error) {
+
+        console.error(
+          "Community-Beiträge:",
+          error
+        );
+
+        container.innerHTML = `
+          <div
+            style="
+              padding:30px;
+              border:1px solid #e4e9e6;
+              border-radius:16px;
+              background:#fff;
+              grid-column:1/-1;
+            "
+          >
+            <strong>
+              Beiträge konnten nicht geladen werden.
+            </strong>
+
+            <p
+              style="
+                margin:8px 0 0;
+                color:#66736d;
+              "
+            >
+              Bitte versuche es später erneut.
+            </p>
+
+          </div>
+        `;
+
+      });
+  }
+
+
+  function render_structured_data() {
+
+    const existing =
+      document.querySelectorAll(
+        "[data_country_structured_data]"
+      );
+
+    existing.forEach(function (element) {
+      element.remove();
+    });
+
+
+    const seo =
+      page_data.seo || {};
+
+    const tourist_destination = {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name":
+        page_data.country_name || "",
+      "description":
+        seo.description || "",
+      "touristType":
+        seo.tourist_types || [],
+      "sameAs":
+        seo.same_as || []
+    };
+
+
+    const tourist_script =
+      document.createElement("script");
+
+    tourist_script.type =
+      "application/ld+json";
+
+    tourist_script.setAttribute(
+      "data_country_structured_data",
+      "true"
+    );
+
+    tourist_script.textContent =
+      JSON.stringify(
+        tourist_destination
+      );
+
+    document.body.appendChild(
+      tourist_script
+    );
+
+
+    const faq_items =
+      page_data.faq &&
+      page_data.faq.items
+        ? page_data.faq.items
+        : [];
+
+    if (faq_items.length) {
+
+      const faq_schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity":
+          faq_items.map(function (item) {
+
+            return {
+              "@type": "Question",
+              "name":
+                item.question || "",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text":
+                  item.answer || ""
+              }
+            };
+
+          })
+      };
+
+
+      const faq_script =
+        document.createElement("script");
+
+      faq_script.type =
+        "application/ld+json";
+
+      faq_script.setAttribute(
+        "data_country_structured_data",
+        "true"
+      );
+
+      faq_script.textContent =
+        JSON.stringify(faq_schema);
+
+      document.body.appendChild(
+        faq_script
+      );
+    }
+  }
+
+
+  function render_page() {
+
+    render_hero();
+    render_intro();
+    render_image_strip();
+    render_regions();
+    render_community_header();
+    render_topics();
+    render_destinations();
+    render_tips();
+    render_guide();
+    render_faq();
+    render_breadcrumb();
+    render_community_posts();
+    render_structured_data();
+
+  }
+
+
+  render_page();
+
+
+  if (
+    window.__country_breadcrumb_initialized
+  ) {
+    return;
+  }
+
+  window.__country_breadcrumb_initialized =
+    true;
+
+
+  window.addEventListener(
+    "popstate",
+    render_breadcrumb
+  );
+
+  window.addEventListener(
+    "pageshow",
+    render_breadcrumb
+  );
+
+  document.addEventListener(
+    "turbo:load",
+    render_breadcrumb
+  );
+
+})();
+</script>
