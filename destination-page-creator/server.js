@@ -13,28 +13,28 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// Path to page-content directory (one level up from destination-page-creator)
-const pageContentPath = path.join(__dirname, '..', 'page-content');
+// Path to public directory (within destination-page-creator)
+const publicPath = path.join(__dirname, 'public');
 
-// Ensure page-content directory exists
-if (!fs.existsSync(pageContentPath)) {
-  fs.mkdirSync(pageContentPath, { recursive: true });
-  console.log(`Created page-content directory at: ${pageContentPath}`);
+// Ensure public directory exists
+if (!fs.existsSync(publicPath)) {
+  fs.mkdirSync(publicPath, { recursive: true });
+  console.log(`Created public directory at: ${publicPath}`);
 }
 
-// Serve static files from the page-content directory
-app.use('/page-content', express.static(pageContentPath));
+// Serve static files from the public directory
+app.use('/page-content', express.static(publicPath));
 
-// API: Get list of countries (JSON files in page-content)
+// API: Get list of countries (JSON files in public directory)
 app.get('/api/countries', (req, res) => {
   try {
-    const files = fs.readdirSync(pageContentPath);
+    const files = fs.readdirSync(publicPath);
     const countries = files
       .filter(file => file.endsWith('.json') && !file.startsWith('.'))
       .map(file => file.replace('.json', ''))
       .sort();
     
-    console.log(`API: Countries list requested - found ${countries.length} countries`);
+    console.log(`API: Countries list requested - found ${countries.length} countries:`, countries);
     res.json({ 
       success: true, 
       countries 
@@ -52,7 +52,7 @@ app.get('/api/countries', (req, res) => {
 app.get('/api/country/:country', (req, res) => {
   try {
     const { country } = req.params;
-    const filePath = path.join(pageContentPath, `${country}.json`);
+    const filePath = path.join(publicPath, `${country}.json`);
     
     if (!fs.existsSync(filePath)) {
       console.log(`API: Country file not found: ${country}.json`);
@@ -101,7 +101,7 @@ app.post('/api/save', (req, res) => {
       });
     }
     
-    const filePath = path.join(pageContentPath, `${country}.json`);
+    const filePath = path.join(publicPath, `${country}.json`);
     
     // Write file
     fs.writeFileSync(filePath, content, 'utf-8');
@@ -124,7 +124,7 @@ app.post('/api/save', (req, res) => {
 app.delete('/api/country/:country', (req, res) => {
   try {
     const { country } = req.params;
-    const filePath = path.join(pageContentPath, `${country}.json`);
+    const filePath = path.join(publicPath, `${country}.json`);
     
     if (!fs.existsSync(filePath)) {
       console.log(`API: Country file to delete not found: ${country}.json`);
@@ -163,7 +163,7 @@ app.post('/api/new-country', (req, res) => {
       });
     }
     
-    const filePath = path.join(pageContentPath, `${country}.json`);
+    const filePath = path.join(publicPath, `${country}.json`);
     
     if (fs.existsSync(filePath)) {
       console.log(`API: Country file already exists: ${country}.json`);
@@ -289,16 +289,16 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`Page content directory: ${pageContentPath}`);
+  console.log(`Public directory: ${publicPath}`);
   
   // Log available countries on startup
   try {
-    const files = fs.readdirSync(pageContentPath);
+    const files = fs.readdirSync(publicPath);
     const countries = files.filter(file => file.endsWith('.json') && !file.startsWith('.'))
       .map(file => file.replace('.json', ''))
       .sort();
     console.log(`Available countries: ${countries.join(', ') || 'None'}`);
   } catch (error) {
-    console.log('No countries found in page-content directory');
+    console.log('No countries found in public directory');
   }
 });

@@ -2,7 +2,7 @@
 
 ## 📁 File Location
 
-All country JSON files are now stored in the `public/` directory of this Vite project.
+All country JSON files are stored in the `public/` directory of this Vite project.
 
 ### Current Files:
 - `public/italien.json`
@@ -10,9 +10,14 @@ All country JSON files are now stored in the `public/` directory of this Vite pr
 
 ## 🚀 How It Works
 
-1. **File Access**: Country JSON files are served directly from the `public/` directory
-2. **URL Paths**: Files are accessible at `/italien.json`, `/spanien.json`, etc.
-3. **Simple Configuration**: No complex Vite configuration needed - public directory files are automatically served
+### Frontend (Vite Dev Server)
+- Country JSON files are served directly from the `public/` directory
+- Files are accessible at `/italien.json`, `/spanien.json`, etc.
+- Simple standard Vite configuration - no special setup needed
+
+### Backend (API Server on port 3001)
+- API endpoints (`/api/countries`, `/api/country/:country`, etc.) read from and write to the `public/` directory
+- All file operations are performed on files in `public/`
 
 ## 📝 Adding New Countries
 
@@ -20,15 +25,14 @@ All country JSON files are now stored in the `public/` directory of this Vite pr
 1. Click "Neues Land" button in the header
 2. Enter the country name
 3. Click "Erstellen" - it copies from Italien with all example data
-4. Click "💾 Speichern" to download the JSON file
-5. Save the file to `public/{country}.json`
-6. Click "🔄 Aktualisieren" to refresh the countries list
+4. Click "💾 Speichern" to save via API (saves to `public/{country}.json`)
+5. Click "🔄 Aktualisieren" to refresh the countries list
 
 ### Method 2: Manual Creation
 1. Create a new file in `public/{country}.json`
 2. Use the existing files as a template
 3. Replace all country names and references
-4. Refresh the app (F5)
+4. Restart the API server if running, or refresh the app (F5)
 
 ## 🔄 Country Creation Features
 
@@ -40,5 +44,6 @@ All country JSON files are now stored in the `public/` directory of this Vite pr
 ## 🧹 Maintenance
 
 - **Single Source**: Only maintain files in the `public/` directory
-- **No Duplication**: Don't keep files in other directories
+- **No Duplication**: Don't keep files in other directories like `../page-content/`
 - **Easy Backup**: Just backup the `public/` directory to save all country data
+- **Server Restart**: If using API server, restart it after adding new files manually

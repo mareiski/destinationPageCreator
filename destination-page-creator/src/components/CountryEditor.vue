@@ -213,7 +213,8 @@ const loadCountryData = async (countryName: string) => {
     }
     
     // Fallback: create template
-    console.log('Using template for:', countryName);
+    console.warn(`Using template for ${countryName} - file not found in public directory!`);
+    console.warn(`Make sure ${countryName}.json exists in public/ and the dev server is running.`);
     try {
       const templateData = JSON.parse(getDefaultTemplate(countryName));
       console.log('Template created with keys:', Object.keys(templateData));
@@ -334,33 +335,41 @@ function replaceCountryNamesInData(data: any, oldName: string, newName: string, 
           newValue = newName;
         } else {
           // For other fields, replace all variations of the old name
-          // First, try to match the old name exactly (case sensitive)
           let replacedValue = value;
           
-          // Replace exact matches of the old name
-          const oldNameRegex = new RegExp(oldName, 'gi');
-          replacedValue = replacedValue.replace(oldNameRegex, newName);
+          // Create all possible variations of the old name
+          const oldNameVariations = [
+            oldName, // original (e.g., "italien")
+            oldName.charAt(0).toUpperCase() + oldName.slice(1), // "Italien"
+            oldName.toLowerCase(), // "italien" 
+            oldName.toUpperCase(), // "ITALIEN"
+          ];
+          
+          // Create matching variations for the new name
+          const newNameCapitalized = newName.charAt(0).toUpperCase() + newName.slice(1);
+          const newNameVariations = [
+            newName, // original (e.g., "frankreich")
+            newNameCapitalized, // "Frankreich"
+            newName.toLowerCase(), // "frankreich"
+            newName.toUpperCase(), // "FRANKREICH"
+          ];
+          
+          // Replace all variations of old name with appropriate new name variations
+          for (let i = 0; i < oldNameVariations.length; i++) {
+            const oldVar = oldNameVariations[i];
+            const newVar = newNameVariations[i];
+            
+            // Only replace if the old variation is different from the new name
+            if (oldVar !== newVar) {
+              const regex = new RegExp(oldVar, 'gi');
+              replacedValue = replacedValue.replace(regex, newVar);
+            }
+          }
           
           // Also handle slugs in URLs (like #italien, italien.json, etc.)
           const oldSlug = createSlug(oldName);
           const slugRegex = new RegExp(oldSlug, 'gi');
           replacedValue = replacedValue.replace(slugRegex, newSlug);
-          
-          // Handle the old name in different cases (e.g., "Italien" vs "italien")
-          // Try to match common variations
-          const variations = [
-            oldName.charAt(0).toUpperCase() + oldName.slice(1), // "Italien"
-            oldName.toLowerCase(), // "italien"
-            oldName.toUpperCase(), // "ITALIEN"
-          ];
-          
-          for (const variation of variations) {
-            if (variation !== oldName) {
-              const variationRegex = new RegExp(variation, 'gi');
-              replacedValue = replacedValue.replace(variationRegex, 
-                newName.charAt(0).toUpperCase() + newName.slice(1));
-            }
-          }
           
           newValue = replacedValue;
         }
@@ -379,21 +388,59 @@ function replaceCountryNamesInData(data: any, oldName: string, newName: string, 
 // Function to copy data from an existing country
 async function copyCountryData(sourceCountry: string, newName: string): Promise<any> {
   try {
-    // Try to load the source country data from public directory
-    const path = `/${sourceCountry}.json`;
-    
-    try {
-      const response = await fetchWithTimeout(path, {}, 2000);
-      if (response.ok) {
-        const content = await response.text();
-        const sourceData = JSON.parse(content);
-        const newSlug = createSlug(newName);
-        
-        // Replace all country names in the data
-        return replaceCountryNamesInData(sourceData, sourceCountry, newName, newSlug);
+    // Try multiple approaches to load the source country data
+    const approaches = [
+      // 1. Try direct fetch from public directory
+      async () => {
+        const path = `/${sourceCountry}.json`;
+        const response = await fetchWithTimeout(path, {}, 2000);
+        if (response.ok) {
+          const content = await response.text();
+          return JSON.parse(content);
+        }
+        return null;
+      },
+      // 2. Try API endpoint
+      async () => {
+        const response = await fetchWithTimeout(`/api/country/${sourceCountry}`, {}, 2000);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success && data.content) {
+            return JSON.parse(data.content);
+          }
+        }
+        return null;
+      },
+      // 3. Try Vite dev server directly
+      async () => {
+        const path = `http://localhost:5173/${sourceCountry}.json`;
+        const response = await fetchWithTimeout(path, {}, 2000);
+        if (response.ok) {
+          const content = await response.text();
+          return JSON.parse(content);
+        }
+        return null;
       }
-    } catch (error) {
-      console.log(`Could not load source country ${sourceCountry} from ${path}:`, error);
+    ];
+    
+    for (const approach of approaches) {
+      try {
+        const sourceData = await approach();
+        if (sourceData) {
+          const newSlug = createSlug(newName);
+          console.log(`Successfully loaded source country ${sourceCountry}, replacing names with ${newName}`);
+          console.log(`Source data country_name: ${sourceData.country_name}`);
+          console.log(`Source data keys:`, Object.keys(sourceData));
+          
+          // Replace all country names in the data
+          const replacedData = replaceCountryNamesInData(sourceData, sourceCountry, newName, newSlug);
+          console.log(`Replaced data country_name: ${replacedData.country_name}`);
+          return replacedData;
+        }
+      } catch (error) {
+        console.log(`Approach failed: ${error}`);
+        continue;
+      }
     }
     
     // If we can't find the source country, fall back to template
@@ -418,13 +465,46 @@ const createNewCountry = async () => {
   
   try {
     isLoading.value = true;
+    console.log(`Creating new country: ${countryDisplayName}, slug: ${countrySlug}`);
     
     // Try to copy from an existing country (italien) instead of using template
     const copiedData = await copyCountryData('italien', newCountryName.value);
     
-    pageData.value = copiedData;
+    if (!copiedData || !copiedData.country_name) {
+      console.error('CopyCountryData returned invalid data:', copiedData);
+      throw new Error('Could not create country data');
+    }
+    
+    console.log(`Copied data for ${countryDisplayName}, country_name in data:`, copiedData.country_name);
+    console.log(`Copied data keys:`, Object.keys(copiedData));
+    
+    // Ensure we have proper data structure
+    if (!copiedData.country_name) {
+      console.error('Copied data is missing country_name! Using template as fallback');
+      pageData.value = JSON.parse(getDefaultTemplate(countrySlug));
+    } else {
+      // Force deep copy to ensure reactivity
+      const deepCopy = JSON.parse(JSON.stringify(copiedData));
+      pageData.value = deepCopy;
+      console.log('pageData.value updated with new country data:', {
+        country_name: pageData.value.country_name,
+        hero_title: pageData.value.hero?.title,
+        intro_title: pageData.value.intro?.title
+      });
+    }
+    
     selectedCountry.value = countrySlug;
     countries.value = [...new Set([...countries.value, countrySlug])].sort();
+    
+    // Auto-save the new country so the file exists
+    try {
+      await saveCountryData();
+      console.log('New country auto-saved successfully');
+    } catch (saveError) {
+      console.warn('Could not auto-save new country:', saveError);
+      // Continue anyway - user can save manually
+    }
+    
     showNewCountryModal.value = false;
     newCountryName.value = '';
     
@@ -508,11 +588,15 @@ const deleteCountry = async () => {
 // Handle country selection
 const handleCountrySelect = (country: string) => {
   console.log(`Country selected: ${country}, current selected: ${selectedCountry.value}`);
+  
+  // Force reload even if it's the same country
   if (selectedCountry.value === country) {
     console.log(`Country ${country} is already selected, forcing reload`);
-    // Force reload by clearing and reloading
+    // Clear pageData to force reload
     pageData.value = null;
   }
+  
+  // Load the country data
   loadCountryData(country);
 };
 

@@ -1,12 +1,12 @@
 {
-  "country_name": "spanien",
+  "country_name": "Spanien",
   "hero": {
     "eyebrow": "Reiseguide & Community",
-    "title": "spanien entdecken",
-    "description": "Erfahre mehr über die Vielfalt von spanien - von beeindruckenden Landschaften bis zu kulturellen Highlights.",
+    "title": "Spanien entdecken",
+    "description": "Spanien verbindet mediterranes Lebensgefühl mit abwechslungsreichen Landschaften, historischen Städten, kilometerlangen Küsten, lebendigen Regionen und einer Küche, die weit über Tapas hinausgeht. Entdecke Regionen, Reiseziele, Sehenswürdigkeiten, praktische Tipps und persönliche Reiseberichte aus der Community.",
     "image": {
-      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1170&auto=format&fit=crop",
-      "alt": "spanien Landschaft"
+      "url": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=85&w=1170&auto=format&fit=crop",
+      "alt": "Mediterrane Landschaft in Spanien mit Küste und Bergen"
     },
     "buttons": [
       {
@@ -20,76 +20,549 @@
     ]
   },
   "intro": {
-    "kicker": "spanien Reiseführer",
-    "title": "Urlaub in spanien: Zwischen Natur und Kultur",
+    "kicker": "Spanien Reiseführer",
+    "title": "Urlaub in Spanien: Zwischen Mittelmeer, Atlantik und historischen Städten",
     "paragraphs": [
-      "spanien bietet eine einzigartige Mischung aus Natur, Kultur und Geschichte.",
-      "Hier findest du einen Überblick über beliebte Reiseziele und praktische Hinweise zur Reiseplanung."
+      "Kaum ein europäisches Land bietet eine vergleichbare landschaftliche und kulturelle Vielfalt wie Spanien. Im Norden findest du die grünen Landschaften Galiciens, Asturiens und des Baskenlands sowie die Pyrenäen. Entlang des Mittelmeers warten lange Strände, kleine Buchten und lebendige Küstenorte, während im Landesinneren historische Städte, weite Landschaften und beeindruckende Gebirgsregionen auf Reisende warten.",
+      "Ein Spanien-Urlaub kann deshalb ganz unterschiedlich aussehen: entspannter Strandurlaub auf Mallorca oder an der Costa del Sol, Roadtrip durch Andalusien, Wanderurlaub in den Pyrenäen, Städtereise nach Barcelona oder Madrid, Kulturreise nach Sevilla und Granada oder eine längere Rundreise durch mehrere Regionen.",
+      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in Spanien sowie praktische Hinweise zur Reiseplanung. In der Community kannst du außerdem aktuelle Reiseberichte, Erfahrungen und Geheimtipps anderer Reisender entdecken.",
+      "Besonders spannend ist Spanien auch deshalb, weil sich unterschiedliche Reisearten hervorragend miteinander verbinden lassen. Ein Urlaub kann morgens mit einem Spaziergang durch eine historische Altstadt beginnen und am Nachmittag bereits an einem Strand, in den Bergen oder in einem kleinen Küstenort weitergehen."
     ],
     "image": {
-      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=687&auto=format&fit=crop",
-      "alt": "Landschaft in spanien"
+      "url": "https://images.unsplash.com/photo-1559386081-325882507af7?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Spanische Landschaft mit Bergen und mediterraner Umgebung"
     }
   },
-  "image_strip": [],
+  "image_strip": [
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1605298602714-c1a2f2d5dd98?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Berglandschaft in Spanien"
+      },
+      "caption": "Berge und Natur entdecken"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1620677368158-32b1293fac36?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Historische Architektur in Spanien"
+      },
+      "caption": "Geschichte und Kultur"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1504019347908-b45f9b0b8dd5?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Historische Architektur in Spanien"
+      },
+      "caption": "Küsten und Mittelmeer"
+    }
+  ],
   "regions": {
     "kicker": "Reiseziele",
-    "title": "Die beliebtesten Regionen",
-    "description": "spanien besteht aus vielen verschiedenen Regionen, die jeweils ihren eigenen Charme haben.",
-    "items": []
+    "title": "Die beliebtesten Regionen Spaniens",
+    "description": "Spanien besteht aus vielen sehr unterschiedlichen Regionen. Während der Norden für grüne Landschaften und Berge bekannt ist, findest du an Mittelmeer und Atlantik zahlreiche Strände und Küstenorte. Andalusien begeistert mit historischen Städten, Katalonien mit Barcelona und abwechslungsreicher Natur, während die Inseln ganz eigene Reiseerlebnisse bieten.",
+    "items": [
+      {
+        "title": "Andalusien",
+        "url": "/spanien/andalusien",
+        "link_label": "Andalusien entdecken →",
+        "description": "Andalusien verbindet maurische Architektur, weiße Dörfer, lange Küsten, beeindruckende Städte und eine abwechslungsreiche Landschaft. Sevilla, Granada, Córdoba und Málaga lassen sich hervorragend mit einem Roadtrip durch die Region verbinden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1669231337396-3c15079f2eb7?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historische Architektur in Andalusien"
+        }
+      },
+      {
+        "title": "Katalonien",
+        "url": "/spanien/katalonien",
+        "link_label": "Katalonien entdecken →",
+        "description": "Katalonien bietet mit Barcelona eine der bekanntesten Städte Europas und verbindet Kultur, Strände, Küstenorte und Berglandschaften. Auch die Costa Brava und die Pyrenäen machen die Region interessant für Rundreisen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1644144976137-3cb6dd8fae0c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Barcelona und die katalanische Küste"
+        }
+      },
+      {
+        "title": "Balearen",
+        "url": "/spanien/balearen",
+        "link_label": "Balearen entdecken →",
+        "description": "Mallorca, Menorca, Ibiza und Formentera bieten kristallklares Wasser, Buchten, Strände und mediterranes Lebensgefühl. Gleichzeitig gibt es auf den Inseln Berglandschaften, historische Orte und ruhige Regionen abseits der bekannten Ferienorte.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1709671841895-ee6c5564dcea?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Türkisfarbene Bucht auf Mallorca"
+        }
+      },
+      {
+        "title": "Kanarische Inseln",
+        "url": "/spanien/kanarische-inseln",
+        "link_label": "Kanarische Inseln entdecken →",
+        "description": "Die Kanarischen Inseln bieten vulkanische Landschaften, Strände, Berge und ganzjährig mildes Klima. Teneriffa, Gran Canaria, Lanzarote und Fuerteventura eignen sich sowohl für Badeurlaub als auch für Wanderungen und individuelle Rundreisen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1613857794632-052edbb98d58?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Vulkanische Landschaft auf den Kanarischen Inseln"
+        }
+      }
+    ]
   },
   "community": {
     "kicker": "Community",
-    "title": "Aktuelle Beiträge über spanien",
+    "title": "Aktuelle Beiträge über Spanien",
     "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
     "search": {
-      "min_lat": 0,
-      "min_lon": 0,
-      "max_lat": 0,
-      "max_lon": 0,
+      "min_lat": 35.95,
+      "min_lon": -9.3,
+      "max_lat": 43.8,
+      "max_lon": 4.35,
       "limit": 6
     }
   },
   "topics": {
     "kicker": "Reiseplanung",
-    "title": "Nach Reisethema entdecken",
-    "description": "Nicht jeder spanien-Urlaub sieht gleich aus.",
-    "items": []
+    "title": "Spanien nach Reisethema entdecken",
+    "description": "Nicht jeder Spanien-Urlaub sieht gleich aus. Je nach Reiseart können andere Regionen, Orte und Jahreszeiten besonders interessant sein.",
+    "items": [
+      {
+        "title": "Strandurlaub",
+        "description": "Traumhafte Buchten, lange Sandstrände und Küstenorte am Mittelmeer und Atlantik.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1593174898997-488a0443e852?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanischer Strand am Mittelmeer"
+        }
+      },
+      {
+        "title": "Berge & Natur",
+        "description": "Pyrenäen, Sierra Nevada, Vulkanlandschaften und abwechslungsreiche Wandergebiete.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1701360240509-b8b227dbbf4c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanische Berglandschaft"
+        }
+      },
+      {
+        "title": "Städtereisen",
+        "description": "Barcelona, Madrid, Sevilla, Valencia, Málaga, Granada und viele weitere Städte.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1579282240050-352db0a14c21?q=80&w=652&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Barcelona mit historischer und moderner Architektur"
+        }
+      },
+      {
+        "title": "Kulinarik",
+        "description": "Tapas, Paella, Pintxos, frischer Fisch, regionale Spezialitäten und spanische Weine.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1650964807311-970cb88d347c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanisches Essen und regionale Spezialitäten"
+        }
+      }
+    ]
   },
   "destinations": {
     "kicker": "Beliebte Ziele",
     "title": "Diese Orte solltest du kennen",
-    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt.",
-    "items": []
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer Spanienreise.",
+    "items": [
+      {
+        "title": "Barcelona",
+        "description": "Architektur, Mittelmeer, Altstadt und katalanisches Lebensgefühl",
+        "url": "/spanien/barcelona",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Barcelona mit Blick auf die Stadt"
+        }
+      },
+      {
+        "title": "Toledo",
+        "description": "Kultur, historische Gebäude und eine lebendige Altstadt in spaniens ehemaliger Hauptstadt",
+        "url": "/spanien/madrid",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1667571134624-9a17aba9d6c6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Toledo und spanische Stadtkultur"
+        }
+      },
+      {
+        "title": "Sevilla",
+        "description": "Andalusische Architektur, Tapas, Plätze und historische Altstadt",
+        "url": "/spanien/sevilla",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=1000&auto=format&fit=crop",
+          "alt": "Historische Architektur in Sevilla"
+        }
+      },
+      {
+        "title": "Mallorca",
+        "description": "Buchten, Strände, Berge und mediterrane Orte",
+        "url": "/spanien/mallorca",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1589979481223-deb893043163?q=80&w=687&auto=format&fit=crop",
+          "alt": "Küste und türkisfarbenes Wasser auf Mallorca"
+        }
+      },
+      {
+        "title": "Costa del Sol",
+        "description": "Strände, Küstenorte, Málaga und andalusisches Lebensgefühl",
+        "url": "/spanien/costa-del-sol",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1170&auto=format&fit=crop",
+          "alt": "Küste an der Costa del Sol"
+        }
+      },
+      {
+        "title": "Granada",
+        "description": "Alhambra, historische Altstadt und die Berge der Sierra Nevada",
+        "url": "/spanien/granada",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?q=80&w=687&auto=format&fit=crop",
+          "alt": "Granada und die historische Alhambra"
+        }
+      }
+    ]
   },
   "tips": {
     "kicker": "Reiseplanung",
-    "title": "Praktische Tipps für deine spanien-Reise",
-    "description": "Tipps und Hinweise für die Reiseplanung.",
-    "items": []
+    "title": "Praktische Tipps für deine Spanien-Reise",
+    "description": "Gerade bei beliebten Reisezielen lohnt es sich, die Reise nicht nur nach Sehenswürdigkeiten zu planen. Saison, Mietwagen, Parkmöglichkeiten, Öffnungszeiten und die Wahl des richtigen Ausgangsortes können einen großen Unterschied machen.",
+    "items": [
+      {
+        "title": "Unterwegs mit dem Mietwagen",
+        "intro": "Ein Mietwagen kann besonders für Rundreisen durch Andalusien, die Costa Brava oder ländliche Regionen praktisch sein. In größeren Städten kann das Auto dagegen schnell zur Belastung werden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Straße durch eine spanische Landschaft"
+        },
+        "blocks": [
+          {
+            "title": "Städte vermeiden",
+            "description": "Für Barcelona, Madrid oder Sevilla ist ein Auto häufig nicht notwendig. Wer eine Rundreise macht, kann das Fahrzeug außerhalb des Stadtzentrums abstellen und die Stadt mit öffentlichen Verkehrsmitteln erkunden."
+          },
+          {
+            "title": "Maut und Straßen",
+            "description": "Je nach Route können mautpflichtige Autobahnen eine Rolle spielen. Vor längeren Fahrten lohnt sich deshalb ein Blick auf alternative Routen und die aktuellen Verkehrsbedingungen."
+          }
+        ]
+      },
+      {
+        "title": "Strände in Spanien",
+        "intro": "Spanien besitzt eine enorme Auswahl an Küstenregionen. Von langen Sandstränden bis zu kleinen felsigen Buchten gibt es sehr unterschiedliche Stranderlebnisse.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1663154439286-5804c8448169?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanischer Strand und Mittelmeer"
+        },
+        "blocks": [
+          {
+            "title": "Bekannte Badeorte",
+            "description": "Beliebte Küstenorte bieten meist eine sehr gute Infrastruktur mit Restaurants, Strandbars, Liegen und Wassersportangeboten. In den Sommermonaten kann es dort allerdings entsprechend voll werden."
+          },
+          {
+            "title": "Ruhigere Buchten",
+            "description": "Wer weniger Trubel sucht, sollte sich kleinere Buchten und Strände außerhalb der bekannten Ferienorte anschauen. Besonders auf Mallorca, Menorca und an der Costa Brava gibt es viele unterschiedliche Küstenabschnitte."
+          }
+        ]
+      },
+      {
+        "title": "Die beste Reisezeit für Spanien",
+        "intro": "Die passende Reisezeit hängt stark davon ab, welche Region du besuchen und welche Aktivitäten du unternehmen möchtest.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1509840841025-9088ba78a826?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanische Küstenlandschaft bei sonnigem Wetter"
+        },
+        "blocks": [
+          {
+            "title": "Sommer",
+            "description": "Für klassischen Badeurlaub sind Juni bis September besonders beliebt. An den Mittelmeer- und Inselküsten kann es im Juli und August jedoch sehr heiß und voll werden."
+          },
+          {
+            "title": "Frühling und Herbst",
+            "description": "Frühling und Herbst sind für Städtereisen, Rundreisen und Wanderungen häufig angenehm. In Andalusien und anderen südlichen Regionen können die Temperaturen zu dieser Zeit besonders attraktiv sein."
+          },
+          {
+            "title": "Winter",
+            "description": "Für einen klassischen Strandurlaub ist der Winter nicht überall geeignet. Die Kanarischen Inseln bieten jedoch auch in den Wintermonaten vergleichsweise milde Temperaturen und sind deshalb ein beliebtes Reiseziel für eine Auszeit in der Sonne."
+          }
+        ]
+      },
+      {
+        "title": "Barcelona: Sehenswürdigkeiten früh planen",
+        "intro": "Barcelona bietet eine große Auswahl an Sehenswürdigkeiten und ist insbesondere in der Hauptsaison sehr gefragt.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1728249960363-13079cc2c6f6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Barcelona und spanische Architektur"
+        },
+        "blocks": [
+          {
+            "title": "Wichtige Sehenswürdigkeiten",
+            "description": "Sagrada Família, Park Güell, die Altstadt und zahlreiche Museen können problemlos mehrere Tage füllen. Wer die Stadt entspannt erleben möchte, sollte ausreichend Zeit einplanen."
+          },
+          {
+            "title": "Eintrittskarten",
+            "description": "Für besonders beliebte Sehenswürdigkeiten lohnt es sich, Eintrittskarten und mögliche Zeitfenster frühzeitig zu prüfen."
+          },
+          {
+            "title": "Tagesplanung",
+            "description": "Plane nicht zu viele Sehenswürdigkeiten direkt hintereinander. Barcelona lässt sich hervorragend zu Fuß erkunden, gleichzeitig können einzelne Wege länger dauern als erwartet."
+          }
+        ]
+      },
+      {
+        "title": "Madrid ohne Parkplatzstress",
+        "intro": "Madrid ist eine große und lebendige Hauptstadt. Wer mit dem Auto anreist, sollte sich deshalb vorab mit Parkmöglichkeiten und den verschiedenen Verkehrszonen beschäftigen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=1000&auto=format&fit=crop",
+          "alt": "Spanische Großstadt mit historischer Architektur"
+        },
+        "blocks": [
+          {
+            "title": "Mit dem Auto",
+            "description": "Für einen Aufenthalt im Zentrum ist ein Auto häufig nicht notwendig. Parkhäuser können teuer sein und der Verkehr in der Innenstadt kann die Fahrt deutlich verlängern."
+          },
+          {
+            "title": "Öffentliche Verkehrsmittel",
+            "description": "Madrid verfügt über ein dichtes Netz aus Metro, Bussen und Bahnverbindungen. Für einen Städtetrip kann es deshalb sinnvoll sein, das Auto außerhalb des Zentrums stehen zu lassen."
+          },
+          {
+            "title": "Tagesausflüge",
+            "description": "Madrid eignet sich auch als Ausgangspunkt für Ausflüge in das Umland. Historische Orte und Sehenswürdigkeiten außerhalb der Hauptstadt lassen sich teilweise gut mit Zug oder Auto erreichen."
+          }
+        ]
+      },
+      {
+        "title": "Essen in Spanien",
+        "intro": "Die spanische Küche ist stark regional geprägt. Deshalb lohnt es sich, im Urlaub nicht nur bekannte Klassiker zu probieren, sondern auch lokale Spezialitäten der jeweiligen Region zu entdecken.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1737129927221-87b686ca31bb?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanische Küche und regionale Spezialitäten"
+        },
+        "blocks": [
+          {
+            "title": "Tapas und regionale Küche",
+            "description": "Tapas sind nur ein kleiner Teil der spanischen Küche. Je nach Region findest du beispielsweise Paella in Valencia, Pintxos im Baskenland, andalusische Spezialitäten oder frischen Fisch an den Küsten."
+          },
+          {
+            "title": "Essenszeiten",
+            "description": "Die Essenszeiten können sich von den Gewohnheiten in Deutschland unterscheiden. Mittag- und Abendessen finden häufig später statt, besonders in touristischen und südlichen Regionen."
+          }
+        ]
+      }
+    ]
   },
   "guide": {
-    "kicker": "spanien Reiseführer",
-    "title": "spanien Urlaub planen: Was du vor der Reise wissen solltest",
-    "content": []
+    "kicker": "Spanien Reiseführer",
+    "title": "Spanien Urlaub planen: Was du vor der Reise wissen solltest",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Spanien ist ein Reiseziel, das sich sowohl für einen kurzen Wochenendtrip als auch für einen mehrwöchigen Urlaub eignet. Durch die unterschiedlichen Regionen lässt sich ein Aufenthalt sehr individuell gestalten. Wer zum ersten Mal nach Spanien reist, steht deshalb häufig vor der Frage, welche Region am besten zum eigenen Urlaub passt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen klassischen Badeurlaub bieten sich beispielsweise die Costa del Sol, Costa Blanca, Costa Brava, die Balearen oder die Kanarischen Inseln an. Wer Berge und Natur bevorzugt, findet in den Pyrenäen, der Sierra Nevada und vielen weiteren Gebirgsregionen zahlreiche Möglichkeiten. Für Kultur- und Städtereisen sind Barcelona, Madrid, Sevilla, Valencia, Málaga, Granada und Córdoba interessante Ziele."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1688680437050-d2cddf4f20b2?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Straße durch eine spanische Stadtlandschaft"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Nordspanien: Grüne Landschaften, Berge und Atlantikküste"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nordspanien unterscheidet sich landschaftlich deutlich vom sonnigen Süden. Regionen wie Galicien, Asturien, Kantabrien und das Baskenland bieten grüne Landschaften, zerklüftete Küsten, Berge und zahlreiche kleinere Orte. Auch für Wanderungen und kulinarische Reisen ist der Norden interessant."
+      },
+      {
+        "type": "paragraph",
+        "text": "Mit Bilbao, San Sebastián und Santiago de Compostela liegen außerdem einige kulturell bedeutende Städte in dieser Region. Besonders die Kombination aus Küste, Natur und regionaler Küche macht Nordspanien interessant für individuelle Rundreisen."
+      },
+      {
+        "type": "split",
+        "image_position": "left",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1602521715918-e50cc83f7326?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Berglandschaft in Spanien"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Berge und Natur"
+          },
+          {
+            "type": "paragraph",
+            "text": "Spanien besitzt deutlich mehr Gebirgslandschaften, als man bei einem klassischen Strandurlaub vermuten würde. Die Pyrenäen im Norden, die Sierra Nevada in Andalusien und zahlreiche kleinere Gebirge bieten Möglichkeiten zum Wandern, Radfahren und für weitere Outdoor-Aktivitäten."
+          },
+          {
+            "type": "paragraph",
+            "text": "Auch die Kanarischen Inseln sind für Naturliebhaber interessant. Vulkanlandschaften, Wanderwege und unterschiedliche Höhenlagen sorgen dort für eine überraschend abwechslungsreiche Landschaft."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Katalonien: Barcelona, Costa Brava und Pyrenäen"
+      },
+      {
+        "type": "paragraph",
+        "text": "Katalonien eignet sich besonders für Reisende, die Städtereise, Strandurlaub und Natur miteinander verbinden möchten. Barcelona ist dabei häufig der Ausgangspunkt. Die Stadt bietet Architektur, Museen, historische Viertel, Märkte und direkten Zugang zum Mittelmeer."
+      },
+      {
+        "type": "paragraph",
+        "text": "Außerhalb Barcelonas warten die Küstenorte der Costa Brava und die Pyrenäen. Dadurch lässt sich eine Reise nach Katalonien sehr abwechslungsreich gestalten, ohne dass zwischen den einzelnen Zielen extrem lange Strecken zurückgelegt werden müssen."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1564740603199-5f56138c6679?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Barcelona und katalanische Architektur"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Andalusien: Kultur, Küsten und historische Städte"
+      },
+      {
+        "type": "paragraph",
+        "text": "Andalusien gehört zu den vielseitigsten Regionen Spaniens. Sevilla, Córdoba und Granada bieten beeindruckende historische Bauwerke und eine starke regionale Identität. Gleichzeitig sorgen die Costa del Sol, die Costa de la Luz und zahlreiche kleinere Küstenorte für Möglichkeiten zum Baden und Entspannen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch Andalusien eignet sich besonders gut, wenn du mehrere Städte miteinander verbinden möchtest. Zwischen den großen Reisezielen gibt es zahlreiche kleinere Orte, weiße Dörfer und Landschaften, die sich für Zwischenstopps anbieten."
+      },
+      {
+        "type": "split",
+        "image_position": "right",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1592634214635-d4ae889d9621?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historische Architektur und Landschaft in Andalusien"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Küsten und Inseln"
+          },
+          {
+            "type": "paragraph",
+            "text": "Von der Costa Brava über die Costa del Sol bis zu Mallorca und den Kanarischen Inseln gibt es zahlreiche unterschiedliche Küstenlandschaften. Manche Regionen eignen sich besonders für klassischen Badeurlaub, andere verbinden Strände mit historischen Orten, Wanderwegen oder kleineren Küstenstädten."
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer mehrere Orte besuchen möchte, sollte bei der Planung nicht nur die Entfernung auf der Karte betrachten. Gerade kurvenreiche Küstenstraßen und touristischer Verkehr können dazu führen, dass kurze Strecken deutlich mehr Zeit benötigen als erwartet."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Spanien mit dem Auto erkunden"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch Spanien bietet viel Freiheit und eignet sich besonders für Andalusien, die Küstenregionen und ländliche Gebiete. Gleichzeitig sollte man beachten, dass das Auto in historischen Innenstädten oft eher hinderlich sein kann. Viele Städte besitzen Bereiche mit eingeschränktem Autoverkehr oder komplizierter Parkplatzsituation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und kleinere Orte unterschiedlich zu planen. Für Barcelona, Madrid oder Sevilla kann es sinnvoll sein, eine Unterkunft mit guter Anbindung an den öffentlichen Verkehr zu wählen und das Auto außerhalb des Zentrums stehen zu lassen."
+      },
+      {
+        "type": "note",
+        "title": "Tipp für die Reiseplanung:",
+        "text": " Plane nicht nur die Entfernung zwischen zwei Orten ein. Besonders an Küsten, in Großstädten und während der Hauptsaison kann die tatsächliche Fahrzeit deutlich länger sein als die Kilometerzahl vermuten lässt."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Spanien für Familien"
+      },
+      {
+        "type": "paragraph",
+        "text": "Spanien eignet sich hervorragend für Familienreisen. Besonders Regionen mit Stränden, kurzen Ausflügen und familienfreundlicher Infrastruktur ermöglichen eine abwechslungsreiche Mischung aus Erholung und Aktivitäten. Mallorca, die Costa Blanca, die Costa del Sol und die Kanarischen Inseln bieten zahlreiche Möglichkeiten für Familien."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Städtereise mit Kindern sollte dagegen darauf geachtet werden, nicht zu viele Sehenswürdigkeiten an einem einzigen Tag einzuplanen. Gerade große Städte lassen sich oft angenehmer erkunden, wenn zwischen einzelnen Programmpunkten ausreichend Zeit für Pausen bleibt."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1644144978822-c97cd4eafe4f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Spanische Küche und Tapas"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Spanien kulinarisch entdecken"
+      },
+      {
+        "type": "paragraph",
+        "text": "Essen ist ein wichtiger Teil einer Spanienreise. Dabei gibt es nicht die eine spanische Küche, sondern zahlreiche regionale Traditionen. Tapas, Paella, Pintxos, Fischgerichte, Schinken, Käse, Olivenöl und regionale Süßspeisen werden je nach Region sehr unterschiedlich zubereitet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gerade bei einer Rundreise lohnt es sich daher, regionale Spezialitäten auszuprobieren. Ein Restaurant in Valencia bietet andere kulinarische Schwerpunkte als eine Tapas-Bar in Sevilla, ein Pintxos-Lokal in San Sebastián oder ein Restaurant auf Mallorca."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wie viele Tage sollte man für Spanien einplanen?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Für eine einzelne Region können bereits fünf bis sieben Tage ausreichend sein, um mehrere Orte kennenzulernen. Für eine größere Rundreise sollte deutlich mehr Zeit eingeplant werden. Spanien ist flächenmäßig groß und die Entfernungen zwischen Norden, Süden und den Inselregionen können erheblich sein."
+      },
+      {
+        "type": "paragraph",
+        "text": "Statt in wenigen Tagen möglichst viele Orte abzuhaken, kann es sinnvoller sein, sich auf eine Region oder eine Kombination aus zwei benachbarten Regionen zu konzentrieren. So bleibt mehr Zeit für spontane Ausflüge, lokale Restaurants und kleinere Orte abseits der bekannten Sehenswürdigkeiten."
+      }
+    ]
   },
   "faq": {
     "kicker": "Häufige Fragen",
-    "title": "spanien FAQ",
-    "description": "Antworten auf häufige Fragen rund um Urlaub und Reise in spanien.",
-    "items": []
+    "title": "Spanien FAQ",
+    "description": "Antworten auf häufige Fragen rund um Urlaub, Reisezeit, Verkehr und beliebte Reiseziele in Spanien.",
+    "items": [
+      {
+        "question": "Wann ist die beste Reisezeit für Spanien?",
+        "answer": "Das hängt stark von der Region und der geplanten Reise ab. Für Badeurlaub sind die warmen Monate besonders interessant, während Frühling und Herbst für Städte, Rundreisen und viele Outdoor-Aktivitäten angenehm sein können. Die Kanarischen Inseln eignen sich aufgrund ihres milden Klimas auch für Reisen im Winter."
+      },
+      {
+        "question": "Welche Regionen eignen sich für einen Spanien-Urlaub?",
+        "answer": "Das hängt vom Urlaubstyp ab. Andalusien eignet sich unter anderem für Kultur, Städte und Küste, Katalonien für Barcelona, Strände und Natur, die Balearen für Inselurlaub und der Norden für grüne Landschaften und Berge. Auch Valencia, Galicien, das Baskenland, die Kanarischen Inseln und viele weitere Regionen bieten unterschiedliche Reiseerlebnisse."
+      },
+      {
+        "question": "Kann man Spanien gut mit dem Auto bereisen?",
+        "answer": "Ja, besonders für Rundreisen durch ländliche Regionen und entlang der Küsten kann ein Auto praktisch sein. In historischen Innenstädten und beliebten Touristenzentren kann das Auto dagegen unpraktisch sein. Vor der Anreise sollte man sich deshalb über Parkmöglichkeiten, Verkehrszonen und die jeweilige Route informieren."
+      },
+      {
+        "question": "Ist Mallorca für einen Urlaub geeignet?",
+        "answer": "Mallorca bietet eine Mischung aus Stränden, Buchten, Bergen, kleinen Orten und kulturellen Sehenswürdigkeiten. Neben den bekannten Ferienregionen gibt es auch ruhigere Gegenden im Inselinneren und an der Nordküste."
+      },
+      {
+        "question": "Wie viele Tage sollte man in Barcelona verbringen?",
+        "answer": "Für die wichtigsten Sehenswürdigkeiten sollte man mindestens mehrere Tage einplanen. Wer neben Sagrada Família, Park Güell und der Altstadt auch Museen, Märkte und verschiedene Viertel erkunden möchte, kann problemlos vier bis fünf Tage oder länger in Barcelona verbringen."
+      },
+      {
+        "question": "Wie kommt man am besten nach Sevilla?",
+        "answer": "Sevilla ist mit Flugzeug, Bahn und Auto erreichbar. Innerhalb Spaniens ist die Bahn besonders interessant, da mehrere größere Städte über schnelle Zugverbindungen angebunden sind. Wer mit dem Auto anreist, sollte die Parkplatzsituation im historischen Zentrum berücksichtigen."
+      }
+    ]
   },
   "breadcrumb": {
     "home_label": "Startseite"
   },
   "seo": {
-    "description": "Reiseguide für spanien mit Informationen zu Regionen, Reisezielen und Community-Beiträgen.",
+    "description": "Reiseguide für Spanien mit Informationen zu Regionen, Reisezielen, Sehenswürdigkeiten, Reisezeit, Verkehr und Community-Beiträgen.",
     "tourist_types": [
       "Leisure Travelers",
       "Families",
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "same_as": []
+    "same_as": [
+      "https://www.spain.info/"
+    ]
   }
 }
