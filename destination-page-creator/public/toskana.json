@@ -1,0 +1,568 @@
+{
+  "country_name": "Toskana",
+  "hero": {
+    "eyebrow": "Reiseguide & Community",
+    "title": "Die Toskana entdecken",
+    "description": "Die Toskana verbindet sanfte Hügellandschaften, historische Städte, mittelalterliche Dörfer, berühmte Weinregionen und eine Küche, die für ihre Einfachheit und Qualität bekannt ist. Entdecke Regionen, Reiseziele, Sehenswürdigkeiten, praktische Tipps und persönliche Reiseberichte aus der Community.",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1744909229894-883bb19b552f?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Typische Landschaft der Toskana mit sanften Hügeln und Zypressen"
+    },
+    "buttons": [
+      {
+        "label": "Regionen entdecken",
+        "url": "#regionen"
+      },
+      {
+        "label": "Beiträge lesen",
+        "url": "#beitraege"
+      }
+    ]
+  },
+  "intro": {
+    "kicker": "Toskana Reiseführer",
+    "title": "Urlaub in der Toskana: Zwischen Hügeln, Kunststädten und Weinregionen",
+    "paragraphs": [
+      "Kaum eine Region Italiens verbindet Landschaft, Kultur, Geschichte und Kulinarik so eindrucksvoll wie die Toskana. Sanfte Hügel, Zypressenalleen, Weinberge und Olivenhaine prägen das Landschaftsbild. Gleichzeitig warten mit Florenz, Siena, Pisa und Lucca einige der bekanntesten historischen Städte Italiens auf Reisende.",
+      "Ein Toskana-Urlaub kann deshalb ganz unterschiedlich aussehen: entspannte Tage in einem Agriturismo, eine Rundreise durch die Weinregionen des Chianti, eine Städtereise nach Florenz, Kultururlaub in Siena, Badeurlaub an der toskanischen Küste oder eine Kombination aus kleinen Dörfern, Natur und regionaler Küche.",
+      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in der Toskana sowie praktische Hinweise zur Reiseplanung. In der Community kannst du außerdem aktuelle Reiseberichte, Erfahrungen und Geheimtipps anderer Reisender entdecken.",
+      "Besonders reizvoll ist die Toskana auch deshalb, weil sich unterschiedliche Reisearten hervorragend miteinander verbinden lassen. Ein Urlaub kann morgens mit einem Spaziergang durch eine mittelalterliche Altstadt beginnen und am Nachmittag bereits durch Weinberge, Olivenhaine oder entlang der Küste führen."
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1528114039593-4366cc08227d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Toskanische Hügellandschaft mit mediterraner Vegetation"
+    }
+  },
+  "image_strip": [
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1608476037397-7b53ace4c871?q=80&w=2240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Hügellandschaft in der Toskana"
+      },
+      "caption": "Landschaften und Natur entdecken"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1572181021711-64df791c556a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Historische Architektur in der Toskana"
+      },
+      "caption": "Geschichte und Kultur"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1653228410470-9915c4cfca67?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Weinberge und mediterrane Landschaft in der Toskana"
+      },
+      "caption": "Wein, Genuss und Landschaft"
+    }
+  ],
+  "regions": {
+    "kicker": "Reiseziele",
+    "title": "Die beliebtesten Regionen der Toskana",
+    "description": "Die Toskana besteht aus vielen unterschiedlichen Landschaften und Reiseregionen. Während das Chianti für Weinberge und sanfte Hügel bekannt ist, begeistern Val d'Orcia und die Umgebung von Siena mit ikonischen Landschaften und mittelalterlichen Orten. Florenz und Pisa bieten Kunst und Kultur, während die toskanische Küste Badeurlaub und maritime Landschaften ermöglicht.",
+    "items": [
+      {
+        "title": "Chianti",
+        "url": "",
+        "link_label": "Chianti entdecken →",
+        "description": "Das Chianti gehört zu den bekanntesten Landschaften der Toskana. Weinberge, Olivenhaine, Zypressen und kleine mittelalterliche Orte prägen die Region. Die Gegend eignet sich besonders für Weinreisen, kulinarische Entdeckungen und entspannte Roadtrips.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1635714805335-21947ed28aab?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Weinberge und Landschaft im Chianti"
+        }
+      },
+      {
+        "title": "Val d'Orcia",
+        "url": "/toskana/val-d-orcia",
+        "link_label": "Val d'Orcia entdecken →",
+        "description": "Das Val d'Orcia südlich von Siena ist für seine sanften Hügel, Zypressenalleen, Weinberge und historischen Orte bekannt. Pienza, Montalcino und Bagno Vignoni lassen sich hervorragend auf einer Rundreise miteinander verbinden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1434025697302-54853b8da166?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Hügellandschaft und Zypressen im Val d'Orcia"
+        }
+      },
+      {
+        "title": "Florenz und Umgebung",
+        "url": "/toskana/florenz",
+        "link_label": "Florenz entdecken →",
+        "description": "Florenz gilt als eine der bedeutendsten Kunst- und Kulturstädte Europas. Renaissance-Architektur, Museen, Kirchen und historische Plätze machen die Stadt zu einem wichtigen Ziel für Kulturreisen. Das Umland eignet sich gleichzeitig für Ausflüge in die toskanische Landschaft.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1528114039593-4366cc08227d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Florenz und historische Architektur in der Toskana"
+        }
+      },
+      {
+        "title": "Toskanische Küste",
+        "url": "/toskana/toskanische-kueste",
+        "link_label": "Toskanische Küste entdecken →",
+        "description": "Die toskanische Küste bietet lange Sandstrände, Badeorte, Pinienwälder und den Zugang zu den Inseln des Toskanischen Archipels. Orte wie Viareggio, Castiglione della Pescaia und die Umgebung von Maremma eignen sich für einen abwechslungsreichen Badeurlaub.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1613857794632-052edbb98d58?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Strand und Küstenlandschaft in der Toskana"
+        }
+      }
+    ]
+  },
+  "community": {
+    "kicker": "Community",
+    "title": "Aktuelle Beiträge über die Toskana",
+    "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
+    "search": {
+      "min_lat": 42.2,
+      "min_lon": 9.7,
+      "max_lat": 44.5,
+      "max_lon": 12.4,
+      "limit": 6
+    }
+  },
+  "topics": {
+    "kicker": "Reiseplanung",
+    "title": "Die Toskana nach Reisethema entdecken",
+    "description": "Nicht jeder Toskana-Urlaub sieht gleich aus. Je nach Reiseart können andere Orte, Regionen und Jahreszeiten besonders interessant sein.",
+    "items": [
+      {
+        "title": "Wein & Genuss",
+        "description": "Weinberge, Weingüter, Olivenhaine, regionale Spezialitäten und traditionelle toskanische Küche.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1593174898997-488a0443e852?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Weinberge und Wein in der Toskana"
+        }
+      },
+      {
+        "title": "Natur & Landschaft",
+        "description": "Sanfte Hügel, Zypressen, Olivenhaine, Weinberge und abwechslungsreiche Landschaften laden zu Wanderungen und Ausflügen ein.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1701360240509-b8b227dbbf4c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Toskanische Landschaft mit Hügeln und Zypressen"
+        }
+      },
+      {
+        "title": "Städtereisen",
+        "description": "Florenz, Siena, Pisa, Lucca, Arezzo und viele weitere historische Städte bieten Kunst, Architektur und italienische Geschichte.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1579282240050-352db0a14c21?q=80&w=652&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historische Stadt in der Toskana"
+        }
+      },
+      {
+        "title": "Kulinarik",
+        "description": "Pasta, Pecorino, Ribollita, Bistecca alla Fiorentina, Olivenöl und regionale Weine gehören zu den kulinarischen Highlights der Toskana.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1650964807311-970cb88d347c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Toskanische Küche und regionale Spezialitäten"
+        }
+      }
+    ]
+  },
+  "destinations": {
+    "kicker": "Beliebte Ziele",
+    "title": "Diese Orte solltest du kennen",
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer Toskana-Reise.",
+    "items": [
+      {
+        "title": "Florenz",
+        "description": "Renaissance, Kunst, Museen, historische Paläste und die berühmte Altstadt",
+        "url": "/toskana/florenz",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Florenz mit Blick auf die historische Stadt"
+        }
+      },
+      {
+        "title": "Siena",
+        "description": "Mittelalterliche Altstadt, Piazza del Campo und toskanische Geschichte",
+        "url": "/toskana/siena",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1667571134624-9a17aba9d6c6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historische Altstadt von Siena"
+        }
+      },
+      {
+        "title": "Pisa",
+        "description": "Schiefer Turm, Piazza dei Miracoli und historische Architektur",
+        "url": "/toskana/pisa",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=1000&auto=format&fit=crop",
+          "alt": "Historische Architektur in Pisa"
+        }
+      },
+      {
+        "title": "Lucca",
+        "description": "Historische Stadtmauer, enge Gassen, Plätze und entspanntes italienisches Lebensgefühl",
+        "url": "/toskana/lucca",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1589979481223-deb893043163?q=80&w=687&auto=format&fit=crop",
+          "alt": "Historische Altstadt von Lucca"
+        }
+      },
+      {
+        "title": "San Gimignano",
+        "description": "Mittelalterliche Türme, historische Gassen und Landschaft des Val d'Elsa",
+        "url": "/toskana/san-gimignano",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1170&auto=format&fit=crop",
+          "alt": "San Gimignano und die toskanische Landschaft"
+        }
+      },
+      {
+        "title": "Montalcino",
+        "description": "Wein, mittelalterliche Festung und Landschaft des Val d'Orcia",
+        "url": "/toskana/montalcino",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?q=80&w=687&auto=format&fit=crop",
+          "alt": "Montalcino und die Landschaft des Val d'Orcia"
+        }
+      }
+    ]
+  },
+  "tips": {
+    "kicker": "Reiseplanung",
+    "title": "Praktische Tipps für deine Toskana-Reise",
+    "description": "Gerade bei einer Reise durch die Toskana lohnt es sich, die Route nicht nur nach Sehenswürdigkeiten zu planen. Saison, Mietwagen, Parkmöglichkeiten, Unterkunft und die Wahl des richtigen Ausgangsortes können einen großen Unterschied machen.",
+    "items": [
+      {
+        "title": "Unterwegs mit dem Mietwagen",
+        "intro": "Ein Mietwagen ist besonders für Rundreisen durch das Chianti, das Val d'Orcia oder ländliche Regionen praktisch. In historischen Innenstädten kann das Auto dagegen schnell zur Belastung werden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1544521252-5cd077af6662?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHR1c2NhbnklMjBjYXJ8ZW58MHx8MHx8fDA%3D",
+          "alt": "Straße durch die toskanische Landschaft"
+        },
+        "blocks": [
+          {
+            "title": "Innenstädte vermeiden",
+            "description": "Für Florenz, Siena, Pisa oder Lucca ist ein Auto häufig nicht notwendig. Historische Zentren besitzen teilweise verkehrsbeschränkte Bereiche. Wer mit dem Auto anreist, sollte deshalb Unterkünfte mit Parkplatz oder Parkmöglichkeiten außerhalb des Zentrums bevorzugen."
+          },
+          {
+            "title": "Straßen und Fahrzeiten",
+            "description": "Viele Straßen durch die Toskana führen durch hügelige Landschaften und kleine Orte. Die tatsächliche Fahrzeit kann deshalb deutlich länger sein als die Entfernung auf der Karte vermuten lässt."
+          }
+        ]
+      },
+      {
+        "title": "Strände in der Toskana",
+        "intro": "Die Toskana ist nicht nur für Weinberge und historische Städte bekannt. Entlang der Küste gibt es lange Sandstrände, Badeorte und naturnahe Küstenabschnitte.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1567158262420-f7e12d382164?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Strand und Küste in der Toskana"
+        },
+        "blocks": [
+          {
+            "title": "Bekannte Badeorte",
+            "description": "Orte wie Viareggio und Forte dei Marmi bieten eine gute touristische Infrastruktur mit Restaurants, Strandbädern und zahlreichen Unterkünften. In den Sommermonaten kann es dort entsprechend lebhaft werden."
+          },
+          {
+            "title": "Ruhigere Küstenabschnitte",
+            "description": "Wer weniger Trubel sucht, findet entlang der toskanischen Küste auch kleinere Strände und naturbelassene Abschnitte. Besonders die Maremma bietet abwechslungsreiche Landschaften zwischen Küste, Pinienwäldern und mediterraner Natur."
+          }
+        ]
+      },
+      {
+        "title": "Die beste Reisezeit für die Toskana",
+        "intro": "Die passende Reisezeit hängt stark davon ab, welche Orte du besuchen und welche Aktivitäten du unternehmen möchtest.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1632660952158-ed66e5ba12d0?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Toskanische Landschaft bei sonnigem Wetter"
+        },
+        "blocks": [
+          {
+            "title": "Sommer",
+            "description": "Juni bis September eignen sich besonders für Badeurlaub und lange Tage im Freien. Im Juli und August können Städte und bekannte Reiseziele jedoch sehr warm und voll sein."
+          },
+          {
+            "title": "Frühling und Herbst",
+            "description": "Frühling und Herbst sind für Rundreisen, Städtereisen, Wanderungen und kulinarische Entdeckungen häufig besonders angenehm. Im Herbst kommt zusätzlich die Wein- und Erntesaison hinzu."
+          },
+          {
+            "title": "Winter",
+            "description": "Die Wintermonate sind ruhiger und eignen sich besonders für Städtereisen und kulturelle Erlebnisse. In ländlichen Regionen können allerdings einige saisonale Betriebe und Unterkünfte geschlossen sein."
+          }
+        ]
+      },
+      {
+        "title": "Florenz: Sehenswürdigkeiten früh planen",
+        "intro": "Florenz gehört zu den beliebtesten Städtezielen Italiens und ist insbesondere in der Hauptsaison sehr gefragt.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1568323993156-14d2eeaec2bd?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Florenz und historische italienische Architektur"
+        },
+        "blocks": [
+          {
+            "title": "Wichtige Sehenswürdigkeiten",
+            "description": "Dom, Uffizien, Ponte Vecchio, Palazzo Vecchio und zahlreiche weitere Museen und Kirchen können problemlos mehrere Tage füllen. Wer die Stadt entspannt erleben möchte, sollte ausreichend Zeit einplanen."
+          },
+          {
+            "title": "Eintrittskarten",
+            "description": "Für besonders beliebte Museen und Sehenswürdigkeiten lohnt es sich, Eintrittskarten und mögliche Zeitfenster frühzeitig zu prüfen."
+          },
+          {
+            "title": "Tagesplanung",
+            "description": "Plane nicht zu viele Sehenswürdigkeiten direkt hintereinander. Die historische Innenstadt lässt sich gut zu Fuß erkunden, gleichzeitig können einzelne Wege und Besichtigungen mehr Zeit benötigen als erwartet."
+          }
+        ]
+      },
+      {
+        "title": "Siena ohne Parkplatzstress",
+        "intro": "Siena besitzt eine kompakte historische Altstadt mit engen Gassen und zahlreichen verkehrsbeschränkten Bereichen. Wer mit dem Auto anreist, sollte sich deshalb vorab mit Parkmöglichkeiten beschäftigen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1592438642556-805c86de14ff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNpZW5hfGVufDB8fDB8fHww",
+          "alt": "Historische italienische Altstadt in der Toskana"
+        },
+        "blocks": [
+          {
+            "title": "Mit dem Auto",
+            "description": "Für einen Aufenthalt innerhalb der historischen Altstadt ist ein Auto häufig nicht notwendig. Parkplätze befinden sich überwiegend außerhalb des unmittelbaren Zentrums."
+          },
+          {
+            "title": "Zu Fuß unterwegs",
+            "description": "Siena lässt sich hervorragend zu Fuß erkunden. Viele der wichtigsten Sehenswürdigkeiten liegen innerhalb oder in unmittelbarer Nähe der historischen Altstadt."
+          },
+          {
+            "title": "Tagesausflüge",
+            "description": "Siena eignet sich auch als Ausgangspunkt für Ausflüge ins Chianti, nach San Gimignano oder in das Val d'Orcia. Mit dem Auto lassen sich viele kleinere Orte flexibel erreichen."
+          }
+        ]
+      },
+      {
+        "title": "Essen in der Toskana",
+        "intro": "Die toskanische Küche ist stark regional geprägt und setzt häufig auf wenige, hochwertige Zutaten. Deshalb lohnt es sich, im Urlaub lokale Spezialitäten und Weine der jeweiligen Region zu entdecken.",
+        "image": {
+          "url": "https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/porterhouse-steak.jpg?fit=1024%2C585&ssl=1",
+          "alt": "Toskanische Küche und regionale Spezialitäten"
+        },
+        "blocks": [
+          {
+            "title": "Regionale Spezialitäten",
+            "description": "Zu den bekannten Spezialitäten gehören unter anderem Ribollita, Pappa al pomodoro, Pecorino, Bistecca alla Fiorentina, Crostini und hochwertige Olivenöle. Auch die Weine der Region spielen eine wichtige Rolle."
+          },
+          {
+            "title": "Essen und Wein",
+            "description": "Gerade in ländlichen Regionen lohnt es sich, Agriturismi, kleine Trattorien und Weingüter zu besuchen. Viele Orte bieten eine Küche, die eng mit den regionalen Produkten und der jeweiligen Landschaft verbunden ist."
+          }
+        ]
+      }
+    ]
+  },
+  "guide": {
+    "kicker": "Toskana Reiseführer",
+    "title": "Toskana Urlaub planen: Was du vor der Reise wissen solltest",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Die Toskana ist ein Reiseziel, das sich sowohl für einen kurzen Städtetrip als auch für einen mehrwöchigen Urlaub eignet. Durch die unterschiedlichen Landschaften und Städte lässt sich ein Aufenthalt sehr individuell gestalten. Wer zum ersten Mal in die Toskana reist, steht deshalb häufig vor der Frage, welche Region am besten zum eigenen Urlaub passt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen klassischen Kultururlaub bieten sich Florenz, Siena, Pisa und Lucca an. Wer Wein und Landschaft bevorzugt, findet im Chianti und im Val d'Orcia zahlreiche Möglichkeiten. Für Badeurlaub eignen sich die toskanische Küste und die Maremma. Auch kleine mittelalterliche Orte wie San Gimignano, Pienza und Montepulciano sind interessante Ziele."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1589533114720-a5824d3983bb?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Straße durch eine historische toskanische Stadt"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Florenz: Kunst, Renaissance und italienische Geschichte"
+      },
+      {
+        "type": "paragraph",
+        "text": "Florenz gehört zu den bedeutendsten Kulturstädten Europas. Die Stadt war ein wichtiges Zentrum der Renaissance und besitzt eine außergewöhnliche Dichte an Kunstwerken, Museen, Kirchen und historischen Gebäuden. Besonders der Dom, die Uffizien, die Ponte Vecchio und der Palazzo Vecchio gehören zu den bekanntesten Sehenswürdigkeiten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auch das Umland von Florenz ist interessant. Von der Stadt aus lassen sich Weinregionen, kleinere Orte und Landschaften des toskanischen Hügellandes gut für Tagesausflüge erreichen."
+      },
+      {
+        "type": "split",
+        "image_position": "left",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1572181021711-64df791c556a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Toskanische Hügellandschaft"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Landschaft und Natur"
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Landschaft der Toskana ist von sanften Hügeln, Weinbergen, Olivenhainen und Zypressen geprägt. Besonders das Val d'Orcia und das Chianti gehören zu den bekanntesten Landschaften der Region."
+          },
+          {
+            "type": "paragraph",
+            "text": "Neben klassischen Rundfahrten bieten sich Wanderungen, Radtouren und Ausflüge zu abgelegeneren Dörfern an. Wer die Landschaft intensiv erleben möchte, sollte mehrere Nächte in einem ländlichen Agriturismo einplanen."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Chianti: Weinberge, Dörfer und Genuss"
+      },
+      {
+        "type": "paragraph",
+        "text": "Das Chianti liegt zwischen Florenz und Siena und ist eine der bekanntesten Weinlandschaften Italiens. Weinberge, Olivenhaine, kleine Burgen und mittelalterliche Dörfer prägen das Landschaftsbild."
+      },
+      {
+        "type": "paragraph",
+        "text": "Eine Reise durch das Chianti eignet sich besonders gut für einen Roadtrip. Kleine Orte, Weingüter und Aussichtspunkte lassen sich flexibel miteinander verbinden. Gleichzeitig bieten viele Unterkünfte die Möglichkeit, direkt in der Landschaft zu übernachten."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1658738080348-ccc1c32483b9?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Weinberge und Landschaft im Chianti"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Val d'Orcia: Eine der bekanntesten Landschaften der Toskana"
+      },
+      {
+        "type": "paragraph",
+        "text": "Das Val d'Orcia südlich von Siena ist für seine sanften Hügel, Zypressen, Weinberge und mittelalterlichen Orte bekannt. Pienza, Montalcino und Bagno Vignoni gehören zu den beliebten Zielen in der Region."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch das Val d'Orcia lässt sich hervorragend mit kulinarischen Erlebnissen verbinden. Neben Wein spielt auch Pecorino eine wichtige Rolle. Besonders morgens und am späten Nachmittag zeigt sich die Landschaft häufig in einem besonders stimmungsvollen Licht."
+      },
+      {
+        "type": "split",
+        "image_position": "right",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1634288233991-c49f18fb9c0c?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Historischer Ort und Landschaft in der Toskana"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Küsten und Inseln"
+          },
+          {
+            "type": "paragraph",
+            "text": "Die Toskana besitzt auch eine abwechslungsreiche Küstenlandschaft. Lange Sandstrände, Pinienwälder, Badeorte und naturbelassene Küstenabschnitte machen die Region interessant für einen Badeurlaub."
+          },
+          {
+            "type": "paragraph",
+            "text": "Vor der Küste liegen außerdem mehrere Inseln des Toskanischen Archipels. Elba ist dabei das bekannteste Reiseziel und verbindet Strände, Buchten, Wanderwege und historische Orte."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die Toskana mit dem Auto erkunden"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch die Toskana bietet viel Freiheit und eignet sich besonders für das Chianti, das Val d'Orcia und kleinere ländliche Orte. Gleichzeitig sollte man beachten, dass das Auto in historischen Innenstädten häufig eher hinderlich sein kann. Viele Städte besitzen verkehrsbeschränkte Bereiche und begrenzte Parkmöglichkeiten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und ländliche Regionen unterschiedlich zu planen. Für Florenz, Siena oder Lucca kann es sinnvoll sein, eine Unterkunft mit guter Anbindung oder Parkplatz außerhalb des historischen Zentrums zu wählen."
+      },
+      {
+        "type": "note",
+        "title": "Tipp für die Reiseplanung:",
+        "text": " Plane nicht nur die Entfernung zwischen zwei Orten ein. Besonders auf kurvigen Landstraßen, in historischen Städten und während der Hauptsaison kann die tatsächliche Fahrzeit deutlich länger sein als die Kilometerzahl vermuten lässt."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die Toskana für Familien"
+      },
+      {
+        "type": "paragraph",
+        "text": "Die Toskana eignet sich hervorragend für Familienreisen. Besonders Unterkünfte auf dem Land, Strände an der Küste und kleinere historische Orte ermöglichen eine abwechslungsreiche Mischung aus Erholung und Aktivitäten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei Städtereisen mit Kindern sollte dagegen darauf geachtet werden, nicht zu viele Sehenswürdigkeiten an einem einzigen Tag einzuplanen. Gerade Florenz und Siena lassen sich angenehmer erkunden, wenn zwischen einzelnen Programmpunkten ausreichend Zeit für Pausen und Essen bleibt."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1733269345489-3bd78e434762?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Toskanische Küche und regionale Spezialitäten"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die Toskana kulinarisch entdecken"
+      },
+      {
+        "type": "paragraph",
+        "text": "Essen ist ein wichtiger Teil einer Toskana-Reise. Die regionale Küche setzt häufig auf einfache Zutaten und traditionelle Zubereitungsarten. Ribollita, Pappa al pomodoro, Pecorino, Bistecca alla Fiorentina, Crostini und hochwertiges Olivenöl gehören zu den bekannten Spezialitäten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auch Wein spielt eine zentrale Rolle. Chianti, Brunello di Montalcino und Vino Nobile di Montepulciano sind international bekannt. Gerade bei einer Rundreise lohnt es sich, regionale Produkte direkt bei kleinen Produzenten, Weingütern und Agriturismi kennenzulernen."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wie viele Tage sollte man für die Toskana einplanen?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen ersten Überblick können fünf bis sieben Tage ausreichen. Wer Florenz mit mehreren Landschaftsregionen und kleineren Orten kombinieren möchte, sollte eher zehn bis vierzehn Tage einplanen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Statt in wenigen Tagen möglichst viele Orte abzuhaken, kann es sinnvoller sein, sich auf zwei oder drei Ausgangsorte zu konzentrieren. So bleibt mehr Zeit für spontane Ausflüge, lokale Restaurants, Weingüter und kleinere Orte abseits der bekanntesten Sehenswürdigkeiten."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "Häufige Fragen",
+    "title": "Toskana FAQ",
+    "description": "Antworten auf häufige Fragen rund um Urlaub, Reisezeit, Verkehr und beliebte Reiseziele in der Toskana.",
+    "items": [
+      {
+        "question": "Wann ist die beste Reisezeit für die Toskana?",
+        "answer": "Frühling und Herbst sind für Rundreisen, Städtereisen und Wanderungen häufig besonders angenehm. Die Sommermonate eignen sich für Badeurlaub und lange Tage im Freien, können in beliebten Städten und Regionen jedoch sehr warm und voll sein."
+      },
+      {
+        "question": "Welche Regionen eignen sich für einen Toskana-Urlaub?",
+        "answer": "Das hängt vom Urlaubstyp ab. Das Chianti eignet sich besonders für Wein und Landschaft, das Val d'Orcia für idyllische Hügel und mittelalterliche Orte, Florenz für Kunst und Kultur und die toskanische Küste für Badeurlaub. Auch Siena, Lucca, Pisa und die Maremma bieten unterschiedliche Reiseerlebnisse."
+      },
+      {
+        "question": "Kann man die Toskana gut mit dem Auto bereisen?",
+        "answer": "Ja, besonders für Rundreisen durch ländliche Regionen ist ein Auto sehr praktisch. In historischen Innenstädten kann es dagegen unpraktisch sein. Vor der Anreise sollte man sich deshalb über Parkmöglichkeiten und verkehrsbeschränkte Bereiche informieren."
+      },
+      {
+        "question": "Ist die Toskana für einen Familienurlaub geeignet?",
+        "answer": "Ja. Besonders Agriturismi, Ferienunterkünfte auf dem Land, kleinere historische Orte und die Küstenregion bieten gute Möglichkeiten für Familien. Auch Städtereisen sind möglich, wenn ausreichend Pausen und ein entspanntes Tagesprogramm eingeplant werden."
+      },
+      {
+        "question": "Wie viele Tage sollte man in Florenz verbringen?",
+        "answer": "Für die wichtigsten Sehenswürdigkeiten sollte man mindestens zwei bis drei volle Tage einplanen. Wer zusätzlich Museen, verschiedene Stadtviertel und das kulinarische Angebot entdecken möchte, kann problemlos vier oder mehr Tage in Florenz verbringen."
+      },
+      {
+        "question": "Welche Orte sollte man in der Toskana besuchen?",
+        "answer": "Zu den bekannten Zielen gehören Florenz, Siena, Pisa, Lucca, San Gimignano, Pienza und Montalcino. Je nach Reiseinteresse können außerdem das Chianti, das Val d'Orcia, die Maremma und die toskanische Küste interessant sein."
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home_label": "Startseite"
+  },
+  "seo": {
+    "description": "Reiseguide für die Toskana mit Informationen zu Regionen, Reisezielen, Sehenswürdigkeiten, Reisezeit, Verkehr, Kulinarik und Community-Beiträgen.",
+    "tourist_types": [
+      "Leisure Travelers",
+      "Families",
+      "Adventure Travelers",
+      "Cultural Travelers"
+    ],
+    "same_as": [
+      "https://www.visittuscany.com/"
+    ]
+  }
+}

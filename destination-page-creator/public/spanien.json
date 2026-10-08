@@ -191,7 +191,7 @@
         "description": "Buchten, Strände, Berge und mediterrane Orte",
         "url": "/spanien/mallorca",
         "image": {
-          "url": "https://images.unsplash.com/photo-1589979481223-deb893043163?q=80&w=687&auto=format&fit=crop",
+          "url": "https://images.unsplash.com/photo-1672264430465-781cd9154896?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "alt": "Küste und türkisfarbenes Wasser auf Mallorca"
         }
       },
@@ -200,7 +200,7 @@
         "description": "Strände, Küstenorte, Málaga und andalusisches Lebensgefühl",
         "url": "/spanien/costa-del-sol",
         "image": {
-          "url": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1170&auto=format&fit=crop",
+          "url": "https://images.unsplash.com/photo-1670960589828-0c5fcf8909cc?q=80&w=2429&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "alt": "Küste an der Costa del Sol"
         }
       },
@@ -209,7 +209,7 @@
         "description": "Alhambra, historische Altstadt und die Berge der Sierra Nevada",
         "url": "/spanien/granada",
         "image": {
-          "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?q=80&w=687&auto=format&fit=crop",
+          "url": "https://images.unsplash.com/photo-1620677368158-32b1293fac36?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "alt": "Granada und die historische Alhambra"
         }
       }
@@ -561,8 +561,6 @@
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "same_as": [
-      "https://www.spain.info/"
-    ]
+    "same_as": ["https://www.spain.info/"]
   }
 }
