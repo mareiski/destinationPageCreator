@@ -6,7 +6,7 @@
     "description": "Italien verbindet mediterranes Lebensgefühl mit jahrtausendealter Geschichte, beeindruckenden Landschaften, traumhaften Küsten, charmanten Städten und einer Küche, die weit über Pizza und Pasta hinausgeht. Wir stellen dir hier Regionen, Tipps und Reisen aus der Community vor, die dich bei der Planung deines eigenen Italien-Roadtrips unterstützen!",
     "image": {
       "url": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=85&w=1170&auto=format&fit=crop",
-      "alt": "Italienische Landschaft mit Bergen und See"
+      "alt": "Blick auf Venedig von der Academia-Brücke"
     },
     "buttons": [
       {
@@ -25,7 +25,7 @@
     "paragraphs": [
       "Kaum ein europäisches Land bietet eine vergleichbare Vielfalt wie Italien. Im Norden reichen die Landschaften von den Alpen und Dolomiten über große Seen bis zu den Weinregionen Venetiens und der Toskana. Weiter südlich warten historische Städte, mediterrane Küsten, Inseln und kleine Dörfer auf Reisende.",
       "Ein Italien-Urlaub kann deshalb ganz unterschiedlich aussehen: entspannter Strandurlaub an der Adria oder am Mittelmeer, Roadtrip durch Norditalien, Wanderurlaub in den Bergen, Kulturreise nach Rom, Städtereise nach Venedig oder Florenz, Familienurlaub am Gardasee oder eine längere Rundreise durch mehrere Regionen.",
-      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in Italien sowie praktische Hinweise zur Reiseplanung. In der Community kannst du außerdem aktuelle Reiseberichte, Erfahrungen und Geheimtipps anderer Reisender entdecken.",
+      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in Italien sowie praktische Hinweise zur Reiseplanung. Außerdem findest du hier aktuelle Reiseberichte, Erfahrungen und Routen anderer Reisender.",
       "Besonders interessant ist Italien auch deshalb, weil sich viele unterschiedliche Reisearten miteinander verbinden lassen. Ein Urlaub kann morgens mit einem Spaziergang durch eine historische Altstadt beginnen und am Nachmittag bereits an einem See, Strand oder in den Bergen weitergehen."
     ],
     "image": {
@@ -56,10 +56,22 @@
       "caption": "Küsten und Mittelmeer"
     }
   ],
+  "community": {
+    "kicker": "Community",
+    "title": "Aktuelle Beiträge über Italien",
+    "description": "Reiseberichte, Routen, Zeitpläne und Tipps aus der Community.",
+    "search": {
+      "min_lat": 36.6301,
+      "min_lon": 6.6238,
+      "max_lat": 47.092,
+      "max_lon": 18.5225,
+      "limit": 6
+    }
+  },
   "regions": {
     "kicker": "Reiseziele",
     "title": "Die beliebtesten Regionen Italiens",
-    "description": "Italien besteht aus vielen sehr unterschiedlichen Regionen. Während Norditalien besonders für Berge, Seen und Städte bekannt ist, findest du in Mittel- und Süditalien mediterrane Landschaften, Strände, historische Orte und Inseln.",
+    "description": "Italien besteht aus vielen sehr unterschiedlichen Regionen, wobei die meisten Roadtrips eher im Alpenraum oder der Toskana stattfinden. Während Norditalien besonders für Berge, Seen und Städte bekannt ist, findest du in Mittel- und Süditalien mediterrane Landschaften, Strände, historische Orte und Inseln.",
     "items": [
       {
         "title": "Toskana",
@@ -103,22 +115,10 @@
       }
     ]
   },
-  "community": {
-    "kicker": "Community",
-    "title": "Aktuelle Beiträge über Italien",
-    "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
-    "search": {
-      "min_lat": 36.6301,
-      "min_lon": 6.6238,
-      "max_lat": 47.092,
-      "max_lon": 18.5225,
-      "limit": 6
-    }
-  },
   "topics": {
     "kicker": "Reiseplanung",
     "title": "Italien nach Reisethema entdecken",
-    "description": "Nicht jeder Italien-Urlaub sieht gleich aus. Je nach Reiseart können andere Regionen, Orte und Jahreszeiten besonders interessant sein.",
+    "description": "Nicht jeder Italien-Roadtrip sieht gleich aus. Je nach Reiseart können andere Regionen, Orte und Jahreszeiten besonders interessant sein. Du solltest dir also vorher überlegen welche Art von Roadtrip du eigentlich machen willst, um die besten Regionen für deine Reise zu wählen.",
     "items": [
       {
         "title": "Strandurlaub",
@@ -157,7 +157,7 @@
   "destinations": {
     "kicker": "Beliebte Ziele",
     "title": "Diese Orte solltest du kennen",
-    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer Italienreise.",
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer Italienreise. Oftmals sind diese eine Art Zentrum der jeweiligen Region wie zb. Florenz als Hauptstadt der Toskana gilt.",
     "items": [
       {
         "title": "Gardasee",
@@ -217,12 +217,12 @@
   },
   "tips": {
     "kicker": "Reiseplanung",
-    "title": "Praktische Tipps für deine Italien-Reise",
+    "title": "Praktische Tipps für deinen Italien-Roadtrip",
     "description": "Gerade bei beliebten Reisezielen lohnt es sich, die Reise nicht nur nach Sehenswürdigkeiten zu planen. Verkehr, Saison, Öffnungszeiten und die Wahl des richtigen Ausgangsortes können einen großen Unterschied machen.",
     "items": [
       {
         "title": "Verkehr am Gardasee",
-        "intro": "Der Gardasee ist in der Hauptsaison sehr beliebt. Da es nur eine große Hauptstraße rund um den See gibt, kann es sich bei kurzen Strecken teils Stunden stauen.",
+        "intro": "Der Gardasee ist in der Hauptsaison sehr beliebt. Da es nur eine große Hauptstraße rund um den See gibt, kann es sich auch bei kurzen Strecken teils Stunden lang stauen bis man sein Ziel erreicht.",
         "image": {
           "url": "https://images.unsplash.com/photo-1636382667057-0752bc8492a6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "alt": "Gardasee und italienische Berglandschaft"
@@ -230,7 +230,7 @@
         "blocks": [
           {
             "title": "Alternative Verkehrsmittel",
-            "description": "Es lohnt sich wegen dem Verkehr daher auf Boote oder Fahrräder auszuweichen, wenn das möglich ist."
+            "description": "Damit man wegen dem Verkehr nicht den ganzen Urlaub stehend auf der Straße verbringt lohnt es sich daher auf die Bootslinien oder Fahrräder auszuweichen oder am besten gar nicht direkt zur Hochsaison zu reisen. Hier muss man allerdings aufpassen, im Winter hat nämlich so gut wie alles am See geschlossen."
           }
         ]
       },
@@ -244,11 +244,15 @@
         "blocks": [
           {
             "title": "Bekannte Badeorte",
-            "description": "Die meisten Strände in Italien sind große Tourismuszentren, bei denen man Liegen und Sonnenschirme mieten muss. Allerdings bieten diese Strände auch Restaurants und weitere Infrastruktur."
+            "description": "Die meisten Strände in Italien sind große Tourismuszentren, bei denen sich die Liegen nur so aneinander reihen. Diese Strände sind wenig idyllisch, aber sie bieten auch Restaurants, Bars und weitere Infrastruktur."
           },
           {
             "title": "Ruhigere Buchten",
-            "description": "Wer weniger Trubel sucht, sollte abseits der Orte nach Stränden suchen. Hier lohnt sich eine Recherche auf Google Maps, da es doch noch den ein oder anderen Geheimtipp gibt."
+            "description": "Wer weniger Trubel sucht, sollte abseits der Orte nach Stränden suchen. Hier lohnt sich eine Recherche auf Google Maps, da es doch noch den ein oder anderen Geheimtipp gibt, der dort eingetragen ist."
+          },
+          {
+            "title": "Inseln",
+            "description": "Sardinien und Sizilien bieten viele Strände, die weniger stark ausgebaut und häufig schöner gelgen sind als auf dem Festland. Allerdings sollte man sich vorher informieren, da es viele Strände gibt, die nur zu Fuß oder per Boot erreichbar sind."
           }
         ]
       },
@@ -262,11 +266,11 @@
         "blocks": [
           {
             "title": "Sommer",
-            "description": "Für Badeurlaub sind Juni bis September besonders beliebt, aber dementsprechend sind die meisten Orte auch sehr stark besucht."
+            "description": "Für Badeurlaub sind Juni bis September besonders beliebt, aber dementsprechend sind die meisten Orte auch sehr stark besucht. Natürlich ist es dann auch sehr heiß weshalb man um die Mittagszeit entweder im Auto, am Strand oder in einem Gebäude bleibt (die meisten Restaurants, Bars etc. haben um die heißeste Zeit des Tages sowieso geschlossen)."
           },
           {
             "title": "Frühling und Herbst",
-            "description": "Mildere Temperaturen können für Städtereisen, Rundreisen und Wanderungen angenehm sein, dort gibt es dann auch weniger Touristen. Allerdings kann es bei Touristen-Hochburgen wie dem Gardasee schwer sein Hotels und Restaurants zu finden da es kaum Gäste gibt und alles geschlossen ist."
+            "description": "Mildere Temperaturen können für Städtereisen, Roadtrips und Wanderungen angenehmer sein. Es gibt weniger Touristen, die Preise sind oft günstiger und es ist weniger Heiß. Allerdings kann es bei Touristen-Hochburgen wie dem Gardasee schwer sein Hotels oder Restaurants zu finden wenn man sehr weit außerhalb der Hauptsaison zb. im Winter dort ist, da es kaum Gäste gibt und alles geschlossen ist. Für Städte wie Rom oder Mailand ist der Winter allerdings eine tolle Reisezeit."
           }
         ]
       },
@@ -280,21 +284,21 @@
         "blocks": [
           {
             "title": "Wichtige Sehenswürdigkeiten",
-            "description": "Kolosseum, Forum Romanum, Vatikan und zahlreiche Museen können problemlos mehrere Tage beanspruchen, man sollte also am besten viel Zeit einplanen oder direkt einen eigenen Städtetrip für Rom planen."
+            "description": "Kolosseum, Forum Romanum, Vatikan und zahlreiche Museen können problemlos mehrere Tage beanspruchen, man sollte also am besten viel Zeit einplanen oder direkt einen eigenen Städtetrip für Rom planen.\n\nAuch außerhalb der Stadt gibt es einiges zu sehen. Tivoli, Ostia Antica oder die Via Appia sind nahe Rom gelegen und stellen daher tolle Ausflugsziele da."
           },
           {
             "title": "Eintrittskarten",
-            "description": "Für besonders beliebte Attraktionen lohnt es sich, Eintrittskarten und mögliche Zeitfenster frühzeitig zu prüfen."
+            "description": "Für besonders beliebte Attraktionen lohnt es sich, Eintrittskarten und mögliche Zeitfenster frühzeitig zu buchen. Bestimmte Highlights wie Neros Palast muss man bereits im Vorraus buchen, da es eine begrenzte Anzahl an Führungen gibt und man anders nicht rein darf."
           },
           {
             "title": "Tagesplanung",
-            "description": "Plane nicht zu viele Sehenswürdigkeiten direkt hintereinander, man kann sich oft wirklich sehr lange aufhalten. Rom lässt sich auch hervorragend zu Fuß zwischen einzelnen Programmpunkten entdecken."
+            "description": "Plane nicht zu viele Sehenswürdigkeiten direkt hintereinander, man kann sich in Rom wirklich sehr lange aufhalten. Die Stadt hat sehr viele kleine Gassen und der Verkehr ist meistens sehr langsam, daher macht es mehr Sinn alles zu Fuß zu erkunden weshalb man aber auch teilweise weite Strecken hat."
           }
         ]
       },
       {
         "title": "Venedig ohne Parkplatzstress",
-        "intro": "Das historische Zentrum von Venedig ist nicht mit dem normalen Auto befahrbar. Die Anreise sollte deshalb vorher geplant werden.",
+        "intro": "Das historische Zentrum von Venedig ist nicht mit dem Auto oder Camper befahrbar. Die Anreise sollte deshalb vorher geplant werden.",
         "image": {
           "url": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=85",
           "alt": "Kanal in Venedig"
@@ -302,15 +306,15 @@
         "blocks": [
           {
             "title": "Mit dem Auto",
-            "description": "Wer mit dem Auto anreist, sollte sich bereits vor der Fahrt mit Parkmöglichkeiten außerhalb des historischen Zentrums beschäftigen. Man kann direkt in Venedig parken, allerdings sind die Parkplätze sehr teuer und man steht oft im Stau."
+            "description": "Wer mit dem Auto anreist, sollte sich bereits vor der Fahrt mit Parkmöglichkeiten außerhalb des historischen Zentrums beschäftigen. Man kann direkt am rande von Venedig parken, allerdings sind die Parkplätze sehr teuer und man steht oft im Stau um überhaupt dorthin zu kommen."
           },
           {
             "title": "Mestre",
-            "description": "Mestre ist ein häufiger Ausgangspunkt für die Weiterfahrt nach Venedig. Hier gibt es günstigere Parkplätze und eine gute Anbindung an die Stadt. Allerdings sollte man sich hier auch vorher informieren, da diese oft nur begrenzt verfügbar sind."
+            "description": "Mestre ist ein häufiger Ausgangspunkt für die Weiterfahrt nach Venedig. Hier gibt es günstigere Parkplätze und eine gute Anbindung an die Stadt per Bus oder Bahn. Allerdings sollte man sich hier auch vorher informieren, da diese oft klein und nur begrenzt verfügbar sind."
           },
           {
             "title": "Bahn",
-            "description": "Auch Padua kann je nach Route interessant sein, da Venedig von dort mit dem Zug sehr günstig und schnell erreichbar ist."
+            "description": "Auch Padua kann je nach Route interessant sein, da Venedig von dort mit dem Zug sehr günstig und schnell erreichbar ist. Padua hat außerdem viel zu bieten, man kann also beide Städte verbinden."
           }
         ]
       },
@@ -392,7 +396,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Mittelitalien ist vor allem für seine historischen Städte, Kulturlandschaften und kulinarischen Traditionen bekannt. Die Toskana mit Florenz, Siena, Pisa und zahlreichen kleineren Orten eignet sich besonders für Rundreisen und Roadtrips."
+        "text": "Mittelitalien ist vor allem für seine mittelalterlichen Städte, Kulturlandschaften und kulinarischen Traditionen bekannt. Die Toskana mit Florenz, Siena, Pisa und zahlreichen kleineren Orten eignet sich besonders gut für Roadtrips."
       },
       {
         "type": "paragraph",
@@ -412,7 +416,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Weiter südlich verändert sich der Charakter vieler Reiseziele. Mediterranes Klima, Küstenlandschaften und kleinere Städte prägen große Teile Süditaliens. Regionen wie Kampanien, Apulien, Kalabrien und Basilikata eignen sich für Reisende, die neben bekannten Sehenswürdigkeiten auch weniger stark touristisch geprägte Orte kennenlernen möchten."
+        "text": "Weiter südlich verändert sich der Charakter vieler Reiseziele. Mediterranes Klima, Küstenlandschaften und kleinere Städte prägen große Teile Süditaliens. Regionen wie Kampanien, Apulien, Kalabrien und Basilikata eignen sich alle, die neben bekannten Sehenswürdigkeiten auch weniger stark touristisch geprägte Orte kennenlernen möchten."
       },
       {
         "type": "paragraph",
@@ -448,49 +452,16 @@
       },
       {
         "type": "paragraph",
-        "text": "Ein Roadtrip durch Italien bietet viel Freiheit und ist besonders außerhalb großer Städte praktisch. Gleichzeitig sollte man beachten, dass das Auto in historischen Innenstädten oft eher hinderlich sein kann. Viele Städte besitzen Bereiche, in denen der Autoverkehr eingeschränkt ist."
+        "text": "Ein Roadtrip durch Italien bietet viel Freiheit und ist besonders außerhalb großer Städte praktisch. Gleichzeitig sollte man beachten, dass das Auto in historischen Innenstädten oft eher hinderlich sein kann. Viele Städte besitzen Bereiche, in denen der Autoverkehr eingeschränkt ist und man nur mit Sondergenehmigung einfahren darf."
       },
       {
         "type": "paragraph",
-        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und kleinere Orte unterschiedlich zu planen. Für Rom, Venedig oder Florenz kann es sinnvoll sein, eine Unterkunft mit guter Anbindung an den öffentlichen Verkehr zu wählen und das Auto außerhalb des Zentrums stehen zu lassen."
+        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und kleinere Orte unterschiedlich zu planen. Für Rom, Venedig oder Florenz kann es sinnvoll sein, eine Unterkunft mit guter Anbindung an den öffentlichen Verkehr zu wählen und das Auto außerhalb des Zentrums stehen zu lassen. Dadurch spart man sich auch das gekurve durch enge Gasssen und Einbahnstraßen."
       },
       {
         "type": "note",
-        "title": "Tipp für die Reiseplanung:",
-        "text": " Plane nicht nur die Entfernung zwischen zwei Orten ein. Besonders an Seen, Küsten und in touristischen Regionen kann die tatsächliche Fahrzeit deutlich länger sein als die Kilometerzahl vermuten lässt."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Italien für Familien"
-      },
-      {
-        "type": "paragraph",
-        "text": "Italien eignet sich auch hervorragend für Familienreisen. Besonders Regionen mit Seen, Stränden und kurzen Ausflügen ermöglichen eine abwechslungsreiche Mischung aus Erholung und Aktivitäten. Rund um den Gardasee gibt es beispielsweise zahlreiche Möglichkeiten für Familien, darunter Ausflüge auf dem Wasser und Freizeitangebote."
-      },
-      {
-        "type": "paragraph",
-        "text": "Bei einer Städtereise mit Kindern sollte dagegen darauf geachtet werden, nicht zu viele Sehenswürdigkeiten an einem einzigen Tag einzuplanen. Gerade historische Städte lassen sich oft angenehmer erkunden, wenn zwischen einzelnen Programmpunkten ausreichend Zeit für Pausen bleibt."
-      },
-      {
-        "type": "image",
-        "image": {
-          "url": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=85",
-          "alt": "Italienische Pizza"
-        }
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Italien kulinarisch entdecken"
-      },
-      {
-        "type": "paragraph",
-        "text": "Essen ist ein wichtiger Teil einer Italienreise. Dabei gibt es nicht die eine italienische Küche, sondern zahlreiche regionale Traditionen. Pasta, Pizza, Fischgerichte, Käse, Wurstwaren, Olivenöl, Wein und Süßspeisen werden je nach Region sehr unterschiedlich zubereitet."
-      },
-      {
-        "type": "paragraph",
-        "text": "Gerade bei einer Rundreise lohnt es sich daher, regionale Spezialitäten auszuprobieren. Ein Restaurant in Bologna bietet andere kulinarische Schwerpunkte als eine Trattoria auf Sizilien oder ein Lokal an der ligurischen Küste."
+        "title": "Tipp für die Reiseplanung: ",
+        "text": "Plane nicht nur die Entfernung zwischen zwei Orten ein. Besonders an Seen, Küsten und in touristischen Regionen kann die tatsächliche Fahrzeit deutlich länger sein als die Kilometerzahl vermuten lässt. Viele Straßen in Italien sind zudem in schlechtem Zustand (auch die Autobahn!), man kann daher oftmals nicht so schnell fahren."
       },
       {
         "type": "heading",
@@ -522,11 +493,11 @@
       },
       {
         "question": "Kann man Italien gut mit dem Auto bereisen?",
-        "answer": "Ja, besonders für Rundreisen durch ländliche Regionen kann ein Auto praktisch sein. In historischen Innenstädten und beliebten Touristenzentren kann das Auto dagegen unpraktisch sein. Vor der Anreise sollte man sich deshalb über Parkmöglichkeiten und lokale Verkehrsbeschränkungen informieren."
+        "answer": "Ja, besonders für Rundreisen durch ländliche Regionen ist das Auto die beste Möglichkeit zu Reisen. In historischen Innenstädten und beliebten Touristenzentren kann das Auto dagegen unpraktisch sein. Vor der Anreise sollte man sich deshalb über Parkmöglichkeiten und lokale Verkehrsbeschränkungen informieren."
       },
       {
-        "question": "Ist der Gardasee für einen Urlaub geeignet?",
-        "answer": "Der Gardasee bietet eine Mischung aus Orten am Wasser, Landschaft, Wassersport, Radwegen, Wanderungen und Ausflugszielen. Besonders in der Hauptreisezeit sollte allerdings mit erhöhtem Verkehrsaufkommen gerechnet werden."
+        "question": "Ist der Gardasee für einen Roadtrip geeignet?",
+        "answer": "Der Gardasee bietet eine Mischung aus Orten am Wasser, Landschaft, Wassersport, Radwegen, Wanderungen und Ausflugszielen. Besonders in der Hauptreisezeit sollte allerdings mit erhöhtem Verkehrsaufkommen gerechnet werden, weshalb es zu dieser Zeit eher weniger sinnvoll ist einen Roadtrip zu machen."
       },
       {
         "question": "Wie viele Tage sollte man in Rom verbringen?",
