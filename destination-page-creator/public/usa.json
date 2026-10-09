@@ -1,0 +1,556 @@
+{
+  "country_name": "USA",
+  "hero": {
+    "eyebrow": "Reiseguide & Community",
+    "title": "Die USA entdecken",
+    "description": "Die USA verbinden pulsierende Metropolen mit spektakulären Nationalparks, endlosen Küsten, beeindruckenden Landschaften und einer außergewöhnlichen kulturellen Vielfalt. Entdecke Regionen, Reiseziele, und fertige Roadtrips aus der Community.für deinen USA-Trip!",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=85&w=1170&auto=format&fit=crop",
+      "alt": "Beeindruckende Landschaft in den USA mit Bergen und See"
+    },
+    "buttons": [
+      {
+        "label": "Regionen entdecken",
+        "url": "#regionen"
+      },
+      {
+        "label": "Beiträge lesen",
+        "url": "#beitraege"
+      }
+    ]
+  },
+  "intro": {
+    "kicker": "USA Reiseführer",
+    "title": "Urlaub in den USA: Zwischen Metropolen, Nationalparks und endlosen Highways",
+    "paragraphs": [
+      "Kaum ein anderes Land bietet eine vergleichbare landschaftliche und kulturelle Vielfalt wie die USA. Von den Wolkenkratzern New Yorks über die Strände Floridas und Kaliforniens bis zu den Rocky Mountains und den gewaltigen Nationalparks im Westen gibt es unzählige unterschiedliche Reiseerlebnisse.",
+      "Ein USA-Urlaub kann deshalb ganz unterschiedlich aussehen: Roadtrip durch den Südwesten, Städtereise nach New York, Strandurlaub in Florida, Wanderurlaub in den Nationalparks, Rundreise entlang der Westküste oder eine längere Reise durch mehrere Bundesstaaten.",
+      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in den USA sowie praktische Hinweise zur Reiseplanung. In der Community kannst du außerdem aktuelle Reiseberichte, Erfahrungen und Geheimtipps anderer Reisender entdecken.",
+      "Besonders interessant sind die USA auch deshalb, weil sich viele unterschiedliche Reisearten miteinander verbinden lassen. Eine Reise kann morgens mit einem Spaziergang durch eine Großstadt beginnen und am Nachmittag bereits durch Wüstenlandschaften, Wälder oder entlang der Küste führen."
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Amerikanische Landschaft mit Bergen und weiter Natur"
+    }
+  },
+  "image_strip": [
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1544728344-7efa025e5603?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Berglandschaft im Westen der USA"
+      },
+      "caption": "Nationalparks und weite Landschaften"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?q=80&w=1170&auto=format&fit=crop",
+        "alt": "Skyline von New York City"
+      },
+      "caption": "Großstadtleben in New York"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1782498270934-722d02d3efc2?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Strand an der amerikanischen Küste"
+      },
+      "caption": "Strände und Küsten"
+    }
+  ],
+  "regions": {
+    "kicker": "Reiseziele",
+    "title": "Die beliebtesten Regionen der USA",
+    "description": "Die USA bestehen aus vielen sehr unterschiedlichen Regionen. Während der Westen besonders für Nationalparks, Wüsten und Berge bekannt ist, findest du an der Ostküste historische Städte und im Süden warme Küsten, Südstaaten-Kultur und abwechslungsreiche Landschaften.",
+    "items": [
+      {
+        "title": "Kalifornien",
+        "url": "/usa/kalifornien",
+        "linklabel": "Kalifornien entdecken →",
+        "description": "Kalifornien verbindet Pazifikküste, Strände, Metropolen, Weinregionen und spektakuläre Natur. San Francisco, Los Angeles, San Diego und Nationalparks wie Yosemite lassen sich hervorragend miteinander kombinieren.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1665412019489-1928d5afa5cc?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Landschaft und Küste in Kalifornien"
+        }
+      },
+      {
+        "title": "Florida",
+        "url": "/usa/florida",
+        "linklabel": "Florida entdecken →",
+        "description": "Florida ist bekannt für warme Temperaturen, lange Sandstrände, Freizeitparks, tropische Landschaften und die Florida Keys. Der Bundesstaat eignet sich sowohl für Badeurlaub als auch für abwechslungsreiche Rundreisen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?q=80&w=1169&auto=format&fit=crop",
+          "alt": "Strand und Küste in Florida"
+        }
+      },
+      {
+        "title": "New York",
+        "url": "/usa/new-york",
+        "linklabel": "New York entdecken →",
+        "description": "New York verbindet weltberühmte Sehenswürdigkeiten, Museen, Parks, Shopping und eine außergewöhnliche kulinarische Szene. Die Stadt eignet sich besonders für eine intensive Städtereise mit zahlreichen unterschiedlichen Vierteln.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=900&q=85",
+          "alt": "Skyline von New York City"
+        }
+      },
+      {
+        "title": "Utah",
+        "url": "/usa/utah",
+        "linklabel": "Utah entdecken →",
+        "description": "Utah ist eines der spektakulärsten Reiseziele für Naturliebhaber. Der Bundesstaat begeistert mit roten Felslandschaften, Canyons und Nationalparks wie Zion, Bryce Canyon, Arches und Canyonlands.",
+        "image": {
+          "url": "https://images.unsplash.com/flagged/photo-1565895975045-8f04bc431f89?q=80&w=1072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Rote Felslandschaft in Utah"
+        }
+      }
+    ]
+  },
+  "community": {
+    "kicker": "Community",
+    "title": "Aktuelle Beiträge über die USA",
+    "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
+    "search": {
+      "minlat": 24.3963,
+      "minlon": -124.848974,
+      "maxlat": 49.384358,
+      "maxlon": -66.885444,
+      "limit": 6
+    }
+  },
+  "topics": {
+    "kicker": "Reiseplanung",
+    "title": "Die USA nach Reisethema entdecken",
+    "description": "Nicht jeder USA-Urlaub sieht gleich aus. Je nach Reiseart können andere Regionen, Bundesstaaten und Jahreszeiten besonders interessant sein.",
+    "items": [
+      {
+        "title": "Strandurlaub",
+        "description": "Traumstrände, Buchten und Küsten am Atlantik, Pazifik, Golf von Mexiko und auf Hawaii.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1685809929612-f0769eb8064d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Strand in den USA"
+        }
+      },
+      {
+        "title": "Nationalparks & Natur",
+        "description": "Grand Canyon, Yosemite, Yellowstone, Zion und viele weitere spektakuläre Landschaften.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Berglandschaft in einem amerikanischen Nationalpark"
+        }
+      },
+      {
+        "title": "Städtereisen",
+        "description": "New York, Los Angeles, San Francisco, Chicago, Las Vegas und viele weitere Städte.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "New York City bei Nacht"
+        }
+      },
+      {
+        "title": "Roadtrips",
+        "description": "Legendäre Highways, endlose Entfernungen, Nationalparks und abwechslungsreiche Landschaften.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1603439944892-caf64fa98ccb?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Straße durch eine amerikanische Landschaft"
+        }
+      }
+    ]
+  },
+  "destinations": {
+    "kicker": "Beliebte Ziele",
+    "title": "Diese Orte solltest du kennen",
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer USA-Reise.",
+    "items": [
+      {
+        "title": "Grand Canyon",
+        "description": "Gewaltige Schluchten, Aussichtspunkte und spektakuläre Sonnenaufgänge",
+        "url": "/usa/grand-canyon",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Grand Canyon mit gewaltiger Landschaft"
+        }
+      },
+      {
+        "title": "New York City",
+        "description": "Wolkenkratzer, Museen, Parks und amerikanisches Großstadtleben",
+        "url": "/usa/new-york-city",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?q=80&w=1170&auto=format&fit=crop",
+          "alt": "New York City mit Skyline"
+        }
+      },
+      {
+        "title": "San Francisco",
+        "description": "Golden Gate Bridge, Hügel, Küste und vielfältige Stadtviertel",
+        "url": "/usa/san-francisco",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1000&q=85",
+          "alt": "San Francisco und die Golden Gate Bridge"
+        }
+      },
+      {
+        "title": "Las Vegas",
+        "description": "Hotels, Casinos, Shows und ein außergewöhnlicher Ausgangspunkt für Roadtrips",
+        "url": "/usa/las-vegas",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?q=80&w=687&auto=format&fit=crop",
+          "alt": "Las Vegas bei Nacht"
+        }
+      },
+      {
+        "title": "Yellowstone",
+        "description": "Geysire, heiße Quellen, Wälder und eine außergewöhnliche Tierwelt",
+        "url": "/usa/yellowstone",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1473445361085-b9a07f55608b?q=80&w=1170&auto=format&fit=crop",
+          "alt": "Landschaft im Yellowstone Nationalpark"
+        }
+      },
+      {
+        "title": "Los Angeles",
+        "description": "Hollywood, Strände, Filmgeschichte und kalifornisches Lebensgefühl",
+        "url": "/usa/los-angeles",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=80&w=687&auto=format&fit=crop",
+          "alt": "Los Angeles und die Skyline der Stadt"
+        }
+      }
+    ]
+  },
+  "tips": {
+    "kicker": "Reiseplanung",
+    "title": "Praktische Tipps für deine USA-Reise",
+    "description": "Gerade bei großen Entfernungen und beliebten Reisezielen lohnt es sich, die Reise nicht nur nach Sehenswürdigkeiten zu planen. Fahrzeiten, Saison, Eintrittskarten und die Wahl des richtigen Ausgangsortes können einen großen Unterschied machen.",
+    "items": [
+      {
+        "title": "Entfernungen in den USA",
+        "intro": "Die USA sind riesig. Entfernungen, die auf der Karte überschaubar aussehen, können in der Realität viele Stunden Fahrt bedeuten.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Amerikanische Straße durch eine weite Landschaft"
+        },
+        "blocks": [
+          {
+            "title": "Fahrzeiten realistisch planen",
+            "description": "Bei Roadtrips solltest du nicht nur die Kilometer betrachten. Pausen, Baustellen, Stadtverkehr und Fotostopps können die tatsächliche Fahrzeit deutlich verlängern."
+          }
+        ]
+      },
+      {
+        "title": "Strände in den USA",
+        "intro": "Die USA besitzen eine enorme Auswahl an Küstenregionen. Vom Pazifik über den Atlantik bis zum Golf von Mexiko gibt es sehr unterschiedliche Stranderlebnisse.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=735&auto=format&fit=crop",
+          "alt": "Strand und Meer an der amerikanischen Küste"
+        },
+        "blocks": [
+          {
+            "title": "Bekannte Badeorte",
+            "description": "Beliebte Strände bieten meist eine sehr gute Infrastruktur mit Restaurants, Parkplätzen, Hotels und Freizeitangeboten. In der Hauptsaison können diese Orte allerdings sehr voll werden."
+          },
+          {
+            "title": "Ruhigere Strände",
+            "description": "Wer weniger Trubel sucht, sollte sich auch kleinere Küstenorte und weniger bekannte Strände ansehen. Besonders außerhalb der großen Ferienzeiten lassen sich viele ruhigere Abschnitte finden."
+          }
+        ]
+      },
+      {
+        "title": "Die beste Reisezeit für die USA",
+        "intro": "Die passende Reisezeit hängt stark davon ab, welche Region du besuchen möchtest und welche Aktivitäten geplant sind.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1603665184599-1baea0a37924?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Amerikanische Berglandschaft im Sommer"
+        },
+        "blocks": [
+          {
+            "title": "Sommer",
+            "description": "Für viele Regionen sind Juni bis August besonders beliebt. Nationalparks und bekannte Städte können dann allerdings sehr stark besucht sein und Unterkünfte sollten früh gebucht werden."
+          },
+          {
+            "title": "Frühling und Herbst",
+            "description": "Frühling und Herbst bieten in vielen Regionen angenehmere Temperaturen und weniger Besucher. Für Nationalparks, Roadtrips und Städtereisen können diese Jahreszeiten besonders interessant sein."
+          }
+        ]
+      },
+      {
+        "title": "Nationalparks früh planen",
+        "intro": "Die bekanntesten Nationalparks der USA können in der Hauptsaison sehr stark besucht sein und benötigen teilweise eine frühzeitige Planung.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1534868489953-ef37c20abb25?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Beeindruckende Landschaft in einem US-Nationalpark"
+        },
+        "blocks": [
+          {
+            "title": "Beliebte Nationalparks",
+            "description": "Grand Canyon, Yosemite, Zion und Yellowstone können problemlos mehrere Tage beanspruchen. Plane deshalb ausreichend Zeit ein, statt nur wenige Stunden für einen Besuch vorzusehen."
+          },
+          {
+            "title": "Eintritt und Reservierungen",
+            "description": "Bei einigen Parks und besonders beliebten Bereichen können Reservierungen, Eintrittsregelungen oder zeitliche Zugangsbeschränkungen gelten. Die aktuellen Bedingungen solltest du vor der Reise prüfen."
+          },
+          {
+            "title": "Tagesplanung",
+            "description": "Plane nicht zu viele Aussichtspunkte und Wanderungen direkt hintereinander. Gerade in großen Nationalparks können die Wege zwischen einzelnen Bereichen deutlich länger sein als erwartet."
+          }
+        ]
+      },
+      {
+        "title": "New York ohne Stress",
+        "intro": "New York bietet eine enorme Anzahl an Sehenswürdigkeiten und Stadtvierteln. Eine gute Tagesplanung kann deshalb viel Zeit sparen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Skyline von New York City"
+        },
+        "blocks": [
+          {
+            "title": "Sehenswürdigkeiten bündeln",
+            "description": "Ordne Sehenswürdigkeiten nach Stadtvierteln und plane nicht jeden Tag quer durch Manhattan. So lässt sich viel Zeit für Wege und den öffentlichen Verkehr sparen."
+          },
+          {
+            "title": "Öffentlicher Verkehr",
+            "description": "Die Subway und Busse sind für viele Strecken eine praktische Möglichkeit, die Stadt zu erkunden. Gerade bei längeren Aufenthalten lohnt es sich, die verschiedenen Ticketmöglichkeiten zu vergleichen."
+          },
+          {
+            "title": "Zu Fuß entdecken",
+            "description": "Viele Viertel lassen sich hervorragend zu Fuß erkunden. Plane zwischen den großen Sehenswürdigkeiten bewusst Zeit für kleinere Straßen, Parks, Geschäfte und Restaurants ein."
+          }
+        ]
+      },
+      {
+        "title": "Essen in den USA",
+        "intro": "Die amerikanische Küche ist stark von regionalen Traditionen und Einflüssen verschiedener Einwanderungskulturen geprägt.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Amerikanischer Burger mit Beilagen"
+        },
+        "blocks": [
+          {
+            "title": "Regionale Spezialitäten",
+            "description": "Je nach Region erwarten dich ganz unterschiedliche Gerichte. Von New Yorker Pizza über Barbecue im Süden bis zu Seafood an den Küsten lohnt es sich, regionale Spezialitäten auszuprobieren."
+          }
+        ]
+      }
+    ]
+  },
+  "guide": {
+    "kicker": "USA Reiseführer",
+    "title": "USA Urlaub planen: Was du vor der Reise wissen solltest",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Die USA sind ein Reiseziel, das sich sowohl für einen kurzen Städtetrip als auch für einen mehrwöchigen Roadtrip eignet. Durch die enorme Größe und die unterschiedlichen Regionen lässt sich ein Aufenthalt sehr individuell gestalten. Wer zum ersten Mal in die USA reist, steht deshalb häufig vor der Frage, welche Region am besten zum eigenen Urlaub passt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen klassischen Strandurlaub bieten sich beispielsweise Florida, Kalifornien, Hawaii oder die Küstenregionen der Carolinas an. Wer Berge und Natur bevorzugt, findet im Westen mit Utah, Arizona, Colorado, Wyoming und Montana zahlreiche Möglichkeiten. Für Kultur- und Städtereisen sind New York, Boston, Chicago, San Francisco, Los Angeles und Washington D.C. interessante Ziele."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1589061936039-fdcd722d5a06?q=80&w=1155&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Straße durch eine amerikanische Landschaft"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Der Westen: Nationalparks, Wüsten und Küsten"
+      },
+      {
+        "type": "paragraph",
+        "text": "Der Westen der USA ist besonders bei Reisenden beliebt, die Natur und Roadtrips miteinander verbinden möchten. Kalifornien, Arizona, Utah und Nevada bieten eine außergewöhnliche Mischung aus Nationalparks, Wüstenlandschaften, Bergen und Küsten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gleichzeitig liegen mit Los Angeles, San Francisco und Las Vegas bedeutende Städte in erreichbarer Entfernung. Ein Roadtrip durch den Westen kann damit unterschiedliche Reisearten miteinander verbinden: Städtereise, Strandurlaub, Wandern und Nationalparks lassen sich innerhalb einer Reise kombinieren."
+      },
+      {
+        "type": "split",
+        "imageposition": "left",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1596761983727-5ec9de8b35d3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Berglandschaft in den Rocky Mountains"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Berge und Nationalparks im Westen"
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer Natur und aktive Erholung miteinander verbinden möchte, findet im Westen der USA zahlreiche Möglichkeiten. Nationalparks wie Yosemite, Zion, Bryce Canyon, Grand Canyon und Yellowstone bieten Wanderwege, Aussichtspunkte und außergewöhnliche Landschaften."
+          },
+          {
+            "type": "paragraph",
+            "text": "Durch die großen Entfernungen zwischen vielen Reisezielen sollte bei einem Roadtrip allerdings ausreichend Zeit eingeplant werden. Auch scheinbar kurze Strecken können durch Bergstraßen, Baustellen oder touristische Stopps deutlich länger dauern."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Der Osten: New York, Neuengland und historische Städte"
+      },
+      {
+        "type": "paragraph",
+        "text": "Die Ostküste ist vor allem für ihre historischen Städte, dicht besiedelten Regionen und abwechslungsreichen Landschaften bekannt. New York, Boston, Philadelphia und Washington D.C. eignen sich besonders für Städtereisen und lassen sich teilweise miteinander kombinieren."
+      },
+      {
+        "type": "paragraph",
+        "text": "Weiter nördlich bieten Neuengland und die Bundesstaaten an der Atlantikküste Wälder, Seen und kleinere Küstenorte. Besonders im Herbst ist die Region für ihre farbenprächtigen Wälder bekannt."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1629671119816-f39d021f1037?q=80&w=1207&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Skyline einer amerikanischen Großstadt"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Der Süden und Florida"
+      },
+      {
+        "type": "paragraph",
+        "text": "Im Süden der USA verändert sich der Charakter vieler Reiseziele. Warme Temperaturen, Küstenlandschaften, Südstaaten-Kultur und eine stark regional geprägte Küche machen die Region besonders abwechslungsreich. Florida eignet sich mit seinen Stränden, Freizeitparks und tropischen Landschaften besonders für Familien und Badeurlaub."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auch Städte wie New Orleans, Nashville, Charleston und Savannah bieten ganz eigene kulturelle und kulinarische Erlebnisse. Für eine Rundreise durch den Süden sollte ausreichend Zeit eingeplant werden, da die Entfernungen zwischen den einzelnen Regionen nicht unterschätzt werden sollten."
+      },
+      {
+        "type": "split",
+        "imageposition": "right",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1635120347022-3f37c74a36b2?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Amerikanische Küste mit Strand und Meer"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Küsten und Strände"
+          },
+          {
+            "type": "paragraph",
+            "text": "Von Kalifornien bis Florida gibt es zahlreiche unterschiedliche Küstenlandschaften. Manche Regionen eignen sich besonders für Badeurlaub, andere verbinden Strände mit Städten, Naturparks, Wanderwegen oder kleineren Küstenorten."
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer mehrere Küstenorte besuchen möchte, sollte bei der Planung nicht nur die Entfernung auf der Karte betrachten. Gerade bei langen Küstenstraßen können Pausen, Verkehr und Sehenswürdigkeiten unterwegs die tatsächliche Reisezeit deutlich verlängern."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die USA mit dem Auto erkunden"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch die USA bietet viel Freiheit und ist besonders außerhalb großer Städte praktisch. Gleichzeitig sollte man beachten, dass die Entfernungen enorm sein können. Ein Mietwagen ist für viele Rundreisen die beste Möglichkeit, abgelegene Orte und Nationalparks flexibel zu erreichen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und ländliche Regionen unterschiedlich zu planen. In New York, San Francisco oder Chicago kann ein Auto eher hinderlich sein, während es für Nationalparks und abgelegene Regionen nahezu unverzichtbar sein kann."
+      },
+      {
+        "type": "note",
+        "title": "Tipp für die Reiseplanung:",
+        "text": " Plane nicht nur die Entfernung zwischen zwei Orten ein. Besonders in Nationalparks, Ballungsräumen und touristischen Regionen kann die tatsächliche Fahrzeit deutlich länger sein als die Kilometerzahl vermuten lässt."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die USA für Familien"
+      },
+      {
+        "type": "paragraph",
+        "text": "Die USA eignen sich hervorragend für Familienreisen. Besonders Regionen mit Stränden, Nationalparks, Freizeitparks und kurzen Ausflügen ermöglichen eine abwechslungsreiche Mischung aus Erholung und Aktivitäten. Florida bietet beispielsweise zahlreiche Freizeitparks und Strände, während der Westen mit Nationalparks und Outdoor-Erlebnissen begeistert."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Städtereise mit Kindern sollte dagegen darauf geachtet werden, nicht zu viele Sehenswürdigkeiten an einem einzigen Tag einzuplanen. Gerade große Städte lassen sich oft angenehmer erkunden, wenn zwischen einzelnen Programmpunkten ausreichend Zeit für Pausen bleibt."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1601313816462-fe3cbebf6753?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXNhJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "alt": "Amerikanischer Burger mit Beilagen"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die USA kulinarisch entdecken"
+      },
+      {
+        "type": "paragraph",
+        "text": "Essen ist ein wichtiger Teil einer USA-Reise. Dabei gibt es nicht die eine amerikanische Küche, sondern zahlreiche regionale Traditionen. Barbecue, Burger, Seafood, Pizza, Tex-Mex, Cajun-Küche und viele weitere Gerichte gehören zu den kulinarischen Besonderheiten des Landes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gerade bei einem Roadtrip lohnt es sich daher, regionale Spezialitäten auszuprobieren. Ein Restaurant in New Orleans bietet andere kulinarische Schwerpunkte als ein Diner in New York, ein Barbecue-Restaurant in Texas oder ein Seafood-Lokal an der kalifornischen Küste."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wie viele Tage sollte man für die USA einplanen?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Für eine einzelne Region oder Städtereise können bereits fünf bis sieben Tage ausreichend sein, um mehrere Highlights kennenzulernen. Für einen größeren Roadtrip sollte deutlich mehr Zeit eingeplant werden. Die USA sind riesig und die Entfernungen zwischen Ost- und Westküste sind erheblich."
+      },
+      {
+        "type": "paragraph",
+        "text": "Statt in wenigen Tagen möglichst viele Orte abzuhaken, kann es sinnvoller sein, sich auf eine Region oder eine Kombination aus mehreren nahe beieinanderliegenden Zielen zu konzentrieren. So bleibt mehr Zeit für spontane Ausflüge, lokale Restaurants, Wanderungen und kleinere Orte abseits der bekannten Sehenswürdigkeiten."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "Häufige Fragen",
+    "title": "USA FAQ",
+    "description": "Antworten auf häufige Fragen rund um Urlaub, Reisezeit, Verkehr und beliebte Reiseziele in den USA.",
+    "items": [
+      {
+        "question": "Wann ist die beste Reisezeit für die USA?",
+        "answer": "Das hängt stark von der Region und der geplanten Reise ab. Für viele Nationalparks und Roadtrips sind Frühling und Herbst besonders angenehm, während der Sommer für viele Regionen ebenfalls beliebt ist. In Florida und anderen südlichen Regionen können die Temperaturen im Sommer allerdings sehr hoch sein."
+      },
+      {
+        "question": "Welche Regionen eignen sich für einen USA-Urlaub?",
+        "answer": "Das hängt vom Urlaubstyp ab. Kalifornien eignet sich unter anderem für Küste, Städte und Natur, Florida für Strand und Familienurlaub, der Südwesten für Nationalparks und Roadtrips und die Ostküste für Städte und Kultur. Auch Hawaii, Alaska, Colorado, Texas und viele weitere Regionen bieten völlig unterschiedliche Reiseerlebnisse."
+      },
+      {
+        "question": "Kann man die USA gut mit dem Auto bereisen?",
+        "answer": "Ja, besonders für Roadtrips durch den Westen, Nationalparks und ländliche Regionen ist ein Auto sehr praktisch. In großen Städten kann das Auto dagegen unpraktisch sein. Vor der Reise sollte man sich deshalb über Parkmöglichkeiten, Mautstraßen und lokale Verkehrsregeln informieren."
+      },
+      {
+        "question": "Sind die Nationalparks für einen Urlaub geeignet?",
+        "answer": "Die Nationalparks der USA gehören zu den beeindruckendsten Reisezielen des Landes. Viele Parks bieten Wanderwege, Aussichtspunkte und unterschiedliche Outdoor-Aktivitäten. In der Hauptsaison sollte allerdings mit vielen Besuchern gerechnet und die Reise entsprechend früh geplant werden."
+      },
+      {
+        "question": "Wie viele Tage sollte man in New York verbringen?",
+        "answer": "Für die wichtigsten Sehenswürdigkeiten sollte man mehrere Tage einplanen. Wer neben Times Square, Central Park und den bekannten Aussichtspunkten auch Museen, Stadtviertel und weniger bekannte Orte erkunden möchte, kann problemlos fünf Tage oder länger in New York verbringen."
+      },
+      {
+        "question": "Wie bewegt man sich in den USA am besten fort?",
+        "answer": "Das hängt stark vom Reiseziel ab. In Großstädten sind öffentliche Verkehrsmittel oft praktisch, während für Roadtrips und Nationalparks ein Mietwagen deutlich mehr Flexibilität bietet. Bei längeren Strecken können außerdem Inlandsflüge sinnvoll sein."
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home_label": "Startseite"
+  },
+  "seo": {
+    "description": "Reiseguide für die USA mit Informationen zu Regionen, Reisezielen, Sehenswürdigkeiten, Reisezeit, Verkehr und Community-Beiträgen.",
+    "touristtypes": [
+      "Leisure Travelers",
+      "Families",
+      "Adventure Travelers",
+      "Cultural Travelers"
+    ],
+    "sameas": [
+      "https://www.visittheusa.com/"
+    ]
+  }
+}

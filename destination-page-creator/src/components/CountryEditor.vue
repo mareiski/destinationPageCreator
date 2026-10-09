@@ -1,20 +1,21 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { createSlug, getDefaultTemplate } from '../config';
-import CountryPreview from './CountryPreview.vue';
+import { ref, computed, watch, onMounted, onUnmounted } from "vue";
+import { createSlug, getDefaultTemplate } from "../config";
+import CountryPreview from "./CountryPreview.vue";
 
 // State
 const countries = ref<string[]>([]);
-const selectedCountry = ref<string>('');
+const selectedCountry = ref<string>("");
 const pageData = ref<any>(null);
 const isLoading = ref<boolean>(false);
-const errorMessage = ref<string>('');
-const successMessage = ref<string>('');
+const errorMessage = ref<string>("");
+const successMessage = ref<string>("");
 const showNewCountryModal = ref<boolean>(false);
-const newCountryName = ref<string>('');
+const newCountryName = ref<string>("");
 const activeFieldPath = ref<string[]>([]);
-const editedText = ref<string>('');
+const editedText = ref<string>("");
 const editDialogVisible = ref<boolean>(false);
+const isSaving = ref<boolean>(false);
 
 // Computed properties
 const countryList = computed(() => {
@@ -22,14 +23,18 @@ const countryList = computed(() => {
 });
 
 // Timeout for fetch requests to prevent hanging
-const fetchWithTimeout = async (url: string, options: any = {}, timeout = 5000) => {
+const fetchWithTimeout = async (
+  url: string,
+  options: any = {},
+  timeout = 5000,
+) => {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
-  
+
   try {
     const response = await fetch(url, {
       ...options,
-      signal: controller.signal
+      signal: controller.signal,
     });
     clearTimeout(timeoutId);
     return response;
@@ -42,16 +47,16 @@ const fetchWithTimeout = async (url: string, options: any = {}, timeout = 5000) 
 // Function to start editing a field
 const startEdit = (fieldPath: string[], currentValue: string) => {
   activeFieldPath.value = fieldPath;
-  editedText.value = currentValue || '';
+  editedText.value = currentValue || "";
   editDialogVisible.value = true;
 };
 
 // Save edited field
 const saveEditedField = () => {
   if (!activeFieldPath.value.length || !pageData.value) return;
-  
+
   let current: any = pageData.value;
-  
+
   // Navigate to the field to update
   for (let i = 0; i < activeFieldPath.value.length - 1; i++) {
     const key = activeFieldPath.value[i];
@@ -60,22 +65,22 @@ const saveEditedField = () => {
     }
     current = current[key];
   }
-  
+
   // Update the final field
   const finalKey = activeFieldPath.value[activeFieldPath.value.length - 1];
   current[finalKey] = editedText.value;
-  
+
   // Update the pageData to trigger reactivity
   pageData.value = { ...pageData.value };
-  
+
   editDialogVisible.value = false;
   activeFieldPath.value = [];
-  editedText.value = '';
-  
-  // Show success message
-  successMessage.value = 'Änderungen gespeichert';
+  editedText.value = "";
+
+  // Show success message - will auto-save to file in 2 seconds
+  successMessage.value = "Änderungen werden automatisch gespeichert...";
   setTimeout(() => {
-    successMessage.value = '';
+    successMessage.value = "";
   }, 2000);
 };
 
@@ -83,17 +88,17 @@ const saveEditedField = () => {
 const loadCountries = async () => {
   try {
     isLoading.value = true;
-    errorMessage.value = '';
-    
+    errorMessage.value = "";
+
     // Use API endpoint if available (when server is running)
     try {
       // Try multiple API endpoints
       const apiEndpoints = [
-        '/api/countries',
-        'http://localhost:3001/api/countries',
-        'http://localhost:3002/api/countries'
+        "/api/countries",
+        "http://localhost:3001/api/countries",
+        "http://localhost:3002/api/countries",
       ];
-      
+
       for (const endpoint of apiEndpoints) {
         try {
           const response = await fetchWithTimeout(endpoint, {}, 2000);
@@ -101,7 +106,11 @@ const loadCountries = async () => {
             const data = await response.json();
             if (data.success && data.countries) {
               countries.value = data.countries.sort();
-              console.log('Loaded countries from API:', endpoint, countries.value);
+              console.log(
+                "Loaded countries from API:",
+                endpoint,
+                countries.value,
+              );
               return;
             }
           }
@@ -111,13 +120,21 @@ const loadCountries = async () => {
         }
       }
     } catch (error) {
-      console.log('API not available, trying direct file access...');
+      console.log("API not available, trying direct file access...");
     }
-    
+
     // Check for country files in the public directory
-    const commonCountries = ['italien', 'spanien', 'frankreich', 'oesterreich', 'schweiz', 'beispiel', 'test'];
+    const commonCountries = [
+      "italien",
+      "spanien",
+      "frankreich",
+      "oesterreich",
+      "schweiz",
+      "beispiel",
+      "test",
+    ];
     const foundCountries: string[] = [];
-    
+
     for (const country of commonCountries) {
       try {
         // Only check in public directory now
@@ -132,24 +149,23 @@ const loadCountries = async () => {
         console.log(`Country file not found: ${country}.json`);
       }
     }
-    
+
     if (foundCountries.length > 0) {
       countries.value = foundCountries.sort();
-      console.log('Found countries:', countries.value);
+      console.log("Found countries:", countries.value);
       return;
     }
-    
+
     // Fallback to default
-    console.log('Using default country list');
-    countries.value = ['italien'];
-    
+    console.log("Using default country list");
+    countries.value = ["italien"];
   } catch (error) {
-    console.error('Error loading countries:', error);
-    errorMessage.value = 'Keine Länder gefunden';
-    countries.value = ['italien'];
+    console.error("Error loading countries:", error);
+    errorMessage.value = "Keine Länder gefunden";
+    countries.value = ["italien"];
   } finally {
     isLoading.value = false;
-    console.log('Countries loading completed:', countries.value);
+    console.log("Countries loading completed:", countries.value);
   }
 };
 
@@ -157,37 +173,43 @@ const loadCountries = async () => {
 const loadCountryData = async (countryName: string) => {
   try {
     isLoading.value = true;
-    errorMessage.value = '';
+    errorMessage.value = "";
     console.log(`Starting to load data for country: ${countryName}`);
     selectedCountry.value = countryName;
-    
+
     // Try API first if available
     try {
       console.log(`Trying API for country data: /api/country/${countryName}`);
-      const response = await fetchWithTimeout(`/api/country/${countryName}`, {}, 3000);
+      const response = await fetchWithTimeout(
+        `/api/country/${countryName}`,
+        {},
+        3000,
+      );
       if (response.ok) {
         const data = await response.json();
         if (data.success && data.content) {
           const parsedData = JSON.parse(data.content);
-          console.log(`API returned ${Object.keys(parsedData).length} keys for ${countryName}`);
+          console.log(
+            `API returned ${Object.keys(parsedData).length} keys for ${countryName}`,
+          );
           pageData.value = parsedData;
-          console.log('Loaded country data from API:', countryName);
+          console.log("Loaded country data from API:", countryName);
           return;
         }
       }
     } catch (error) {
-      console.log('API not available, trying direct file access...:', error);
+      console.log("API not available, trying direct file access...:", error);
     }
-    
+
     // Try to fetch the JSON file directly from public directory
     try {
       console.log(`Attempting to fetch: /${countryName}.json`);
       // Only use public directory now - simplest approach
       const paths = [
-        `/${countryName}.json`,  // Direct from public directory
-        `http://localhost:5173/${countryName}.json`,  // Direct Vite server
+        `/${countryName}.json`, // Direct from public directory
+        `http://localhost:5173/${countryName}.json`, // Direct Vite server
       ];
-      
+
       for (const filePath of paths) {
         try {
           console.log(`Trying to fetch: ${filePath}`);
@@ -195,7 +217,10 @@ const loadCountryData = async (countryName: string) => {
           if (response.ok) {
             const content = await response.text();
             const parsedData = JSON.parse(content);
-            console.log(`Successfully loaded data from ${filePath}, keys:`, Object.keys(parsedData));
+            console.log(
+              `Successfully loaded data from ${filePath}, keys:`,
+              Object.keys(parsedData),
+            );
             pageData.value = parsedData;
             console.log(`Loaded country data from: ${filePath}`);
             return;
@@ -209,184 +234,208 @@ const loadCountryData = async (countryName: string) => {
         }
       }
     } catch (error) {
-      console.log('Could not fetch JSON file directly:', error);
+      console.log("Could not fetch JSON file directly:", error);
     }
-    
+
     // Fallback: create template
-    console.warn(`Using template for ${countryName} - file not found in public directory!`);
-    console.warn(`Make sure ${countryName}.json exists in public/ and the dev server is running.`);
+    console.warn(
+      `Using template for ${countryName} - file not found in public directory!`,
+    );
+    console.warn(
+      `Make sure ${countryName}.json exists in public/ and the dev server is running.`,
+    );
     try {
       const templateData = JSON.parse(getDefaultTemplate(countryName));
-      console.log('Template created with keys:', Object.keys(templateData));
-      console.log('Template country_name:', templateData.country_name);
+      console.log("Template created with keys:", Object.keys(templateData));
+      console.log("Template country_name:", templateData.country_name);
       pageData.value = templateData;
     } catch (templateError) {
-      console.error('Error parsing template:', templateError);
+      console.error("Error parsing template:", templateError);
       errorMessage.value = `Fehler beim Erstellen der Vorlage: ${templateError}`;
     }
-    
   } catch (error) {
-    console.error('Error loading country data:', error);
+    console.error("Error loading country data:", error);
     errorMessage.value = `Fehler beim Laden: ${error}`;
     try {
       const templateData = JSON.parse(getDefaultTemplate(countryName));
-      console.log('Fallback to template with keys:', Object.keys(templateData));
+      console.log("Fallback to template with keys:", Object.keys(templateData));
       pageData.value = templateData;
     } catch (templateError) {
-      console.error('Error parsing fallback template:', templateError);
+      console.error("Error parsing fallback template:", templateError);
     }
     selectedCountry.value = countryName;
   } finally {
     isLoading.value = false;
-    console.log('Country data loading completed. pageData set:', !!pageData.value);
+    console.log(
+      "Country data loading completed. pageData set:",
+      !!pageData.value,
+    );
   }
 };
 
 // Save country JSON data to file
-const saveCountryData = async () => {
+const saveCountryData = async (silent = false) => {
   try {
+    // Skip if already saving or no data selected
+    if (isSaving.value) return;
     if (!selectedCountry.value || !pageData.value) {
-      errorMessage.value = 'Bitte wähle ein Land aus.';
+      if (!silent) errorMessage.value = "Bitte wähle ein Land aus.";
       return;
     }
-    
-    isLoading.value = true;
-    errorMessage.value = '';
-    successMessage.value = '';
-    
+
+    isSaving.value = true;
+    if (!silent) isLoading.value = true;
+    errorMessage.value = "";
+    if (!silent) successMessage.value = "";
+
     const content = JSON.stringify(pageData.value, null, 2);
-    const blob = new Blob([content], { type: 'application/json' });
-    
+    const blob = new Blob([content], { type: "application/json" });
+
     // In development, we can use the file system access if available
     // For now, we'll use the API if available, otherwise provide download
     try {
-      const response = await fetchWithTimeout(`/api/save`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      const response = await fetchWithTimeout(
+        `/api/save`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            country: selectedCountry.value,
+            content: content,
+          }),
         },
-        body: JSON.stringify({
-          country: selectedCountry.value,
-          content: content
-        }),
-      }, 5000);
-      
+        5000,
+      );
+
       if (response.ok) {
         const result = await response.json();
         if (result.success) {
-          successMessage.value = result.message || `Datei gespeichert!`;
-          
-          // Refresh countries
-          await loadCountries();
-          
-          setTimeout(() => {
-            successMessage.value = '';
-          }, 3000);
+          if (!silent) {
+            successMessage.value = result.message || `Automatisch gespeichert`;
+            setTimeout(() => {
+              successMessage.value = "";
+            }, 2000);
+          }
           return;
         }
       }
     } catch (apiError) {
-      console.log('API save failed, trying file save...');
+      console.log("API save failed, trying file save...");
     }
-    
+
     // Fallback: Create download link for manual save
     // This allows saving in development without server
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `${selectedCountry.value}.json`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-    
-    successMessage.value = 'Datei wurde als Download gespeichert!';
-    setTimeout(() => {
-      successMessage.value = '';
-    }, 3000);
-    
+    if (!silent) {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `${selectedCountry.value}.json`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+
+      successMessage.value = "Datei wurde als Download gespeichert!";
+      setTimeout(() => {
+        successMessage.value = "";
+      }, 3000);
+    }
   } catch (error) {
-    console.error('Error saving country data:', error);
-    errorMessage.value = `Fehler beim Speichern: ${error}`;
+    console.error("Error saving country data:", error);
+    if (!silent) errorMessage.value = `Fehler beim Speichern: ${error}`;
   } finally {
-    isLoading.value = false;
+    isSaving.value = false;
+    if (!silent) isLoading.value = false;
   }
 };
 
 // Function to deep clone an object and replace country names
-function replaceCountryNamesInData(data: any, oldName: string, newName: string, newSlug: string): any {
+function replaceCountryNamesInData(
+  data: any,
+  oldName: string,
+  newName: string,
+  newSlug: string,
+): any {
   if (!data) return data;
-  
+
   // Handle arrays
   if (Array.isArray(data)) {
-    return data.map(item => replaceCountryNamesInData(item, oldName, newName, newSlug));
+    return data.map((item) =>
+      replaceCountryNamesInData(item, oldName, newName, newSlug),
+    );
   }
-  
+
   // Handle objects
-  if (typeof data === 'object' && !Array.isArray(data)) {
+  if (typeof data === "object" && !Array.isArray(data)) {
     const newObj: any = {};
     for (const [key, value] of Object.entries(data)) {
       let newValue = value;
-      
+
       // Replace values that match the old country name (case-insensitive)
-      if (typeof value === 'string') {
+      if (typeof value === "string") {
         // Handle the country_name field specially - use the new name as provided
-        if (key === 'country_name') {
+        if (key === "country_name") {
           newValue = newName;
         } else {
           // For other fields, replace all variations of the old name
           let replacedValue = value;
-          
+
           // Create all possible variations of the old name
           const oldNameVariations = [
             oldName, // original (e.g., "italien")
             oldName.charAt(0).toUpperCase() + oldName.slice(1), // "Italien"
-            oldName.toLowerCase(), // "italien" 
+            oldName.toLowerCase(), // "italien"
             oldName.toUpperCase(), // "ITALIEN"
           ];
-          
+
           // Create matching variations for the new name
-          const newNameCapitalized = newName.charAt(0).toUpperCase() + newName.slice(1);
+          const newNameCapitalized =
+            newName.charAt(0).toUpperCase() + newName.slice(1);
           const newNameVariations = [
             newName, // original (e.g., "frankreich")
             newNameCapitalized, // "Frankreich"
             newName.toLowerCase(), // "frankreich"
             newName.toUpperCase(), // "FRANKREICH"
           ];
-          
+
           // Replace all variations of old name with appropriate new name variations
           for (let i = 0; i < oldNameVariations.length; i++) {
             const oldVar = oldNameVariations[i];
             const newVar = newNameVariations[i];
-            
+
             // Only replace if the old variation is different from the new name
             if (oldVar !== newVar) {
-              const regex = new RegExp(oldVar, 'gi');
+              const regex = new RegExp(oldVar, "gi");
               replacedValue = replacedValue.replace(regex, newVar);
             }
           }
-          
+
           // Also handle slugs in URLs (like #italien, italien.json, etc.)
           const oldSlug = createSlug(oldName);
-          const slugRegex = new RegExp(oldSlug, 'gi');
+          const slugRegex = new RegExp(oldSlug, "gi");
           replacedValue = replacedValue.replace(slugRegex, newSlug);
-          
+
           newValue = replacedValue;
         }
-      } else if (typeof value === 'object') {
+      } else if (typeof value === "object") {
         newValue = replaceCountryNamesInData(value, oldName, newName, newSlug);
       }
-      
+
       newObj[key] = newValue;
     }
     return newObj;
   }
-  
+
   return data;
 }
 
 // Function to copy data from an existing country
-async function copyCountryData(sourceCountry: string, newName: string): Promise<any> {
+async function copyCountryData(
+  sourceCountry: string,
+  newName: string,
+): Promise<any> {
   try {
     // Try multiple approaches to load the source country data
     const approaches = [
@@ -402,7 +451,11 @@ async function copyCountryData(sourceCountry: string, newName: string): Promise<
       },
       // 2. Try API endpoint
       async () => {
-        const response = await fetchWithTimeout(`/api/country/${sourceCountry}`, {}, 2000);
+        const response = await fetchWithTimeout(
+          `/api/country/${sourceCountry}`,
+          {},
+          2000,
+        );
         if (response.ok) {
           const data = await response.json();
           if (data.success && data.content) {
@@ -420,21 +473,30 @@ async function copyCountryData(sourceCountry: string, newName: string): Promise<
           return JSON.parse(content);
         }
         return null;
-      }
+      },
     ];
-    
+
     for (const approach of approaches) {
       try {
         const sourceData = await approach();
         if (sourceData) {
           const newSlug = createSlug(newName);
-          console.log(`Successfully loaded source country ${sourceCountry}, replacing names with ${newName}`);
+          console.log(
+            `Successfully loaded source country ${sourceCountry}, replacing names with ${newName}`,
+          );
           console.log(`Source data country_name: ${sourceData.country_name}`);
           console.log(`Source data keys:`, Object.keys(sourceData));
-          
+
           // Replace all country names in the data
-          const replacedData = replaceCountryNamesInData(sourceData, sourceCountry, newName, newSlug);
-          console.log(`Replaced data country_name: ${replacedData.country_name}`);
+          const replacedData = replaceCountryNamesInData(
+            sourceData,
+            sourceCountry,
+            newName,
+            newSlug,
+          );
+          console.log(
+            `Replaced data country_name: ${replacedData.country_name}`,
+          );
           return replacedData;
         }
       } catch (error) {
@@ -442,13 +504,14 @@ async function copyCountryData(sourceCountry: string, newName: string): Promise<
         continue;
       }
     }
-    
+
     // If we can't find the source country, fall back to template
-    console.log(`Could not find source country ${sourceCountry}, using template`);
+    console.log(
+      `Could not find source country ${sourceCountry}, using template`,
+    );
     return JSON.parse(getDefaultTemplate(newName));
-    
   } catch (error) {
-    console.error('Error copying country data:', error);
+    console.error("Error copying country data:", error);
     return JSON.parse(getDefaultTemplate(newName));
   }
 }
@@ -456,74 +519,81 @@ async function copyCountryData(sourceCountry: string, newName: string): Promise<
 // Create new country
 const createNewCountry = async () => {
   if (!newCountryName.value.trim()) {
-    errorMessage.value = 'Bitte gib einen Ländernamen ein.';
+    errorMessage.value = "Bitte gib einen Ländernamen ein.";
     return;
   }
-  
+
   const countrySlug = createSlug(newCountryName.value);
   const countryDisplayName = newCountryName.value;
-  
+
   try {
     isLoading.value = true;
-    console.log(`Creating new country: ${countryDisplayName}, slug: ${countrySlug}`);
-    
+    console.log(
+      `Creating new country: ${countryDisplayName}, slug: ${countrySlug}`,
+    );
+
     // Try to copy from an existing country (italien) instead of using template
-    const copiedData = await copyCountryData('italien', newCountryName.value);
-    
+    const copiedData = await copyCountryData("italien", newCountryName.value);
+
     if (!copiedData || !copiedData.country_name) {
-      console.error('CopyCountryData returned invalid data:', copiedData);
-      throw new Error('Could not create country data');
+      console.error("CopyCountryData returned invalid data:", copiedData);
+      throw new Error("Could not create country data");
     }
-    
-    console.log(`Copied data for ${countryDisplayName}, country_name in data:`, copiedData.country_name);
+
+    console.log(
+      `Copied data for ${countryDisplayName}, country_name in data:`,
+      copiedData.country_name,
+    );
     console.log(`Copied data keys:`, Object.keys(copiedData));
-    
+
     // Ensure we have proper data structure
     if (!copiedData.country_name) {
-      console.error('Copied data is missing country_name! Using template as fallback');
+      console.error(
+        "Copied data is missing country_name! Using template as fallback",
+      );
       pageData.value = JSON.parse(getDefaultTemplate(countrySlug));
     } else {
       // Force deep copy to ensure reactivity
       const deepCopy = JSON.parse(JSON.stringify(copiedData));
       pageData.value = deepCopy;
-      console.log('pageData.value updated with new country data:', {
+      console.log("pageData.value updated with new country data:", {
         country_name: pageData.value.country_name,
         hero_title: pageData.value.hero?.title,
-        intro_title: pageData.value.intro?.title
+        intro_title: pageData.value.intro?.title,
       });
     }
-    
+
     selectedCountry.value = countrySlug;
     countries.value = [...new Set([...countries.value, countrySlug])].sort();
-    
+
     // Auto-save the new country so the file exists
     try {
       await saveCountryData();
-      console.log('New country auto-saved successfully');
+      console.log("New country auto-saved successfully");
     } catch (saveError) {
-      console.warn('Could not auto-save new country:', saveError);
+      console.warn("Could not auto-save new country:", saveError);
       // Continue anyway - user can save manually
     }
-    
+
     showNewCountryModal.value = false;
-    newCountryName.value = '';
-    
+    newCountryName.value = "";
+
     successMessage.value = `Neues Land "${countryDisplayName}" erstellt (basierend auf Italien)`;
   } catch (error) {
-    console.error('Error creating new country:', error);
+    console.error("Error creating new country:", error);
     errorMessage.value = `Fehler beim Erstellen des neuen Landes: ${error}`;
-    
+
     // Fallback to template if copying fails
     pageData.value = JSON.parse(getDefaultTemplate(countrySlug));
     selectedCountry.value = countrySlug;
     countries.value = [...new Set([...countries.value, countrySlug])].sort();
     showNewCountryModal.value = false;
-    newCountryName.value = '';
+    newCountryName.value = "";
     successMessage.value = `Neues Land "${countryDisplayName}" erstellt`;
   } finally {
     isLoading.value = false;
     setTimeout(() => {
-      successMessage.value = '';
+      successMessage.value = "";
     }, 2000);
   }
 };
@@ -531,54 +601,65 @@ const createNewCountry = async () => {
 // Delete country
 const deleteCountry = async () => {
   if (!selectedCountry.value) {
-    errorMessage.value = 'Bitte wähle ein Land zum Löschen aus.';
+    errorMessage.value = "Bitte wähle ein Land zum Löschen aus.";
     return;
   }
-  
-  if (!confirm(`Möchtest du die Datei ${selectedCountry.value}.json wirklich löschen?`)) {
+
+  if (
+    !confirm(
+      `Möchtest du die Datei ${selectedCountry.value}.json wirklich löschen?`,
+    )
+  ) {
     return;
   }
-  
+
   try {
     isLoading.value = true;
-    
+
     try {
-      const response = await fetchWithTimeout(`/api/country/${selectedCountry.value}`, {
-        method: 'DELETE',
-      }, 3000);
-      
+      const response = await fetchWithTimeout(
+        `/api/country/${selectedCountry.value}`,
+        {
+          method: "DELETE",
+        },
+        3000,
+      );
+
       if (response.ok) {
         const result = await response.json();
         if (result.success) {
           successMessage.value = result.message || `Datei gelöscht`;
-          
+
           // Remove from list and clear selection
-          countries.value = countries.value.filter(c => c !== selectedCountry.value);
-          selectedCountry.value = '';
+          countries.value = countries.value.filter(
+            (c) => c !== selectedCountry.value,
+          );
+          selectedCountry.value = "";
           pageData.value = null;
-          
+
           setTimeout(() => {
-            successMessage.value = '';
+            successMessage.value = "";
           }, 3000);
           return;
         }
       }
     } catch (apiError) {
-      console.log('API delete failed');
+      console.log("API delete failed");
     }
-    
+
     // Fallback: just remove from UI
-    countries.value = countries.value.filter(c => c !== selectedCountry.value);
-    selectedCountry.value = '';
+    countries.value = countries.value.filter(
+      (c) => c !== selectedCountry.value,
+    );
+    selectedCountry.value = "";
     pageData.value = null;
-    successMessage.value = 'Land aus der Liste entfernt';
-    
+    successMessage.value = "Land aus der Liste entfernt";
+
     setTimeout(() => {
-      successMessage.value = '';
+      successMessage.value = "";
     }, 2000);
-    
   } catch (error) {
-    console.error('Error deleting country:', error);
+    console.error("Error deleting country:", error);
     errorMessage.value = `Fehler beim Löschen: ${error}`;
   } finally {
     isLoading.value = false;
@@ -587,15 +668,17 @@ const deleteCountry = async () => {
 
 // Handle country selection
 const handleCountrySelect = (country: string) => {
-  console.log(`Country selected: ${country}, current selected: ${selectedCountry.value}`);
-  
+  console.log(
+    `Country selected: ${country}, current selected: ${selectedCountry.value}`,
+  );
+
   // Force reload even if it's the same country
   if (selectedCountry.value === country) {
     console.log(`Country ${country} is already selected, forcing reload`);
     // Clear pageData to force reload
     pageData.value = null;
   }
-  
+
   // Load the country data
   loadCountryData(country);
 };
@@ -608,30 +691,35 @@ const refreshCountries = async () => {
 // Format country name for display
 const formatCountryName = (name: string) => {
   return name
-    .replace(/-/g, ' ')
+    .replace(/-/g, " ")
     .replace(/\b\w/g, (l: string) => l.toUpperCase());
 };
 
 // Check if current country exists
 const isNewCountry = computed(() => {
-  return selectedCountry.value && !countries.value.includes(selectedCountry.value);
+  return (
+    selectedCountry.value && !countries.value.includes(selectedCountry.value)
+  );
 });
 
 // Auto-save functionality
 const autoSaveTimeout = ref<any>(null);
 
 // Watch for changes and auto-save
-// Disabled for now to prevent spamming
-// watch(() => pageData.value, (newVal) => {
-//   if (autoSaveTimeout.value) {
-//     clearTimeout(autoSaveTimeout.value);
-//   }
-//   if (selectedCountry.value) {
-//     autoSaveTimeout.value = setTimeout(() => {
-//       saveCountryData();
-//     }, 3000);
-//   }
-// }, { deep: true });
+watch(
+  () => pageData.value,
+  (newVal) => {
+    if (autoSaveTimeout.value) {
+      clearTimeout(autoSaveTimeout.value);
+    }
+    if (selectedCountry.value && newVal) {
+      autoSaveTimeout.value = setTimeout(() => {
+        saveCountryData(true);
+      }, 2000);
+    }
+  },
+  { deep: true },
+);
 
 // Clean up timeout on unmount
 onUnmounted(() => {
@@ -642,96 +730,100 @@ onUnmounted(() => {
 
 // Initialize
 onMounted(async () => {
-  console.log('CountryEditor mounted');
-  
+  console.log("CountryEditor mounted");
+
   try {
     await loadCountries();
-    console.log('Countries loaded:', countries.value);
-    
+    console.log("Countries loaded:", countries.value);
+
     // If we have countries, load the first one
     if (countries.value.length > 0) {
-      console.log('Loading first country:', countries.value[0]);
+      console.log("Loading first country:", countries.value[0]);
       await loadCountryData(countries.value[0]);
-      console.log('First country loaded, pageData:', pageData.value ? 'set' : 'not set');
+      console.log(
+        "First country loaded, pageData:",
+        pageData.value ? "set" : "not set",
+      );
     } else {
       // If no countries exist, create a default one
-      console.log('Creating default country');
-      pageData.value = JSON.parse(getDefaultTemplate('italien'));
-      selectedCountry.value = 'italien';
-      countries.value = ['italien'];
+      console.log("Creating default country");
+      pageData.value = JSON.parse(getDefaultTemplate("italien"));
+      selectedCountry.value = "italien";
+      countries.value = ["italien"];
     }
   } catch (error) {
-    console.error('Error during initialization:', error);
+    console.error("Error during initialization:", error);
     // Fallback to default
-    pageData.value = JSON.parse(getDefaultTemplate('italien'));
-    selectedCountry.value = 'italien';
-    countries.value = ['italien'];
+    pageData.value = JSON.parse(getDefaultTemplate("italien"));
+    selectedCountry.value = "italien";
+    countries.value = ["italien"];
   }
-  
+
   // Final safety check - ensure pageData is always set
   if (!pageData.value) {
-    console.log('No pageData after initialization, setting default');
-    pageData.value = JSON.parse(getDefaultTemplate('italien'));
-    selectedCountry.value = 'italien';
-    if (!countries.value.includes('italien')) {
-      countries.value = [...countries.value, 'italien'].sort();
+    console.log("No pageData after initialization, setting default");
+    pageData.value = JSON.parse(getDefaultTemplate("italien"));
+    selectedCountry.value = "italien";
+    if (!countries.value.includes("italien")) {
+      countries.value = [...countries.value, "italien"].sort();
     }
   }
-  
+
   // Add a simple test to check if preview works
-  console.log('Initialization complete. pageData:', pageData.value ? 'set' : 'not set');
-  console.log('selectedCountry:', selectedCountry.value);
-  console.log('countries:', countries.value);
-  
+  console.log(
+    "Initialization complete. pageData:",
+    pageData.value ? "set" : "not set",
+  );
+  console.log("selectedCountry:", selectedCountry.value);
+  console.log("countries:", countries.value);
+
   // Debug: Log the actual content of pageData
   if (pageData.value) {
-    console.log('Final pageData country_name:', pageData.value.country_name);
-    console.log('Final pageData keys:', Object.keys(pageData.value));
+    console.log("Final pageData country_name:", pageData.value.country_name);
+    console.log("Final pageData keys:", Object.keys(pageData.value));
   }
-  
+
   // If still no data, set a minimal test object
   if (!pageData.value) {
-    console.log('Setting test data as fallback');
+    console.log("Setting test data as fallback");
     pageData.value = {
-      country_name: 'Testland',
+      country_name: "Testland",
       hero: {
-        eyebrow: 'Test',
-        title: 'Test Land entdecken',
-        description: 'Dies ist ein Test.',
+        eyebrow: "Test",
+        title: "Test Land entdecken",
+        description: "Dies ist ein Test.",
         image: {
-          url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=687&auto=format&fit=crop',
-          alt: 'Testbild'
+          url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=687&auto=format&fit=crop",
+          alt: "Testbild",
         },
-        buttons: []
+        buttons: [],
       },
       breadcrumb: {
-        home_label: 'Startseite'
-      }
+        home_label: "Startseite",
+      },
     };
   }
-  
+
   // Set debug data for simple preview testing
   if (!pageData.value || !pageData.value.country_name) {
-    console.log('Using hardcoded test data');
+    console.log("Using hardcoded test data");
     pageData.value = {
-      country_name: 'Testland',
+      country_name: "Testland",
       hero: {
-        eyebrow: 'Test Reiseguide',
-        title: 'Testland entdecken',
-        description: 'Dies ist eine Testbeschreibung für die Vorschau.',
+        eyebrow: "Test Reiseguide",
+        title: "Testland entdecken",
+        description: "Dies ist eine Testbeschreibung für die Vorschau.",
         image: {
-          url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1170&auto=format&fit=crop',
-          alt: 'Testland Landschaft'
+          url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1170&auto=format&fit=crop",
+          alt: "Testland Landschaft",
         },
-        buttons: [
-          { label: 'Mehr erfahren', url: '#' }
-        ]
+        buttons: [{ label: "Mehr erfahren", url: "#" }],
       },
       breadcrumb: {
-        home_label: 'Startseite'
-      }
+        home_label: "Startseite",
+      },
     };
-    selectedCountry.value = 'testland';
+    selectedCountry.value = "testland";
   }
 });
 </script>
@@ -744,16 +836,16 @@ onMounted(async () => {
         <h1>Länder-Konfiguration - Live Vorschau</h1>
         <p class="subtitle">Bearbeite Inhalte direkt in der Vorschau</p>
       </div>
-      
+
       <div class="header-actions">
-        <button 
+        <button
           @click="showNewCountryModal = true"
           class="btn btn-primary"
           :disabled="isLoading"
         >
           <span>+ Neues Land</span>
         </button>
-        <button 
+        <button
           @click="refreshCountries"
           class="btn btn-secondary"
           :disabled="isLoading"
@@ -761,15 +853,15 @@ onMounted(async () => {
         >
           <span>🔄 Aktualisieren</span>
         </button>
-        <button 
-          @click="saveCountryData"
+        <button
+          @click="saveCountryData()"
           class="btn btn-success"
-          :disabled="isLoading || !selectedCountry || !pageData"
+          :disabled="isLoading || isSaving || !selectedCountry || !pageData"
         >
-          <span v-if="isLoading">💾 Speichern...</span>
+          <span v-if="isLoading || isSaving">💾 Speichern...</span>
           <span v-else>💾 Speichern</span>
         </button>
-        <button 
+        <button
           v-if="selectedCountry && !isNewCountry"
           @click="deleteCountry"
           class="btn btn-danger"
@@ -787,8 +879,8 @@ onMounted(async () => {
         <div class="sidebar-content">
           <h3>Länder auswählen</h3>
           <div class="country-list">
-            <div 
-              v-for="country in countryList" 
+            <div
+              v-for="country in countryList"
               :key="country"
               class="country-item"
               :class="{ active: selectedCountry === country }"
@@ -797,12 +889,17 @@ onMounted(async () => {
               <span class="country-name">{{ formatCountryName(country) }}</span>
               <span class="country-file">{{ country }}.json</span>
             </div>
-            <div v-if="selectedCountry && isNewCountry" class="country-item new">
-              <span class="country-name">{{ formatCountryName(selectedCountry) }}</span>
+            <div
+              v-if="selectedCountry && isNewCountry"
+              class="country-item new"
+            >
+              <span class="country-name">{{
+                formatCountryName(selectedCountry)
+              }}</span>
               <span class="country-file">{{ selectedCountry }}.json (neu)</span>
             </div>
           </div>
-          
+
           <div v-if="selectedCountry" class="sidebar-info">
             <div class="info-item">
               <strong>Aktuelles Land:</strong>
@@ -813,10 +910,13 @@ onMounted(async () => {
               <span>{{ selectedCountry }}.json</span>
             </div>
           </div>
-          
+
           <div class="sidebar-hint">
             <p><strong>💡 Tipp:</strong></p>
-            <p>Klicke auf jeden Text oder jedes Bild in der Vorschau, um es zu bearbeiten.</p>
+            <p>
+              Klicke auf jeden Text oder jedes Bild in der Vorschau, um es zu
+              bearbeiten.
+            </p>
           </div>
         </div>
       </aside>
@@ -827,28 +927,29 @@ onMounted(async () => {
           <h3>Kein Land ausgewählt</h3>
           <p>Wähle ein Land aus der Liste aus oder erstelle ein neues Land.</p>
         </div>
-        
+
         <div v-else-if="!pageData" class="loading-preview">
           <div class="loading-spinner"></div>
-          <p>Lade Daten für: {{ selectedCountry || 'unbekannt' }}...</p>
+          <p>Lade Daten für: {{ selectedCountry || "unbekannt" }}...</p>
         </div>
-        
+
         <div v-else class="preview-container">
           <!-- Live Preview -->
-          <CountryPreview 
-            :page-data="pageData" 
-            @edit-field="startEdit"
-          />
+          <CountryPreview :page-data="pageData" @edit-field="startEdit" />
         </div>
       </main>
     </div>
 
     <!-- Edit Dialog -->
-    <div v-if="editDialogVisible" class="modal-overlay" @click.self="editDialogVisible = false">
+    <div
+      v-if="editDialogVisible"
+      class="modal-overlay"
+      @click.self="editDialogVisible = false"
+    >
       <div class="edit-dialog">
         <h3>Text bearbeiten</h3>
-        <textarea 
-          v-model="editedText" 
+        <textarea
+          v-model="editedText"
           class="edit-textarea"
           placeholder="Gib den neuen Text ein..."
           @keyup.ctrl.enter="saveEditedField"
@@ -858,7 +959,11 @@ onMounted(async () => {
           <button @click="editDialogVisible = false" class="btn btn-secondary">
             Abbrechen
           </button>
-          <button @click="saveEditedField" class="btn btn-primary" :disabled="!editedText.trim()">
+          <button
+            @click="saveEditedField"
+            class="btn btn-primary"
+            :disabled="!editedText.trim()"
+          >
             Speichern
           </button>
         </div>
@@ -867,36 +972,49 @@ onMounted(async () => {
 
     <!-- Messages -->
     <div class="messages-container">
-      <div v-if="errorMessage" class="message error">
-        ❌ {{ errorMessage }}
-      </div>
+      <div v-if="errorMessage" class="message error">❌ {{ errorMessage }}</div>
       <div v-if="successMessage" class="message success">
         ✅ {{ successMessage }}
       </div>
     </div>
 
     <!-- New Country Modal -->
-    <div v-if="showNewCountryModal" class="modal-overlay" @click.self="showNewCountryModal = false">
+    <div
+      v-if="showNewCountryModal"
+      class="modal-overlay"
+      @click.self="showNewCountryModal = false"
+    >
       <div class="modal">
         <h3>Neues Land erstellen</h3>
-        <p>Gib den Namen für das neue Land ein (wird automatisch zu einer URL-freundlichen Slug umgewandelt):</p>
-        <p class="modal-hint">Das neue Land wird basierend auf "Italien" erstellt, mit allen Beispiel-Daten aber dem neuen Namen. Datei wird im public-Verzeichnis gespeichert.</p>
-        
-        <input 
-          v-model="newCountryName" 
-          type="text" 
+        <p>
+          Gib den Namen für das neue Land ein (wird automatisch zu einer
+          URL-freundlichen Slug umgewandelt):
+        </p>
+        <p class="modal-hint">
+          Das neue Land wird basierend auf "Italien" erstellt, mit allen
+          Beispiel-Daten aber dem neuen Namen. Datei wird im public-Verzeichnis
+          gespeichert.
+        </p>
+
+        <input
+          v-model="newCountryName"
+          type="text"
           placeholder="z.B. Spanien, Frankreich, Österreich"
           class="form-input"
           @keyup.enter="createNewCountry"
           :disabled="isLoading"
         />
-        
+
         <div class="modal-actions">
-          <button @click="showNewCountryModal = false" class="btn btn-secondary" :disabled="isLoading">
+          <button
+            @click="showNewCountryModal = false"
+            class="btn btn-secondary"
+            :disabled="isLoading"
+          >
             Abbrechen
           </button>
-          <button 
-            @click="createNewCountry" 
+          <button
+            @click="createNewCountry"
             class="btn btn-primary"
             :disabled="!newCountryName.trim() || isLoading"
           >
@@ -944,7 +1062,6 @@ onMounted(async () => {
   opacity: 0.9;
   font-size: 0.95rem;
 }
-
 
 .header-actions {
   display: flex;
@@ -1062,8 +1179,6 @@ onMounted(async () => {
   max-width: 1180px;
   margin: 0 auto;
 }
-
-
 
 .no-country-selected,
 .loading-preview {
@@ -1235,7 +1350,9 @@ onMounted(async () => {
   border-radius: 8px;
   font-size: 1rem;
   margin-bottom: 20px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .form-input:focus {
@@ -1255,7 +1372,9 @@ onMounted(async () => {
   line-height: 1.6;
   margin-bottom: 20px;
   resize: vertical;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .edit-textarea:focus {
@@ -1323,42 +1442,42 @@ onMounted(async () => {
   .editor-container {
     flex-direction: column;
   }
-  
+
   .sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #e4e9e6;
   }
-  
+
   .sidebar-content {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     align-items: stretch;
   }
-  
+
   .country-list {
     flex-direction: row;
     flex-wrap: wrap;
     max-height: none;
   }
-  
+
   .country-item {
     width: calc(33.333% - 8px);
     min-width: 200px;
   }
-  
+
   .sidebar-info,
   .sidebar-hint {
     flex: 1;
     min-width: 250px;
   }
-  
+
   .header-actions {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .header-actions .btn {
     width: 100%;
   }
@@ -1370,20 +1489,20 @@ onMounted(async () => {
     gap: 20px;
     text-align: center;
   }
-  
+
   .header-actions {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .country-item {
     width: calc(50% - 8px);
   }
-  
+
   .sidebar-content {
     flex-direction: column;
   }
-  
+
   .sidebar-info,
   .sidebar-hint {
     width: 100%;
@@ -1394,14 +1513,14 @@ onMounted(async () => {
   .country-item {
     width: 100%;
   }
-  
+
   .messages-container {
     bottom: 10px;
     right: 10px;
     left: 10px;
     max-width: calc(100% - 20px);
   }
-  
+
   .message {
     font-size: 0.85rem;
     padding: 10px;

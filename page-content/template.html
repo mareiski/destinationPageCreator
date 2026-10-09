@@ -1192,6 +1192,11 @@
       return "#";
     }
 
+    // Preserve hash-only URLs (fragment identifiers)
+    if (value.startsWith("#")) {
+      return value;
+    }
+
     try {
 
       const url =
