@@ -1,0 +1,523 @@
+{
+  "country_name": "Deutschland",
+  "hero": {
+    "eyebrow": "Reiseguide & Community",
+    "title": "Deutschland entdecken",
+    "description": "Deutschland verbindet historische Städte mit abwechslungsreichen Landschaften, Nord- und Ostseeküste, Mittelgebirgen, Alpen, Seen und einer vielfältigen regionalen Kultur. Entdecke Regionen, Reiseziele, Sehenswürdigkeiten, praktische Tipps und persönliche Reiseberichte aus der Community.",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=85&w=1170&auto=format&fit=crop",
+      "alt": "Historische Stadtlandschaft in Deutschland"
+    },
+    "buttons": [
+      {
+        "label": "Regionen entdecken",
+        "url": "#regionen"
+      },
+      {
+        "label": "Beiträge lesen",
+        "url": "#beitraege"
+      }
+    ]
+  },
+  "intro": {
+    "kicker": "Deutschland Reiseführer",
+    "title": "Urlaub in Deutschland: Zwischen Küste, Bergen und historischen Städten",
+    "paragraphs": [
+      "Deutschland bietet eine überraschend große landschaftliche Vielfalt. Im Norden warten Nord- und Ostsee mit Inseln, Stränden und Küstenlandschaften, während sich im Süden die Alpen und zahlreiche Seen erstrecken. Dazwischen liegen Mittelgebirge, Flusstäler, Weinregionen und historische Städte.",
+      "Ein Deutschland-Urlaub kann deshalb ganz unterschiedlich aussehen: entspannter Strandurlaub an der Ostsee, Wanderurlaub in den Alpen, Roadtrip entlang des Rheins, Städtereise nach Berlin, Hamburg oder München, Familienurlaub an einem See oder eine Rundreise durch mehrere Regionen.",
+      "Auf dieser Seite findest du einen Überblick über beliebte Reiseziele in Deutschland sowie praktische Hinweise zur Reiseplanung. In der Community kannst du außerdem aktuelle Reiseberichte, Erfahrungen und Geheimtipps anderer Reisender entdecken.",
+      "Besonders interessant ist Deutschland auch deshalb, weil sich viele unterschiedliche Reisearten miteinander verbinden lassen. Ein Urlaub kann morgens mit einem Spaziergang durch eine historische Altstadt beginnen und am Nachmittag bereits an einem See, an der Küste oder in den Bergen weitergehen."
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1611312456567-bd76240dcaf4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+      "alt": "Landschaft mit Bergen und See in Deutschland"
+    }
+  },
+  "image_strip": [
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1562878344-85f7b6243c5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+        "alt": "Alpenlandschaft mit See in Deutschland"
+      },
+      "caption": "Seen und Berge im Süden"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=1170&auto=format&fit=crop",
+        "alt": "Historische Sehenswürdigkeit in Berlin"
+      },
+      "caption": "Geschichte in Berlin"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1721122877833-a07dccf91333?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+        "alt": "Strand an der deutschen Küste"
+      },
+      "caption": "Küsten und Nord- und Ostsee"
+    }
+  ],
+  "regions": {
+    "kicker": "Reiseziele",
+    "title": "Die beliebtesten Regionen Deutschlands",
+    "description": "Deutschland besteht aus vielen sehr unterschiedlichen Regionen. Während Norddeutschland besonders für Küsten, Inseln und maritime Landschaften bekannt ist, findest du im Süden Berge und Seen sowie dazwischen historische Städte, Flusstäler und abwechslungsreiche Kulturlandschaften.",
+    "items": [
+      {
+        "title": "Bayern",
+        "url": "/deutschland/bayern",
+        "linklabel": "Bayern entdecken →",
+        "description": "Bayern verbindet Alpen, Seen, historische Städte und traditionelle Kulturlandschaften. München, der Chiemsee, der Tegernsee und die Zugspitze lassen sich hervorragend mit weiteren Ausflugszielen kombinieren.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1577462282244-b58c2816d686?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Bayerische Landschaft mit Bergen und See"
+        }
+      },
+      {
+        "title": "Baden-Württemberg",
+        "url": "/deutschland/baden-wuerttemberg",
+        "linklabel": "Baden-Württemberg entdecken →",
+        "description": "Baden-Württemberg bietet Schwarzwald, Bodensee, Weinregionen und historische Städte. Freiburg, Heidelberg, der Bodensee und zahlreiche kleinere Orte eignen sich für abwechslungsreiche Rundreisen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1623354454054-68f2ba370beb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Landschaft im Schwarzwald"
+        }
+      },
+      {
+        "title": "Nordsee",
+        "url": "/deutschland/nordsee",
+        "linklabel": "Nordsee entdecken →",
+        "description": "Die deutsche Nordseeküste verbindet lange Strände, Wattenmeer, Inseln und maritime Orte. Sylt, Norderney, Föhr und die ostfriesischen Inseln bieten unterschiedliche Möglichkeiten für Erholung und Naturerlebnisse.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1618584618387-e08a897cd94c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Küstenlandschaft an der Nordsee"
+        }
+      },
+      {
+        "title": "Ostsee",
+        "url": "/deutschland/ostsee",
+        "linklabel": "Ostsee entdecken →",
+        "description": "Die Ostseeküste ist bekannt für Sandstrände, Seebäder, Steilküsten und Inseln. Rügen, Usedom, Fehmarn und die Lübecker Bucht eignen sich besonders für Strandurlaub und Familienreisen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1612810798551-291a64afc49b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Strand und Küste an der Ostsee"
+        }
+      }
+    ]
+  },
+  "community": {
+    "kicker": "Community",
+    "title": "Aktuelle Beiträge über Deutschland",
+    "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
+    "search": {
+      "minlat": 47.2701,
+      "minlon": 5.8663,
+      "maxlat": 55.0583,
+      "maxlon": 15.0419,
+      "limit": 6
+    }
+  },
+  "topics": {
+    "kicker": "Reiseplanung",
+    "title": "Deutschland nach Reisethema entdecken",
+    "description": "Nicht jeder Deutschland-Urlaub sieht gleich aus. Je nach Reiseart können andere Regionen, Orte und Jahreszeiten besonders interessant sein.",
+    "items": [
+      {
+        "title": "Strandurlaub",
+        "description": "Sandstrände, Inseln, Seebäder und Küstenlandschaften an Nord- und Ostsee.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1453192170300-fafb9a7840e5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Deutscher Strand an der Küste"
+        }
+      },
+      {
+        "title": "Berge & Natur",
+        "description": "Alpen, Schwarzwald, Harz, Bayerischer Wald und abwechslungsreiche Wandergebiete.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1699262625387-1092c67161d0?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Berglandschaft in Deutschland"
+        }
+      },
+      {
+        "title": "Städtereisen",
+        "description": "Berlin, Hamburg, München, Köln, Dresden und viele weitere große und kleine Städte.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1619120810930-6ca5048deee1?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Historische Architektur in Berlin"
+        }
+      },
+      {
+        "title": "Kultur",
+        "description": "Historische Sehenswürdigkeiten und mittelalterliche Städte",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Deutsches Essen"
+        }
+      }
+    ]
+  },
+  "destinations": {
+    "kicker": "Beliebte Ziele",
+    "title": "Diese Orte solltest du kennen",
+    "description": "Einige Reiseziele eignen sich besonders gut als Ausgangspunkt, Zwischenstopp oder Schwerpunkt einer Deutschlandreise.",
+    "items": [
+      {
+        "title": "Bodensee",
+        "description": "See, Berge, historische Orte und mediterranes Flair",
+        "url": "/deutschland/bodensee",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1559462653-b3bc0c73242a?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Bodensee mit Bergen und Wasser"
+        }
+      },
+      {
+        "title": "Berlin",
+        "description": "Geschichte, Museen, Sehenswürdigkeiten und modernes Stadtleben",
+        "url": "/deutschland/berlin",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1777907158664-aeaa420df056?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Berlin mit historischer Architektur"
+        }
+      },
+      {
+        "title": "Hamburg",
+        "description": "Hafen, Speicherstadt, Elbe und norddeutsches Stadtleben",
+        "url": "/deutschland/hamburg",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1473615695634-d284ec918736?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Hamburg und die historische Speicherstadt"
+        }
+      },
+      {
+        "title": "Rügen",
+        "description": "Kreidefelsen, Strände, Seebäder und Ostseeküste",
+        "url": "/deutschland/ruegen",
+        "image": {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/K%C3%B6nigsstuhl_und_Viktoria-Sicht.jpg/960px-K%C3%B6nigsstuhl_und_Viktoria-Sicht.jpg?utm_source=de.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "alt": "Küste und Strand auf Rügen"
+        }
+      },
+      {
+        "title": "Bayerische Alpen",
+        "description": "Berge, Seen, Wanderwege und alpine Landschaften",
+        "url": "/deutschland/bayerische-alpen",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1568046772612-8bb5afe37e51?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Berglandschaft der bayerischen Alpen"
+        }
+      },
+      {
+        "title": "Heidelberg",
+        "description": "Altstadt, Schloss, Neckar und historische Universitätsstadt",
+        "url": "/deutschland/heidelberg",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1622214366189-72b19cc61597?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Heidelberg mit historischer Altstadt"
+        }
+      }
+    ]
+  },
+  "tips": {
+    "kicker": "Reiseplanung",
+    "title": "Praktische Tipps für deine Deutschland-Reise",
+    "description": "Gerade bei beliebten Reisezielen lohnt es sich, die Reise nicht nur nach Sehenswürdigkeiten zu planen. Verkehr, Saison, Wetter, Öffnungszeiten und die Wahl des richtigen Ausgangsortes können einen großen Unterschied machen.",
+    "items": [
+      {
+        "title": "Verkehr in den Alpen",
+        "intro": "Beliebte Regionen in den bayerischen Alpen können an Wochenenden und in Ferienzeiten sehr stark besucht sein. Auf wichtigen Zufahrtsstraßen kann es zu erheblichen Verzögerungen kommen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1623190038016-592ab612f8d2?q=80&w=1154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Bayerische Alpen und Landschaft"
+        },
+        "blocks": [
+          {
+            "title": "Alternative Verkehrsmittel",
+            "description": "Gerade bei beliebten Ausflugszielen kann es sich lohnen, mit Bahn, Bus oder Fahrrad anzureisen. Viele Orte und Wandergebiete sind gut an den öffentlichen Verkehr angebunden."
+          }
+        ]
+      },
+      {
+        "title": "Strände in Deutschland",
+        "intro": "Deutschland besitzt eine große Auswahl an Stränden an Nord- und Ostsee. Zwischen bekannten Seebädern und kleineren Küstenabschnitten gibt es sehr unterschiedliche Urlaubserlebnisse.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=735&auto=format&fit=crop",
+          "alt": "Strand und deutsche Küste"
+        },
+        "blocks": [
+          {
+            "title": "Bekannte Badeorte",
+            "description": "Viele deutsche Küstenorte sind große Tourismuszentren mit Hotels, Restaurants, Strandkörben und umfangreicher Infrastruktur. In der Hauptsaison können diese Orte allerdings sehr voll werden."
+          },
+          {
+            "title": "Ruhigere Küstenabschnitte",
+            "description": "Wer weniger Trubel sucht, sollte sich auch kleinere Orte und weniger bekannte Strandabschnitte ansehen. Besonders außerhalb der Ferienzeiten lassen sich viele ruhigere Plätze finden."
+          }
+        ]
+      },
+      {
+        "title": "Die beste Reisezeit für Deutschland",
+        "intro": "Die passende Reisezeit hängt stark davon ab, wohin du reisen möchtest und was du unternehmen willst.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1701613535037-b78c3ceb2c4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Deutsche Landschaft im Sommer"
+        },
+        "blocks": [
+          {
+            "title": "Sommer",
+            "description": "Für Badeurlaub, Wanderungen und Städtereisen sind Juni bis August besonders beliebt. Entsprechend stark besucht können Küstenorte, Seen und beliebte Ausflugsziele sein."
+          },
+          {
+            "title": "Frühling und Herbst",
+            "description": "Mildere Temperaturen können für Städtereisen, Rundreisen und Wanderungen angenehm sein. Gleichzeitig sind viele Orte außerhalb der Ferienzeiten weniger stark besucht."
+          }
+        ]
+      },
+      {
+        "title": "Berlin: Sehenswürdigkeiten planen",
+        "intro": "Berlin bietet so viele historische und kulturelle Sehenswürdigkeiten, dass mehrere Tage schnell gefüllt sind.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Historische Architektur in Berlin"
+        },
+        "blocks": [
+          {
+            "title": "Wichtige Sehenswürdigkeiten",
+            "description": "Brandenburger Tor, Reichstag, Museumsinsel, Berliner Mauer und zahlreiche Museen können problemlos mehrere Tage beanspruchen. Plane deshalb ausreichend Zeit für Berlin ein."
+          },
+          {
+            "title": "Eintrittskarten",
+            "description": "Für besonders beliebte Museen und Sehenswürdigkeiten lohnt es sich, Eintrittskarten und mögliche Zeitfenster frühzeitig zu prüfen."
+          },
+          {
+            "title": "Tagesplanung",
+            "description": "Plane nicht zu viele Sehenswürdigkeiten direkt hintereinander. Berlin ist groß und die Wege zwischen den einzelnen Vierteln können länger dauern als erwartet."
+          }
+        ]
+      },
+      {
+        "title": "Hamburg ohne Parkplatzstress",
+        "intro": "Hamburg lässt sich gut mit öffentlichen Verkehrsmitteln erkunden. Wer mit dem Auto anreist, sollte sich deshalb vorher mit Parkmöglichkeiten beschäftigen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1553547274-0df401ae03c9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Hamburg mit Hafen und historischer Architektur"
+        },
+        "blocks": [
+          {
+            "title": "Mit dem Auto",
+            "description": "Wer mit dem Auto anreist, sollte sich bereits vor der Fahrt über Parkhäuser und Park-and-Ride-Möglichkeiten informieren. Gerade in zentralen Bereichen können Parkplätze knapp und teuer sein."
+          },
+          {
+            "title": "Öffentlicher Verkehr",
+            "description": "U-Bahn, S-Bahn, Busse und Fähren ermöglichen es, viele Sehenswürdigkeiten ohne Auto zu erreichen. Besonders bei einem Aufenthalt im Zentrum kann das Auto daher problemlos stehen bleiben."
+          },
+          {
+            "title": "Bahn",
+            "description": "Auch umliegende Städte und Regionen lassen sich von Hamburg aus gut mit der Bahn erreichen. Dadurch kann sich Hamburg als Ausgangspunkt für weitere Ausflüge eignen."
+          }
+        ]
+      },
+      {
+        "title": "Essen in Deutschland",
+        "intro": "Die deutsche Küche ist stark regional geprägt. Deshalb lohnt es sich, im Urlaub auch lokale Spezialitäten auszuprobieren.",
+        "image": {
+          "url": "https://plus.unsplash.com/premium_photo-1692296309608-312c08d582b6?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Deutsche regionale Küche"
+        },
+        "blocks": [
+          {
+            "title": "Regionale Küche",
+            "description": "Von Weißwurst und Brezen in Bayern über Fisch an der Küste bis zu Maultaschen in Baden-Württemberg gibt es zahlreiche regionale Spezialitäten. Auch Brot, Kuchen und saisonale Gerichte gehören zur deutschen Esskultur."
+          }
+        ]
+      }
+    ]
+  },
+  "guide": {
+    "kicker": "Deutschland Reiseführer",
+    "title": "Deutschland Urlaub planen: Was du vor der Reise wissen solltest",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Deutschland ist ein Reiseziel, das sich sowohl für einen kurzen Wochenendtrip als auch für einen mehrwöchigen Urlaub eignet. Durch die unterschiedlichen Regionen lässt sich ein Aufenthalt sehr individuell gestalten. Wer zum ersten Mal im eigenen Land Urlaub macht, steht deshalb häufig vor der Frage, welche Region am besten zum eigenen Urlaub passt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen klassischen Badeurlaub bieten sich beispielsweise die Nordsee, die Ostsee und die deutschen Inseln an. Wer Berge und Seen bevorzugt, findet im Süden mit den bayerischen Alpen, dem Bodensee und zahlreichen weiteren Seen viele Möglichkeiten. Für Kultur- und Städtereisen sind Berlin, Hamburg, München, Köln, Dresden und Heidelberg interessante Ziele."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1765227141297-c8ed211c90d8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Straße durch eine deutsche Landschaft"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Süddeutschland: Seen, Berge und Städte"
+      },
+      {
+        "type": "paragraph",
+        "text": "Süddeutschland ist besonders bei Reisenden beliebt, die Landschaft und Kultur miteinander verbinden möchten. Bayern bietet mit den Alpen, zahlreichen Seen und historischen Orten viele Möglichkeiten für Wanderungen, Ausflüge und Erholung."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gleichzeitig liegen mit München, Nürnberg, Regensburg, Ulm, Freiburg und Augsburg bedeutende Städte in erreichbarer Entfernung. Der Süden verbindet damit unterschiedliche Urlaubsarten: Seeurlaub, Städtereise, Wanderurlaub und Familienurlaub können innerhalb eines Roadtrips kombiniert werden."
+      },
+      {
+        "type": "split",
+        "imageposition": "left",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1630250273518-14f2fb5c66dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Berglandschaft der bayerischen Alpen"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Das Alpenvorland"
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer Natur und aktive Erholung miteinander verbinden möchte, findet im Süden Deutschlands zahlreiche Möglichkeiten. Seen wie der Chiemsee, der Tegernsee und der Bodensee bieten Wassersport und Ausflüge, während die Bergregionen für Wanderungen, Radtouren und weitere Outdoor-Aktivitäten interessant sind.Schlier-, Königs- und Walchensee zählen zu den malerischen kleinen Seen der Alpenregion von denen es hier auch eine Vielzahl gibt."
+          },
+          {
+            "type": "paragraph",
+            "text": "Durch die vergleichsweise kurzen Entfernungen zwischen vielen Reisezielen kann Süddeutschland außerdem gut mit einer Rundreise kombiniert werden."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Westdeutschland: Rhein, Mosel und historische Städte"
+      },
+      {
+        "type": "paragraph",
+        "text": "Westdeutschland ist vor allem für Flusslandschaften, Weinregionen, historische Städte und Burgen bekannt. Der Rhein und die Mosel bieten zahlreiche Möglichkeiten für Rundreisen, Radtouren und Ausflüge."
+      },
+      {
+        "type": "paragraph",
+        "text": "Städte wie Köln, Düsseldorf, Bonn, Trier und weiter im Süden  auch Heidelberg lassen sich gut mit Ausflügen in die umliegenden Regionen verbinden. Besonders entlang von Rhein und Mosel gibt es zahlreiche historische Orte, Burgen und Aussichtspunkte."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1767715241091-dcbac841d0c0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Historische Stadtlandschaft in Deutschland"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Norddeutschland und die deutschen Küsten"
+      },
+      {
+        "type": "paragraph",
+        "text": "Weiter nördlich verändert sich der Charakter vieler Reiseziele. Küstenlandschaften, Inseln, Strände und maritime Städte prägen große Teile Norddeutschlands. Die Nordsee ist besonders für das Wattenmeer und die Inseln bekannt, während die Ostsee mit Sandstränden und Seebädern lockt."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auch die Inseln Sylt, Rügen, Usedom und Norderney sind vielseitige Reiseziele. Sie eignen sich für Strandurlaub, bieten aber gleichzeitig Natur, Radwege, historische Orte und regionale Küche. Für einen Inselurlaub sollte ausreichend Zeit eingeplant werden, da Fähren und die Entfernungen innerhalb größerer Inseln berücksichtigt werden müssen."
+      },
+      {
+        "type": "split",
+        "imageposition": "right",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1680070207738-40025ad1055e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+          "alt": "Deutsche Küste mit Strand und Meer"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Küsten und Inseln"
+          },
+          {
+            "type": "paragraph",
+            "text": "Von der Nordsee bis zur Ostsee gibt es zahlreiche unterschiedliche Küstenlandschaften. Manche Regionen eignen sich besonders für Badeurlaub, andere verbinden Strände mit Naturschutzgebieten, Wanderwegen oder historischen Küstenstädten."
+          },
+          {
+            "type": "paragraph",
+            "text": "Wer mehrere Orte besuchen möchte, sollte bei der Planung nicht nur die Entfernung auf der Karte betrachten. Fähren, saisonaler Verkehr und beliebte Ausflugsziele können die tatsächliche Reisezeit deutlich verlängern."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Deutschland mit dem Auto erkunden"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip durch Deutschland bietet viel Freiheit und ist besonders außerhalb großer Städte praktisch. Gleichzeitig sollte man beachten, dass das Auto in historischen Innenstädten oft eher hinderlich sein kann. Viele Städte besitzen Bereiche mit eingeschränktem Autoverkehr oder begrenzten Parkmöglichkeiten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einer Rundreise empfiehlt es sich deshalb, größere Städte und kleinere Orte unterschiedlich zu planen. Für Berlin, Hamburg oder München kann es sinnvoll sein, eine Unterkunft mit guter Anbindung an den öffentlichen Verkehr zu wählen und das Auto außerhalb des Zentrums stehen zu lassen."
+      },
+      {
+        "type": "note",
+        "title": "Tipp für die Reiseplanung:",
+        "text": " Schaue bereits vor begin deiner Reise nach Stau auf Google Maps. Besonders zwischen den großen Städten im Ruhrgebiet aber auch generell auf den Autobahnen gibt viele Stellen an den es sich grundsätzlich immer Staut."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wie viele Tage sollte man für Deutschland einplanen?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Für eine einzelne Region können bereits fünf bis sieben Tage ausreichend sein, um mehrere Orte kennenzulernen. Für eine größere Rundreise sollte deutlich mehr Zeit eingeplant werden. Deutschland ist zwar deutlich kleiner als viele andere große Reiseländer, bietet aber eine große Anzahl unterschiedlicher Regionen und Reiseziele."
+      },
+      {
+        "type": "paragraph",
+        "text": "Statt in wenigen Tagen möglichst viele Orte abzuhaken, kann es sinnvoller sein, sich auf eine Region oder eine Kombination aus zwei benachbarten Regionen zu konzentrieren. So bleibt mehr Zeit für spontane Ausflüge, lokale Restaurants und kleinere Orte abseits der bekannten Sehenswürdigkeiten."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "Häufige Fragen",
+    "title": "Deutschland FAQ",
+    "description": "Antworten auf häufige Fragen rund um Urlaub, Reisezeit, Verkehr und beliebte Reiseziele in Deutschland.",
+    "items": [
+      {
+        "question": "Wann ist die beste Reisezeit für Deutschland?",
+        "answer": "Das hängt stark von der Region und der geplanten Reise ab. Für Strandurlaub sind die Sommermonate besonders interessant, während Frühling und Herbst für Städte, Rundreisen und viele Outdoor-Aktivitäten angenehm sein können. In den Bergen und an der Küste kann das Wetter allerdings deutlich wechselhafter sein."
+      },
+      {
+        "question": "Welche Regionen eignen sich für einen Deutschland-Urlaub?",
+        "answer": "Das hängt vom Urlaubstyp ab. Bayern eignet sich unter anderem für Berge und Seen, die Nordsee und Ostsee für Strandurlaub, der Schwarzwald für Natur und Wandern und Berlin, Hamburg oder München für Städtereisen. Auch der Rhein, die Mosel, der Harz und viele weitere Regionen bieten unterschiedliche Reiseerlebnisse."
+      },
+      {
+        "question": "Kann man Deutschland gut mit dem Auto bereisen?",
+        "answer": "Ja, besonders für Rundreisen durch ländliche Regionen kann ein Auto praktisch sein. In historischen Innenstädten und beliebten Touristenzentren kann das Auto dagegen unpraktisch sein. Vor der Anreise sollte man sich deshalb über Parkmöglichkeiten, Umweltzonen und lokale Verkehrsbeschränkungen informieren."
+      },
+      {
+        "question": "Ist die Ostsee für einen Urlaub geeignet?",
+        "answer": "Die Ostsee bietet eine Mischung aus Sandstränden, Seebädern, Inseln, Steilküsten und Ausflugszielen. Besonders in der Hauptreisezeit sind viele Orte sehr beliebt, weshalb Unterkünfte und Ferienwohnungen frühzeitig gebucht werden sollten."
+      },
+      {
+        "question": "Wie viele Tage sollte man in Berlin verbringen?",
+        "answer": "Für die wichtigsten Sehenswürdigkeiten sollte man mehrere Tage einplanen. Wer neben Brandenburger Tor, Reichstag und Museumsinsel auch verschiedene Stadtviertel, Museen und weniger bekannte Orte erkunden möchte, kann problemlos vier bis fünf Tage oder länger in Berlin verbringen."
+      },
+      {
+        "question": "Wie kommt man am besten durch Deutschland?",
+        "answer": "Deutschland lässt sich mit Auto und Bahn gut bereisen. Für Städtereisen ist die Bahn oft besonders praktisch, während ein Auto für ländliche Regionen, Wandergebiete und individuelle Rundreisen mehr Flexibilität bietet."
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home_label": "Startseite"
+  },
+  "seo": {
+    "description": "Reiseguide für Deutschland mit Informationen zu Regionen, Reisezielen, Sehenswürdigkeiten, Reisezeit, Verkehr und Community-Beiträgen.",
+    "touristtypes": [
+      "Leisure Travelers",
+      "Families",
+      "Adventure Travelers",
+      "Cultural Travelers"
+    ],
+    "sameas": [
+      "https://www.germany.travel/"
+    ]
+  }
+}
