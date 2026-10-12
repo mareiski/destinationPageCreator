@@ -10,12 +10,12 @@
     },
     "buttons": [
       {
-        "label": "Regionen entdecken",
-        "url": "#regionen"
+        "label": "Roadtrips ansehen",
+        "url": "#roadtrips"
       },
       {
-        "label": "Beiträge lesen",
-        "url": "#beitraege"
+        "label": "Regionen entdecken",
+        "url": "#regionen"
       }
     ]
   },
@@ -108,10 +108,8 @@
     "title": "Aktuelle Beiträge über die USA",
     "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
     "search": {
-      "minlat": 24.3963,
-      "minlon": -124.848974,
-      "maxlat": 49.384358,
-      "maxlon": -66.885444,
+      "title": "USA",
+      "country_code": "US",
       "limit": 6
     }
   },
@@ -549,8 +547,6 @@
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "sameas": [
-      "https://www.visittheusa.com/"
-    ]
+    "sameas": ["https://www.visittheusa.com/"]
   }
 }

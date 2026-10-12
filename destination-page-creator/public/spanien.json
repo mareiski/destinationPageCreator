@@ -10,12 +10,12 @@
     },
     "buttons": [
       {
-        "label": "Regionen entdecken",
-        "url": "#regionen"
+        "label": "Roadtrips ansehen",
+        "url": "#roadtrips"
       },
       {
-        "label": "Beiträge lesen",
-        "url": "#beitraege"
+        "label": "Regionen entdecken",
+        "url": "#regionen"
       }
     ]
   },
@@ -108,10 +108,8 @@
     "title": "Aktuelle Beiträge über Spanien",
     "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
     "search": {
-      "min_lat": 35.95,
-      "min_lon": -9.3,
-      "max_lat": 43.8,
-      "max_lon": 4.35,
+      "title": "Spanien",
+      "country_code": "ES",
       "limit": 6
     }
   },
@@ -561,8 +559,6 @@
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "same_as": [
-      "https://www.spain.info/"
-    ]
+    "same_as": ["https://www.spain.info/"]
   }
 }

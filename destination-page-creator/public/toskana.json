@@ -10,12 +10,12 @@
     },
     "buttons": [
       {
-        "label": "Regionen entdecken",
-        "url": "#regionen"
+        "label": "Roadtrips ansehen",
+        "url": "#roadtrips"
       },
       {
-        "label": "Beiträge lesen",
-        "url": "#beitraege"
+        "label": "Regionen entdecken",
+        "url": "#regionen"
       }
     ]
   },
@@ -108,10 +108,39 @@
     "title": "Aktuelle Beiträge über die Toskana",
     "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
     "search": {
-      "min_lat": 42.2,
-      "min_lon": 9.7,
-      "max_lat": 44.5,
-      "max_lon": 12.4,
+      "title": "Toskana",
+      "geojson": {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [9.8416068, 44.0847367],
+              [9.6032781, 44.4374801],
+              [9.9687154, 44.528167],
+              [10.9432149, 44.1265694],
+              [11.3722066, 44.2860219],
+              [11.8117906, 44.1341721],
+              [11.7588287, 43.8865814],
+              [12.0501193, 43.7872558],
+              [12.3467061, 43.8063697],
+              [12.3890756, 43.6839349],
+              [12.1136736, 43.3998456],
+              [12.1878203, 43.2534417],
+              [11.960084, 43.1298807],
+              [11.9706764, 42.862601],
+              [11.8064944, 42.7810243],
+              [11.8064944, 42.6214454],
+              [11.6529048, 42.4223726],
+              [11.3033561, 42.3088915],
+              [10.2071552, 42.218064],
+              [9.6007447, 43.1053124],
+              [9.8416068, 44.0847367]
+            ]
+          ]
+        }
+      },
       "limit": 6
     }
   },
@@ -561,8 +590,6 @@
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "same_as": [
-      "https://www.visittuscany.com/"
-    ]
+    "same_as": ["https://www.visittuscany.com/"]
   }
 }

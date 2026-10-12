@@ -10,12 +10,12 @@
     },
     "buttons": [
       {
-        "label": "Regionen entdecken",
-        "url": "#regionen"
+        "label": "Roadtrips ansehen",
+        "url": "#roadtrips"
       },
       {
-        "label": "Beiträge lesen",
-        "url": "#beitraege"
+        "label": "Regionen entdecken",
+        "url": "#regionen"
       }
     ]
   },
@@ -108,10 +108,8 @@
     "title": "Aktuelle Beiträge über Deutschland",
     "description": "Reiseberichte, Erfahrungen und Tipps aus der Community.",
     "search": {
-      "minlat": 47.2701,
-      "minlon": 5.8663,
-      "maxlat": 55.0583,
-      "maxlon": 15.0419,
+      "title": "Deutschland",
+      "country_code": "DE",
       "limit": 6
     }
   },
@@ -516,8 +514,6 @@
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "sameas": [
-      "https://www.germany.travel/"
-    ]
+    "sameas": ["https://www.germany.travel/"]
   }
 }
