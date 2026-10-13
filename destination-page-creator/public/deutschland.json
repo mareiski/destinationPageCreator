@@ -514,6 +514,8 @@
       "Adventure Travelers",
       "Cultural Travelers"
     ],
-    "sameas": ["https://www.germany.travel/"]
+    "sameas": [
+      "https://www.germany.travel/"
+    ]
   }
 }

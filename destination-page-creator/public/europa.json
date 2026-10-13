@@ -1,0 +1,466 @@
+{
+  "country_name": "Europa",
+  "hero": {
+    "eyebrow": "Roadtrips & Reisetipps",
+    "title": "Europa entdecken",
+    "description": "Europa bietet unzählige Möglichkeiten für deinen nächsten Roadtrip: von mediterranen Küsten und sonnigen Inseln über beeindruckende Berglandschaften bis hin zu historischen Städten und weiten Naturlandschaften im Norden. Hier findest du die schönsten Routen und Inspiration durch die Roadtrips und Reiseberichten von anderen Reisenden.",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=85&w=1170&auto=format&fit=crop",
+      "alt": "Historische europäische Stadt mit charmanten Straßen und Gebäuden"
+    },
+    "buttons": [
+      {
+        "label": "Roadtrips ansehen",
+        "url": "#roadtrips"
+      },
+      {
+        "label": "Länder entdecken",
+        "url": "#regionen"
+      }
+    ]
+  },
+  "intro": {
+    "kicker": "Roadtrip in Europa",
+    "title": "Maximale Abwechslung, Freiheit und Abenteuer",
+    "paragraphs": [
+      "Europa ist unglaublich vielseitig und bietet für nahezu jeden Urlaub die passende Umgebung. Im Süden erwarten dich mediterrane Küsten, Inseln und historische Städte. In Mitteleuropa findest du Berge, Seen, Wälder und abwechslungsreiche Kulturlandschaften. Weiter im Norden begeistern Fjorde, weite Natur und spektakuläre Landschaften.",
+      "Aufgrund der Kompaktheit und der reichen Kultur des Kontinents ist Europa wohl eine der besten Regionen für einen Roadtrip. Viele Reiseziele lassen sich miteinander verbinden und bieten die Möglichkeit, innerhalb eines Urlaubs ganz unterschiedliche Regionen kennenzulernen.",
+      "Auf dieser Seite findest du eine Auswahl beliebter europäischer Länder und Reiseziele. Dazu kommen Roadtrips, Reiseberichte und Erfahrungen aus der Community, die dir bei der Planung deiner nächsten Reise helfen können.",
+      "Wenn du aus Deutschland startest, stehen dir viele Möglichkeiten offen: Die meisten Länder erreichst du bequem mit dem Auto oder Camper, während sich für weiter entfernte Ziele ein Flug und Mietwagen anbietet."
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=687&auto=format&fit=crop",
+      "alt": "Klarer Bergsee in einer europäischen Alpenlandschaft"
+    }
+  },
+  "image_strip": [
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1074&auto=format&fit=crop",
+        "alt": "Sonniger Strand mit türkisblauem Meer"
+      },
+      "caption": "Sonne, Strände und Inseln"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1170&auto=format&fit=crop",
+        "alt": "Europäische Stadt mit historischen Gebäuden"
+      },
+      "caption": "Städte voller Geschichte"
+    },
+    {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1169&auto=format&fit=crop",
+        "alt": "Beeindruckende Berglandschaft mit hohen Gipfeln"
+      },
+      "caption": "Berge und Natur erleben"
+    }
+  ],
+  "community": {
+    "kicker": "Community",
+    "title": "Roadtrips durch Europa",
+    "description": "Entdecke persönliche Reiseberichte, erprobte Roadtrip-Routen, Erfahrungen und Reiseideen aus ganz Europa. Lass dich inspirieren und finde Anregungen für deine eigene Reiseplanung.",
+    "search": {
+      "title": "Europa",
+      "geojson": {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -11.5018455,
+                34.8919833
+              ],
+              [
+                1.9001257,
+                36.8566981
+              ],
+              [
+                11.5106955,
+                36.9664833
+              ],
+              [
+                11.2999044,
+                33.7275175
+              ],
+              [
+                19.2936876,
+                32.5137348
+              ],
+              [
+                21.1636486,
+                33.3884919
+              ],
+              [
+                28.4808989,
+                31.6510621
+              ],
+              [
+                33.9535492,
+                31.9538252
+              ],
+              [
+                35.4274789,
+                35.9672429
+              ],
+              [
+                43.6548444,
+                70.7748722
+              ],
+              [
+                20.7668632,
+                71.8373583
+              ],
+              [
+                -27.9196076,
+                66.560996
+              ],
+              [
+                -28.7669266,
+                34.339276
+              ],
+              [
+                -17.005229,
+                25.7742757
+              ],
+              [
+                -13.2384821,
+                28.5365952
+              ],
+              [
+                -12.5357925,
+                31.843839
+              ],
+              [
+                -11.5018455,
+                34.8919833
+              ]
+            ]
+          ]
+        }
+      },
+      "limit": 6
+    }
+  },
+  "regions": {
+    "kicker": "Länder entdecken",
+    "title": "Die besten Länder für deine Rundreise",
+    "description": "Jedes Land in Europa hat seinen eigenen Charakter. Ob mediterrane Küsten, beeindruckende Berglandschaften, historische Städte oder weite Natur: Wir stellen dir hier die beliebtesten Länder für einen Roadtrip durch Europa vor.",
+    "items": [
+      {
+        "title": "Italien",
+        "url": "/europa/italien",
+        "link_label": "Italien entdecken →",
+        "description": "Italien verbindet mediterranes Lebensgefühl mit historischen Städten, abwechslungsreichen Küsten, Seen, Bergen und einer vielfältigen Küche. Das Land eignet sich für Strandurlaub, Kulturreisen und ausgedehnte Roadtrips.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Bunte Häuser in einer italienischen Küstenlandschaft"
+        }
+      },
+      {
+        "title": "Griechenland",
+        "url": "/europa/griechenland",
+        "link_label": "Griechenland entdecken →",
+        "description": "Griechenland begeistert mit Inseln, türkisblauem Meer, antiken Sehenswürdigkeiten und charmanten Dörfern. Neben den bekannten Inseln lohnt sich auch eine Rundreise über das griechische Festland.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Weiße Häuser auf Santorini mit Blick auf die Ägäis"
+        }
+      },
+      {
+        "title": "Spanien",
+        "url": "/europa/spanien",
+        "link_label": "Spanien entdecken →",
+        "description": "Von den Stränden am Mittelmeer über die Landschaften Andalusiens bis zu lebendigen Städten wie Barcelona und Madrid bietet Spanien viel Abwechslung für Autoreisen und Kultururlaub.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Architektur und Stadtleben in Spanien"
+        }
+      },
+      {
+        "title": "Portugal",
+        "url": "/europa/portugal",
+        "link_label": "Portugal entdecken →",
+        "description": "Portugal lockt mit der Atlantikküste, historischen Städten, kleinen Fischerdörfern und abwechslungsreichen Landschaften. Bereits mit einem Roadtrip kann das gesamte Land von Porto über Lissabon bis zur Algarve abgefahren werden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Historische Häuser und Gassen in Portugal"
+        }
+      },
+      {
+        "title": "Frankreich",
+        "url": "/europa/frankreich",
+        "link_label": "Frankreich entdecken →",
+        "description": "Frankreich bietet mediterrane Küsten, charmante Dörfer, Weinregionen, Alpenlandschaften und weltbekannte Städte. Durch die vielen unterschiedlichen Regionen ist das Land ideal für abwechslungsreiche Rundreisen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Paris mit Blick auf den Eiffelturm"
+        }
+      },
+      {
+        "title": "Kroatien",
+        "url": "/europa/kroatien",
+        "link_label": "Kroatien entdecken →",
+        "description": "Kroatien ist bekannt für die Adriaküste, historische Hafenstädte, Inseln und Nationalparks. Das Land eignet sich besonders für einen Roadtrip mit Badeurlaub und Naturerlebnissen.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1555990793-da11153b2473?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Historische Küstenstadt an der Adriaküste"
+        }
+      },
+      {
+        "title": "Norwegen",
+        "url": "/europa/norwegen",
+        "link_label": "Norwegen entdecken →",
+        "description": "Norwegen begeistert mit Fjorden, Wasserfällen, Bergen und weiten Landschaften. Das Land erfreut sich besonders bei Naturliebhabern, die es lieber Ruhiger möchten, immer größerer Beliebtheit.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Weite Wasserlandschaft in einer nordischen Umgebung"
+        }
+      },
+      {
+        "title": "Niederlande",
+        "url": "/europa/niederlande",
+        "link_label": "Niederlande entdecken →",
+        "description": "Die Niederlande verbinden historische Städte, Grachten, weite Strände und ländliche Landschaften. Viele Reiseziele sind nahe beisammen und können in einem großen Roadtrip kombiniert werden.",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Historische Architektur und Wasser in einer niederländischen Stadt"
+        }
+      }
+    ]
+  },
+  "destinations": {
+    "kicker": "Beliebte Reiseziele",
+    "title": "Diese Orte machen Lust auf Europa",
+    "description": "Manchmal beginnt die Reiseplanung mit einem einzelnen Ort. Entdecke bekannte Städte und Landschaften, die sich als Reiseziel, Zwischenstopp oder Ausgangspunkt für eine größere Rundreise eignen.",
+    "items": [
+      {
+        "title": "Santorini",
+        "description": "Weiße Häuser, blaue Kuppeln und spektakuläre Ausblicke auf die Ägäis",
+        "url": "/europa/griechenland/santorini",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Weiße Häuser und blaues Meer auf Santorini"
+        }
+      },
+      {
+        "title": "Paris",
+        "description": "Berühmte Sehenswürdigkeiten, historische Viertel und französisches Lebensgefühl",
+        "url": "/europa/frankreich/paris",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Blick auf den Eiffelturm in Paris"
+        }
+      },
+      {
+        "title": "Lissabon",
+        "description": "Hügelige Gassen, historische Straßenbahnen und Ausblicke über den Tejo",
+        "url": "/europa/portugal/lissabon",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=1000&auto=format&fit=crop",
+          "alt": "Historische Häuser und Straßen in Portugal"
+        }
+      },
+      {
+        "title": "Dolomiten",
+        "description": "Markante Gipfel, Bergseen und abwechslungsreiche Wanderlandschaften",
+        "url": "/europa/italien/dolomiten",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Hohe Gipfel und alpine Berglandschaft"
+        }
+      },
+      {
+        "title": "Amalfiküste",
+        "description": "Küstenstraßen, bunte Orte am Hang und mediterrane Ausblicke",
+        "url": "/europa/italien/amalfi",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Sonnige Küste am Mittelmeer"
+        }
+      },
+      {
+        "title": "Norwegische Fjorde",
+        "description": "Steile Berghänge, tiefblaue Gewässer und eindrucksvolle Natur",
+        "url": "/europa/norwegen/fjorde",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1074&auto=format&fit=crop",
+          "alt": "Dramatische Berglandschaft in einer nordischen Region"
+        }
+      }
+    ]
+  },
+  "tips": {
+    "kicker": "",
+    "title": "",
+    "description": "",
+    "items": []
+  },
+  "guide": {
+    "kicker": "Reiseplanung",
+    "title": "Warum Roadtrips in Europa so beliebt sind",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Wer ein Land oder eine Region wirklich kennenlernen möchte, sollte mehr als nur einen Ort besuchen. Ein Roadtrip durch Europa bietet die perfekte Möglichkeit, verschiedene Länder, Landschaften und Sehenswürdigkeiten auf einer Reise zu entdecken. Durch den Schengenraum musst du dir keine Gedanken über eine Reise durch mehrere Länder machen.  Dabei bleibst du flexibel, kannst spontan neue Orte erkunden und deine Route ganz nach deinen eigenen Vorstellungen gestalten."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein großer Vorteil Europas ist die Vielfalt auf kleinem Raum. Zahlreiche Länder liegen nah beieinander und lassen sich oft innerhalb weniger Stunden erreichen. So kannst du in kurzer Zeit unterschiedliche Kulturen, Traditionen und Landschaften erleben – und dabei gleich mehrere Länder auf einem Roadtrip entdecken."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1170&auto=format&fit=crop",
+          "alt": "Bergsee als Beispiel für die abwechslungsreichen Landschaften Europas"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Die passende Region für deinen Urlaub"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ob traumhafte Strände am Mittelmeer, beeindruckende Berglandschaften, lebendige Metropolen oder charmante Dörfer: Europa bietet für jeden Geschmack das passende Reiseziel. Gerade diese Abwechslung macht Roadtrips so reizvoll. Du kannst morgens durch die Gassen einer historischen Altstadt schlendern, nachmittags die Natur genießen und den Tag an der Küste ausklingen lassen. Du kannst dich also einfach inspirieren lassen, welches Land dich interessiert und dich danach informieren welche Regionen dich ansprechen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Auch die Jahreszeit spielt bei der Auswahl eine Rolle. Mediterrane Reiseziele sind im Sommer besonders beliebt, während Frühling und Herbst für viele Städtereisen und Rundreisen angenehm sein können. In nördlichen Regionen und Gebirgslandschaften hängen die Möglichkeiten zusätzlich von Wetter, Tageslicht und saisonalen Bedingungen ab. Klicke gerne ob auf ein Land um dir Tipps zu diesen Punkten anzusehen."
+      },
+      {
+        "type": "split",
+        "image_position": "left",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1000&auto=format&fit=crop",
+          "alt": "Strandlandschaft als Inspiration für einen Urlaub am Meer"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Strandurlaub und Inselreisen"
+          },
+          {
+            "type": "paragraph",
+            "text": "Wenn du Sonne, Meer und entspannte Tage suchst, bieten die Küsten und Inseln Südeuropas viele Möglichkeiten. Griechenland, Spanien, Italien, Portugal und Kroatien unterscheiden sich dabei deutlich hinsichtlich Landschaft, Atmosphäre und Anreise."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bei Inselreisen solltest du neben der Unterkunft auch Flüge, Fährverbindungen und lokale Transportmöglichkeiten berücksichtigen. Wenn du mehrere Inseln kombinieren möchtest, lohnt es sich, genügend Zeit für Transfers und mögliche Änderungen im Reiseplan einzuplanen."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Städtereisen und Kultur"
+      },
+      {
+        "type": "paragraph",
+        "text": "Europa besitzt eine große Auswahl an Städten mit unterschiedlichen kulturellen und architektonischen Schwerpunkten. Paris, Rom, Lissabon, Amsterdam, Barcelona und Prag eignen sich für mehrtägige Städtereisen. Auch kleinere Städte können eine gute Wahl sein, wenn du historische Altstädte, regionale Küche und ein etwas ruhigeres Reisetempo bevorzugst."
+      },
+      {
+        "type": "paragraph",
+        "text": "Bei einem Kurztrip ist es meist sinnvoll, sich auf ein Stadtgebiet oder wenige nahe beieinanderliegende Sehenswürdigkeiten zu konzentrieren. So bleibt ausreichend Zeit, die Stadt zu Fuß zu erkunden und auch weniger bekannte Viertel kennenzulernen."
+      },
+      {
+        "type": "image",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=1170&auto=format&fit=crop",
+          "alt": "Straßen und historische Architektur einer europäischen Stadt"
+        }
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Mit dem Auto durch Europa"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ein Roadtrip bietet die Möglichkeit, verschiedene Regionen flexibel miteinander zu verbinden. Besonders für Landschaften, kleinere Orte und Rundreisen kann das Auto praktisch sein. Plane die Tagesetappen jedoch realistisch und berücksichtige, dass kurvenreiche Bergstraßen, Küstenrouten und stark befahrene Strecken deutlich mehr Zeit benötigen können als erwartet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Vor der Abfahrt solltest du dich über die Verkehrsregeln der jeweiligen Länder informieren. Dazu gehören mögliche Mautgebühren, Vignetten, Umweltzonen, Parkregelungen und lokale Einschränkungen. Wenn du mit dem eigenen Auto mehrere Länder bereist, prüfe außerdem, ob Versicherungsschutz und Fahrzeugunterlagen für die gesamte Route passen."
+      },
+      {
+        "type": "note",
+        "title": "Für deine Planung:",
+        "text": " Plane nicht zu viele Stationen in zu kurzer Zeit. Eine kleinere Route mit genügend Zeit für spontane Zwischenstopps ist oft entspannter als eine Rundreise, bei der du täglich lange Strecken zurücklegst. Prüfe außerdem vor der Abreise die aktuellen Verkehrs- und Einreisebestimmungen der Länder, die du besuchen möchtest. Trotz Schengenabkommen gibt es ja leider teilweise Grenzkontrollen"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Europa mit Bahn und Flugzeug erkunden"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nicht jede Reise muss 100% mit dem Auto stattfinden. Vor allem wenn du direkt ein Stadtzentrum besichtigen möchtest lohnt es sich außerhalb zu Parken und mit öffentlichen Verkehrsmitteln in die Stadt zu fahren."
+      },
+      {
+        "type": "paragraph",
+        "text": "Vergleiche bei der Planung nicht nur die reine Fahr- oder Flugzeit, sondern auch die Anreise zum Bahnhof oder Flughafen, Umstiege, Gepäck und den Transfer zum Zielort. So kannst du besser einschätzen, welche Verbindung für deine Reise tatsächlich am sinnvollsten ist."
+      },
+      {
+        "type": "split",
+        "image_position": "right",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1170&auto=format&fit=crop",
+          "alt": "Berglandschaft als Beispiel für Naturreisen in Europa"
+        },
+        "content": [
+          {
+            "type": "heading",
+            "level": 3,
+            "text": "Natur, Berge und aktive Reisen"
+          },
+          {
+            "type": "paragraph",
+            "text": "Von den Alpen bis zu den norwegischen Fjorden bietet Europa viele Möglichkeiten für Wanderungen, Radtouren und andere Outdoor-Aktivitäten. Welche Region am besten geeignet ist, hängt von der Jahreszeit, dem gewünschten Schwierigkeitsgrad und der verfügbaren Zeit ab."
+          },
+          {
+            "type": "paragraph",
+            "text": "Informiere dich vor Ausflügen über lokale Bedingungen, Öffnungszeiten von Bergbahnen, saisonale Einschränkungen und die notwendige Ausrüstung. In Bergregionen kann sich das Wetter schnell ändern, und manche Wege sind außerhalb der Hauptsaison nur eingeschränkt zugänglich."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wie viel Zeit solltest du für Europa einplanen?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Für einen Städtetrip reichen häufig zwei bis vier Tage, während sich für einen Urlaub in einer einzelnen Region eine Woche oder mehr anbieten kann. Bei einer Rundreise durch mehrere Länder solltest du zusätzliche Zeit für längere Strecken, Grenzübertritte, Transfers und Zwischenstopps berücksichtigen."
+      },
+      {
+        "type": "paragraph",
+        "text": "Statt möglichst viele Länder in kurzer Zeit zu besuchen, ist es oft angenehmer, sich auf eine Region oder einige benachbarte Länder zu konzentrieren. So bleibt mehr Zeit, einzelne Orte wirklich kennenzulernen und den Urlaub flexibel an die eigenen Interessen anzupassen."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "",
+    "title": "",
+    "description": "",
+    "items": []
+  },
+  "breadcrumb": {
+    "home_label": "Startseite"
+  },
+  "seo": {
+    "description": "Entdecke Europas schönste Länder und Reiseziele. Finde Roadtrips, Reiseberichte und Inspiration für deinen nächsten Urlaub ab Deutschland.",
+    "tourist_types": [
+      "Leisure Travelers",
+      "Families",
+      "Adventure Travelers",
+      "Cultural Travelers"
+    ],
+    "same_as": [
+      "https://european-union.europa.eu/index_de"
+    ]
+  }
+}
